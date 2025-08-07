@@ -1,0 +1,686 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "technology": "Technology",
+    "news": "News",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "home": {
+    "hero": {
+      "title": "Tailored for Every Pet",
+      "subtitle": "Technology-Driven Professional Pet Consumer Ecosystem",
+      "description": "Providing personalized nutrition solutions for every pet through AI technology and professional nutritionist teams",
+      "cta": {
+        "primary": "View Products",
+        "secondary": "Learn More"
+      },
+      "imageAlt": "Happy golden retriever enjoying premium pet food"
+    },
+    "features": {
+      "title": "Core Advantages",
+      "subtitle": "Three core advantages providing the best nutrition solutions for your pets",
+      "nutrition": {
+        "title": "Scientific Nutrition Formula",
+        "description": "Based on pet nutrition research, carefully formulated ingredients to ensure healthy pet growth"
+      },
+      "safety": {
+        "title": "Safety & Quality Assurance",
+        "description": "Strict quality control system from ingredient sourcing to production packaging, ensuring safety and reliability"
+      },
+      "technology": {
+        "title": "AI Smart Recommendations",
+        "description": "Using artificial intelligence technology to provide personalized nutrition advice based on pet breed, age, weight and other factors"
+      }
+    },
+    "stats": {
+      "title": "Trusted by Numbers",
+      "subtitle": "Numbers that demonstrate our expertise and quality",
+      "customers": "Customers Served",
+      "awards": "Awards Received",
+      "satisfaction": "Customer Satisfaction"
+    },
+    "news": {
+      "title": "Latest News",
+      "subtitle": "Stay updated with ASUPET's latest news and industry insights",
+      "viewAll": "View All"
+    },
+    "cta": {
+      "title": "Start Your Pet's Nutrition Journey",
+      "subtitle": "Let us provide the most professional nutrition solutions for your pet",
+      "button": "Contact Now"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "hero": {
+      "title": "About ASUPET",
+      "subtitle": "Technology-driven professional pet consumer ecosystem, dedicated to providing personalized nutrition solutions for every pet"
+    },
+    "story": {
+      "title": "Brand Story",
+      "subtitle": "ASUPET's founding philosophy and mission vision",
+      "imageAlt": "ASUPET Brand Story"
+    },
+    "values": {
+      "title": "Core Values",
+      "subtitle": "The principles and beliefs we uphold",
+      "love": {
+        "title": "Born from Love",
+        "description": "Every product stems from deep love for pets, we believe love is the best nutrition"
+      },
+      "quality": {
+        "title": "Quality First",
+        "description": "Strict quality control and scientific nutrition formulas ensure every product meets the highest standards"
+      },
+      "innovation": {
+        "title": "Continuous Innovation",
+        "description": "Utilizing the latest AI technology and nutritional science to continuously innovate products and services"
+      }
+    },
+    "achievements": {
+      "title": "Our Achievements",
+      "subtitle": "Numbers that witness our growth and professionalism",
+      "customers": "Customers Served",
+      "awards": "Awards Received",
+      "countries": "Countries Covered"
+    },
+    "team": {
+      "title": "Professional Team",
+      "subtitle": "A professional team composed of senior nutritionists and technical experts"
+    },
+    "cta": {
+      "title": "Start Your Pet's Nutrition Journey",
+      "subtitle": "Let us provide the most professional nutrition solutions for your pet",
+      "products": "View Products",
+      "contact": "Contact Us"
+    }
+  },
+  "products": {
+    "title": "Product Philosophy",
+    "subtitle": "Three product series to meet the nutritional needs of different pets",
+    "hero": {
+      "title": "Scientific Nutrition, Tailored for Every Pet",
+      "subtitle": "Based on AI technology and professional nutrition science, providing personalized nutrition solutions for every pet"
+    },
+    "philosophy": {
+      "title": "Product Philosophy",
+      "subtitle": "Science-based, love-driven, providing the finest nutrition experience for pets"
+    },
+    "principles": {
+      "natural": {
+        "title": "Natural Ingredients",
+        "description": "Carefully selected premium natural ingredients, no artificial colors, preservatives or chemical additives, ensuring every bite is pure nutrition"
+      },
+      "safety": {
+        "title": "Safety Assurance",
+        "description": "Strict quality control system from ingredient sourcing to production packaging, every step is rigorously tested to ensure product safety and reliability"
+      },
+      "nutrition": {
+        "title": "Balanced Nutrition",
+        "description": "Based on pet nutrition research, scientifically formulated proteins, fats, vitamins and other nutrients to meet the nutritional needs of pets at different growth stages"
+      },
+      "quality": {
+        "title": "Excellent Quality",
+        "description": "Advanced production processes and equipment ensure stable product quality, providing continuous premium nutrition assurance for pets"
+      }
+    },
+    "series": {
+      "title": "Product Series"
+    },
+    "nutrition": {
+      "title": "Nutritional Features",
+      "subtitle": "Scientific formulation, comprehensive nutrition",
+      "protein": "Protein",
+      "fat": "Fat",
+      "fiber": "Fiber",
+      "imageAlt": "Nutritional composition analysis chart"
+    },
+    "benefits": {
+      "digestibility": "Easy Digestion & Absorption",
+      "immunity": "Enhanced Immunity",
+      "coat": "Shiny Coat",
+      "energy": "Sustained Energy",
+      "dental": "Oral Health",
+      "weight": "Weight Management"
+    },
+    "quality": {
+      "title": "Quality Assurance",
+      "subtitle": "Strict quality control system ensuring every product meets the highest standards",
+      "certification": {
+        "title": "Authoritative Certification",
+        "description": "Certified by international authorities such as ISO22000 and HACCP, product quality meets international standards"
+      },
+      "testing": {
+        "title": "Rigorous Testing",
+        "description": "Every batch undergoes strict nutritional composition and safety testing to ensure product quality"
+      },
+      "satisfaction": {
+        "title": "Satisfaction Guarantee",
+        "description": "100% satisfaction guarantee - we promise unconditional returns and exchanges for any quality issues"
+      }
+    },
+    "scenarios": {
+      "title": "Application Scenarios"
+    },
+    "cases": {
+      "title": "Success Stories"
+    },
+    "cta": {
+      "title": "Choose ASUPET, Give Your Pet the Best Nutrition",
+      "subtitle": "Learn about our products now and provide scientific nutrition solutions for your pet",
+      "contact": "Contact Us",
+      "technology": "Learn Technology"
+    }
+  },
+  "technology": {
+    "title": "Technology Advantages",
+    "subtitle": "AI-Driven Personalized Pet Nutrition Solutions",
+    "hero": {
+      "title": "Technology Innovation Leads the Future",
+      "subtitle": "Utilizing cutting-edge AI technology to provide intelligent solutions for pet nutrition"
+    },
+    "core": {
+      "title": "Core Technology Architecture",
+      "subtitle": "Intelligent recommendation system based on deep learning and big data analytics"
+    },
+    "ai": {
+      "title": "AI Personalized Recommendation System",
+      "description": "Through machine learning algorithms analyzing factors such as pet breed, age, weight, and activity level, we provide precise nutritional recommendations for each pet",
+      "features": {
+        "analysis": "Intelligent Data Analysis",
+        "recommendation": "Personalized Recommendations",
+        "monitoring": "Real-time Health Monitoring",
+        "optimization": "Nutrition Plan Optimization"
+      }
+    },
+    "data": {
+      "title": "Big Data Processing Platform",
+      "description": "Building a complete pet health data ecosystem to provide precise nutrition analysis and recommendations",
+      "features": {
+        "collection": "Multi-dimensional Data Collection",
+        "processing": "Real-time Data Processing",
+        "insights": "Deep Insight Analysis",
+        "prediction": "Health Trend Prediction"
+      }
+    },
+    "security": {
+      "title": "Data Security Assurance",
+      "description": "Enterprise-grade security standards to ensure the privacy and security of user and pet data",
+      "features": {
+        "encryption": "End-to-end Encryption",
+        "privacy": "Privacy Protection Mechanism",
+        "compliance": "Compliance Assurance",
+        "backup": "Secure Backup System"
+      }
+    },
+    "advantages": {
+      "title": "Technology Advantages",
+      "subtitle": "Leading technical indicators providing you with the most reliable service",
+      "accuracy": "Accuracy Rate",
+      "accuracyDesc": "AI Recommendation Accuracy",
+      "availability": "Availability",
+      "availabilityDesc": "24/7 Service Guarantee",
+      "efficiency": "Efficiency Improvement",
+      "efficiencyDesc": "Nutrition Formula Efficiency Enhancement",
+      "algorithms": "Algorithm Models",
+      "algorithmsDesc": "Professional Algorithm Model Support"
+    },
+    "services": {
+      "title": "Technical Services",
+      "subtitle": "Comprehensive technical support and professional services",
+      "consultation": {
+        "title": "Professional Consultation Service",
+        "description": "Providing one-on-one professional nutrition consultation and technical support",
+        "benefits": {
+          "expert": "Expert Team Support",
+          "personalized": "Personalized Solutions",
+          "support": "24/7 Technical Support"
+        }
+      },
+      "monitoring": {
+        "title": "Health Monitoring Service",
+        "description": "Real-time monitoring of pet health status and timely adjustment of nutrition plans",
+        "benefits": {
+          "realtime": "Real-time Data Monitoring",
+          "alerts": "Intelligent Alert System",
+          "reports": "Detailed Health Reports"
+        }
+      },
+      "optimization": {
+        "title": "Plan Optimization Service",
+        "description": "Continuously optimizing nutrition plans to ensure optimal results",
+        "benefits": {
+          "efficiency": "Continuous Efficiency Improvement",
+          "cost": "Effective Cost Control",
+          "performance": "Continuous Performance Optimization"
+        }
+      }
+    },
+    "process": {
+      "title": "Technology R&D Process",
+      "subtitle": "Rigorous R&D process ensuring technological innovation and product quality",
+      "research": {
+        "title": "Requirements Research",
+        "description": "In-depth research on pet nutrition needs and market trends"
+      },
+      "development": {
+        "title": "Technology Development",
+        "description": "Utilizing the latest technology to develop innovative solutions"
+      },
+      "testing": {
+        "title": "Testing & Validation",
+        "description": "Rigorous testing to ensure product quality and safety"
+      },
+      "deployment": {
+        "title": "Deployment & Launch",
+        "description": "Stable deployment with continuous monitoring and optimization"
+      }
+    },
+    "cta": {
+      "title": "Experience Our Technology",
+      "subtitle": "Learn about ASUPET's technology advantages and provide the best nutrition plan for your pet",
+      "contact": "Contact Us",
+      "products": "View Products"
+    },
+    "team": {
+      "title": "Technical Team",
+      "description": "Professional technical team composed of AI experts, data scientists, and software engineers"
+    },
+    "service": {
+      "title": "Service Model",
+      "subscription": "Subscription Service",
+      "dual": "Dual Service Model"
+    }
+  },
+  "news": {
+    "title": "News & Updates",
+    "hero": {
+      "title": "News & Updates",
+      "subtitle": "Stay updated with ASUPET's latest news and industry insights"
+    },
+    "search": {
+      "placeholder": "Search news..."
+    },
+    "filter": {
+      "all": "All"
+    },
+    "noNews": "No news available",
+    "newsletter": {
+      "title": "Subscribe to Newsletter",
+      "subtitle": "Get the latest ASUPET news and industry insights",
+      "placeholder": "Enter your email address",
+      "subscribe": "Subscribe"
+    },
+    "categories": {
+      "all": "All",
+      "company": "Company News",
+      "industry": "Industry Insights",
+      "media": "Media Coverage"
+    },
+    "featured": {
+      "title": "Featured News"
+    },
+    "latest": {
+      "title": "Latest News"
+    },
+    "readTime": "min read",
+    "readMore": "Read More",
+    "noResults": "No news found",
+    "publishedOn": "Published on",
+    "by": "By",
+    "detail": {
+      "notFound": "News not found",
+      "backToNews": "Back to News",
+      "share": "Share",
+      "tags": "Tags",
+      "related": "Related News",
+      "cta": {
+        "title": "Want to Learn More?",
+        "subtitle": "Contact us for more information and professional advice",
+        "contact": "Contact Us",
+        "moreNews": "More News"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We look forward to working with you",
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "We look forward to working with you to contribute to the pet nutrition industry"
+    },
+    "info": {
+      "title": "Contact Information",
+      "subtitle": "Multiple contact methods, providing professional services anytime",
+      "address": {
+        "title": "Company Address",
+        "content": "399 Keyuan Road, Zhangjiang Hi-Tech Park, Pudong New Area, Shanghai"
+      },
+      "phone": {
+        "title": "Phone",
+        "content": "+86 400-123-4567"
+      },
+      "email": {
+        "title": "Email",
+        "content": "contact@asupet.com"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "content": "Monday to Friday 9:00-18:00"
+      }
+    },
+    "map": {
+      "alt": "ASUPET company location map"
+    },
+    "form": {
+      "title": "Online Inquiry",
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "namePlaceholder": "Please enter your name",
+      "emailPlaceholder": "Please enter your email address",
+      "phonePlaceholder": "Please enter your phone number",
+      "companyPlaceholder": "Please enter your company name",
+      "subjectPlaceholder": "Please select a subject",
+      "messagePlaceholder": "Please describe your needs or questions in detail",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "subjects": {
+        "general": "General Inquiry",
+        "products": "Product Inquiry",
+        "partnership": "Business Partnership",
+        "support": "Technical Support",
+        "media": "Media Contact"
+      },
+      "success": {
+        "title": "Submitted Successfully!",
+        "message": "Thank you for your inquiry. We will respond within 24 hours"
+      },
+      "error": "Submission failed, please try again later"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Quick answers to your concerns",
+      "questions": {
+        "response": {
+          "question": "What is your response time?",
+          "answer": "We promise to respond within 24 hours of receiving your inquiry. For urgent matters, we will respond within 2 hours."
+        },
+        "products": {
+          "question": "How do I choose the right product for my pet?",
+          "answer": "Our AI recommendation system will suggest the most suitable nutrition plan based on your pet's breed, age, weight, activity level, and other factors. You can also consult our professional nutritionists."
+        },
+        "partnership": {
+          "question": "How can I establish a partnership with ASUPET?",
+          "answer": "We welcome all forms of cooperation. Please contact us through our business partnership channel, and our business team will discuss cooperation plans with you in detail."
+        },
+        "support": {
+          "question": "What technical support services do you provide?",
+          "answer": "We provide comprehensive technical support, including product usage guidance, nutrition consultation, health monitoring, and more. Our professional team is always ready to help you."
+        }
+      }
+    }
+  },
+  "footer": {
+    "company": "ASUPET",
+    "description": "Technology-Driven Professional Pet Consumer Ecosystem",
+    "address": "Zhangjiang Hi-Tech Park, Pudong New Area, Shanghai",
+    "phone": "+86 400-123-4567",
+    "email": "contact@asupet.com",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "newsletter": "Subscribe to our newsletter",
+    "emailPlaceholder": "Enter your email address",
+    "subscribe": "Subscribe",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "links": {
+      "about": "About Us",
+      "products": "Products",
+      "technology": "Technology",
+      "news": "News",
+      "contact": "Contact"
+    },
+    "copyright": "© {{year}} ASUPET. All rights reserved."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "We value your privacy and are committed to protecting your personal information",
+    "backToHome": "Back to Home",
+    "lastUpdated": "Last Updated",
+    "introduction": {
+      "title": "Introduction",
+      "content": "ASUPET (hereinafter referred to as \"we\") respects and protects users' privacy rights. This privacy policy explains how we collect, use, store, and protect your personal information. By using our services, you agree to the terms of this privacy policy."
+    },
+    "collection": {
+      "title": "Information Collection",
+      "description": "We may collect the following types of information:",
+      "personal": "Personal identification information (name, email address, phone number, etc.)",
+      "pet": "Pet information (breed, age, weight, health condition, etc.)",
+      "usage": "Usage data (access time, page views, feature usage, etc.)",
+      "device": "Device information (IP address, browser type, operating system, etc.)"
+    },
+    "usage": {
+      "title": "Information Usage",
+      "description": "We use the collected information to:",
+      "service": "Provide and improve our services",
+      "recommendation": "Provide personalized nutrition recommendations for your pets",
+      "communication": "Communicate with you about service-related matters",
+      "improvement": "Analyze and improve our products and services"
+    },
+    "sharing": {
+      "title": "Information Sharing",
+      "description": "We do not sell, trade, or transfer your personal information to third parties, except:",
+      "partners": "Sharing with trusted service providers to deliver better services",
+      "legal": "Legal requirements or to protect our rights and safety",
+      "consent": "With your explicit consent"
+    },
+    "security": {
+      "title": "Data Security",
+      "description": "We employ industry-standard security measures to protect your personal information, including encrypted transmission, secure storage, and access controls. We regularly review and update security measures to ensure data safety."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "description": "You have the following rights regarding your personal information:",
+      "access": "Access and view your personal information",
+      "correction": "Correct inaccurate or incomplete information",
+      "deletion": "Request deletion of your personal information",
+      "portability": "Request data portability"
+    },
+    "cookies": {
+      "title": "Cookie Usage",
+      "description": "We use cookies and similar technologies to improve user experience, analyze website usage, and provide personalized content. You can manage cookie preferences through your browser settings."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "If you have any questions about this privacy policy or need to exercise your rights, please contact us through:",
+      "email": "Email",
+      "address": "Address"
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "subtitle": "Please read the following terms carefully before using our services",
+    "backToHome": "Back to Home",
+    "lastUpdated": "Last Updated",
+    "introduction": {
+      "title": "Introduction",
+      "content": "Welcome to ASUPET's services. These Terms of Service (hereinafter referred to as \"Terms\") govern your use of our services. By using our services, you agree to comply with these Terms."
+    },
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "content": "By accessing or using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, please do not use our services."
+    },
+    "services": {
+      "title": "Service Description",
+      "description": "ASUPET provides the following services:",
+      "nutrition": "Pet nutrition analysis and recommendations",
+      "recommendation": "Personalized product recommendations",
+      "consultation": "Professional nutritionist consultations",
+      "monitoring": "Pet health monitoring"
+    },
+    "responsibilities": {
+      "title": "User Responsibilities",
+      "description": "As a user of our services, you agree to:",
+      "accurate": "Provide accurate and complete information",
+      "lawful": "Use the services in a lawful and appropriate manner",
+      "security": "Protect the security of your account",
+      "respect": "Respect the rights of other users and ourselves"
+    },
+    "prohibited": {
+      "title": "Prohibited Uses",
+      "description": "You may not use our services for:",
+      "illegal": "Any illegal or unauthorized purposes",
+      "harmful": "Distributing harmful, threatening, or offensive content",
+      "unauthorized": "Unauthorized access to our systems",
+      "interference": "Interfering with or disrupting the normal operation of services"
+    },
+    "intellectual": {
+      "title": "Intellectual Property",
+      "content": "Our services and all content, features, and characteristics are the exclusive property of ASUPET and its licensors, protected by copyright, trademark, and other intellectual property laws."
+    },
+    "disclaimers": {
+      "title": "Disclaimers",
+      "description": "Our services are provided \"as is\" and we do not guarantee:",
+      "accuracy": "The accuracy or completeness of information",
+      "availability": "Continuous availability of services",
+      "medical": "Our recommendations cannot replace professional veterinary advice"
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "content": "To the maximum extent permitted by law, ASUPET shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use our services."
+    },
+    "termination": {
+      "title": "Service Termination",
+      "content": "We reserve the right to suspend or terminate your access to the services at any time, particularly in cases where you violate these Terms."
+    },
+    "changes": {
+      "title": "Changes to Terms",
+      "content": "We may update these Terms from time to time. Significant changes will be communicated through our website or other appropriate means. Continued use of the services constitutes acceptance of the revised Terms."
+    },
+    "governing": {
+      "title": "Governing Law",
+      "content": "These Terms are governed by the laws of the People's Republic of China, and any disputes will be resolved in courts with jurisdiction in Shanghai."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "If you have any questions about these Terms, please contact us:",
+      "email": "Email",
+      "address": "Address"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error occurred",
+    "retry": "Retry",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close"
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "login": {
+      "title": "Admin Login",
+      "username": "Username",
+      "password": "Password",
+      "submit": "Login",
+      "error": "Invalid username or password"
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "news": "News Management",
+      "categories": "Categories",
+      "settings": "Settings",
+      "logout": "Logout"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "stats": {
+        "total": "Total",
+        "published": "Published",
+        "draft": "Draft",
+        "thisMonth": "This Month"
+      },
+      "quickActions": "Quick Actions",
+      "recentNews": "Recent News",
+      "createNews": "Create News",
+      "manageNews": "Manage News",
+      "categories": "Categories",
+      "noNews": "No news articles",
+      "getStarted": "Get started by creating a new news article"
+    },
+    "news": {
+      "title": "News Management",
+      "create": "Create News",
+      "edit": "Edit News",
+      "list": "News List",
+      "search": "Search news...",
+      "category": "Category",
+      "featured": "Featured",
+      "status": "Status",
+      "actions": "Actions",
+      "delete": "Delete",
+      "batchDelete": "Batch Delete",
+      "selectAll": "Select All",
+      "confirmDelete": "Confirm Delete",
+      "deleteMessage": "Are you sure you want to delete these news articles? This action cannot be undone.",
+      "preview": "Preview",
+      "form": {
+        "titleZh": "Chinese Title",
+        "titleEn": "English Title",
+        "contentZh": "Chinese Content",
+        "contentEn": "English Content",
+        "category": "Category",
+        "selectCategory": "Select a category",
+        "featured": "Set as Featured",
+        "publishDate": "Publish Date",
+        "images": "Images",
+        "uploadImages": "Upload Images",
+        "dragDrop": "Drag and drop files here or click to upload",
+        "maxFiles": "Maximum 5 images",
+        "submit": "Submit",
+        "submitting": "Submitting...",
+        "success": "Operation successful",
+        "error": "Operation failed"
+      }
+    },
+    "categories": {
+      "title": "Category Management",
+      "create": "Create Category",
+      "edit": "Edit Category",
+      "name": "Category Name",
+      "nameZh": "Chinese Name",
+      "nameEn": "English Name",
+      "description": "Description",
+      "descriptionZh": "Chinese Description",
+      "descriptionEn": "English Description",
+      "color": "Color",
+      "actions": "Actions",
+      "delete": "Delete",
+      "confirmDelete": "Confirm Delete",
+      "deleteMessage": "Are you sure you want to delete this category?",
+      "cannotDelete": "Cannot Delete",
+      "categoryInUse": "This category is being used by news articles and cannot be deleted",
+      "form": {
+        "nameZhPlaceholder": "Enter Chinese name",
+        "nameEnPlaceholder": "Enter English name",
+        "descriptionZhPlaceholder": "Enter Chinese description",
+        "descriptionEnPlaceholder": "Enter English description",
+        "submit": "Save",
+        "submitting": "Saving...",
+        "success": "Operation successful",
+        "error": "Operation failed"
+      }
+    }
+  }
+}

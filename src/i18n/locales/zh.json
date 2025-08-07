@@ -1,0 +1,1524 @@
+{
+  "header": {
+    "nav": {
+      "home": "首页",
+      "cats": "猫咪专区",
+      "dogs": "狗狗专区",
+      "nutrition": "营养指南",
+      "shop": "严选商品",
+      "community": "宠物社区"
+    }
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "products": "产品理念",
+    "technology": "技术优势",
+    "news": "新闻动态",
+    "contact": "联系我们",
+    "language": "语言"
+  },
+  "home": {
+    "hero": {
+      "title": "精致养宠，溯造生活",
+      "subtitle": "科技驱动的专业宠物消费新生态",
+      "description": "通过AI技术和专业营养师团队，为每只宠物提供个性化营养解决方案",
+      "cta": {
+        "primary": "查看产品",
+        "secondary": "了解更多"
+      },
+      "imageAlt": "快乐的金毛犬正在享用优质宠物食品"
+    },
+    "features": {
+      "title": "核心优势",
+      "subtitle": "三大核心优势，为您的宠物提供最优质的营养解决方案",
+      "nutrition": {
+        "title": "科学营养配方",
+        "description": "基于宠物营养学研究，精心调配每一种营养成分，确保宠物健康成长"
+      },
+      "safety": {
+        "title": "安全品质保障",
+        "description": "严格的质量控制体系，从原料采购到生产包装，每个环节都确保安全可靠"
+      },
+      "technology": {
+        "title": "AI智能推荐",
+        "description": "运用人工智能技术，根据宠物的品种、年龄、体重等因素，提供个性化营养建议"
+      }
+    },
+    "stats": {
+      "title": "值得信赖的数据",
+      "subtitle": "用数字见证我们的专业与品质",
+      "customers": "服务客户",
+      "awards": "获得奖项",
+      "satisfaction": "客户满意度"
+    },
+    "news": {
+      "title": "最新动态",
+      "subtitle": "了解ASUPET的最新资讯和行业动态",
+      "viewAll": "查看全部"
+    },
+    "cta": {
+      "title": "开始您的宠物营养之旅",
+      "subtitle": "让我们为您的宠物提供最专业的营养解决方案",
+      "button": "立即咨询"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "hero": {
+      "title": "关于ASUPET",
+      "subtitle": "科技驱动的专业宠物消费新生态，致力于为每只宠物提供个性化营养解决方案"
+    },
+    "story": {
+      "title": "品牌故事",
+      "subtitle": "ASUPET的创立理念与使命愿景",
+      "imageAlt": "ASUPET品牌故事"
+    },
+    "values": {
+      "title": "核心价值观",
+      "subtitle": "我们坚持的理念和原则",
+      "love": {
+        "title": "因爱而生",
+        "description": "每一个产品都源于对宠物的深深关爱，我们相信爱是最好的营养"
+      },
+      "quality": {
+        "title": "品质至上",
+        "description": "严格的品质控制和科学的营养配方，确保每一份产品都达到最高标准"
+      },
+      "innovation": {
+        "title": "持续创新",
+        "description": "运用最新的AI技术和营养科学，不断创新产品和服务"
+      }
+    },
+    "achievements": {
+      "title": "我们的成就",
+      "subtitle": "数字见证我们的成长与专业",
+      "customers": "服务客户",
+      "awards": "获得奖项",
+      "countries": "覆盖国家"
+    },
+    "team": {
+      "title": "专业团队",
+      "subtitle": "由资深营养师和技术专家组成的专业团队"
+    },
+    "cta": {
+      "title": "开始您的宠物营养之旅",
+      "subtitle": "让我们为您的宠物提供最专业的营养解决方案",
+      "products": "查看产品",
+      "contact": "联系我们"
+    }
+  },
+  "products": {
+    "title": "产品理念",
+    "subtitle": "三大产品系列，满足不同宠物的营养需求",
+    "hero": {
+      "title": "科学营养，因宠而异",
+      "subtitle": "基于AI技术和专业营养学，为每只宠物提供个性化营养解决方案"
+    },
+    "philosophy": {
+      "title": "产品理念",
+      "subtitle": "以科学为基础，以爱为驱动，为宠物提供最优质的营养体验"
+    },
+    "principles": {
+      "natural": {
+        "title": "天然原料",
+        "description": "精选优质天然原料，不添加人工色素、防腐剂和化学添加剂，确保每一口都是纯净营养"
+      },
+      "safety": {
+        "title": "安全保障",
+        "description": "严格的质量控制体系，从原料采购到生产包装，每个环节都经过严格检测，确保产品安全可靠"
+      },
+      "nutrition": {
+        "title": "营养均衡",
+        "description": "基于宠物营养学研究，科学配比蛋白质、脂肪、维生素等营养成分，满足宠物不同生长阶段的营养需求"
+      },
+      "quality": {
+        "title": "品质卓越",
+        "description": "采用先进的生产工艺和设备，确保产品品质稳定，为宠物提供持续优质的营养保障"
+      }
+    },
+    "series": {
+      "title": "产品系列"
+    },
+    "nutrition": {
+      "title": "营养特点",
+      "subtitle": "科学配比，营养全面",
+      "protein": "蛋白质",
+      "fat": "脂肪",
+      "fiber": "纤维",
+      "imageAlt": "营养成分分析图表"
+    },
+    "benefits": {
+      "digestibility": "易消化吸收",
+      "immunity": "增强免疫力",
+      "coat": "亮泽毛发",
+      "energy": "提供持久能量",
+      "dental": "口腔健康",
+      "weight": "体重管理"
+    },
+    "quality": {
+      "title": "品质保证",
+      "subtitle": "严格的质量控制体系，确保每一份产品都达到最高标准",
+      "certification": {
+        "title": "权威认证",
+        "description": "通过ISO22000、HACCP等国际权威认证，产品质量符合国际标准"
+      },
+      "testing": {
+        "title": "严格检测",
+        "description": "每批产品都经过严格的营养成分检测和安全性检测，确保产品质量"
+      },
+      "satisfaction": {
+        "title": "满意保障",
+        "description": "提供100%满意保障，如有任何质量问题，我们承诺无条件退换货"
+      }
+    },
+    "scenarios": {
+      "title": "适用场景"
+    },
+    "cases": {
+      "title": "成功案例"
+    },
+    "cta": {
+      "title": "选择ASUPET，给宠物最好的营养",
+      "subtitle": "立即了解我们的产品，为您的宠物提供科学营养解决方案",
+      "contact": "联系我们",
+      "technology": "了解技术"
+    }
+  },
+  "technology": {
+    "title": "技术优势",
+    "subtitle": "AI驱动的个性化宠物营养解决方案",
+    "hero": {
+      "title": "技术创新引领未来",
+      "subtitle": "运用前沿AI技术，为宠物营养提供智能化解决方案"
+    },
+    "core": {
+      "title": "核心技术架构",
+      "subtitle": "基于深度学习和大数据分析的智能推荐系统"
+    },
+    "ai": {
+      "title": "AI个性化推荐系统",
+      "description": "通过机器学习算法分析宠物的品种、年龄、体重、活动量等因素，为每只宠物提供精准的营养建议",
+      "features": {
+        "analysis": "智能数据分析",
+        "recommendation": "个性化推荐",
+        "monitoring": "实时健康监测",
+        "optimization": "营养方案优化"
+      }
+    },
+    "data": {
+      "title": "大数据处理平台",
+      "description": "构建完整的宠物健康数据生态，提供精准的营养分析和建议",
+      "features": {
+        "collection": "多维数据采集",
+        "processing": "实时数据处理",
+        "insights": "深度洞察分析",
+        "prediction": "健康趋势预测"
+      }
+    },
+    "security": {
+      "title": "数据安全保障",
+      "description": "采用企业级安全标准，确保用户和宠物数据的隐私安全",
+      "features": {
+        "encryption": "端到端加密",
+        "privacy": "隐私保护机制",
+        "compliance": "合规性保障",
+        "backup": "安全备份系统"
+      }
+    },
+    "advantages": {
+      "title": "技术优势",
+      "subtitle": "领先的技术指标，为您提供最可靠的服务",
+      "accuracy": "准确率",
+      "accuracyDesc": "AI推荐准确率",
+      "availability": "可用性",
+      "availabilityDesc": "全天候服务保障",
+      "efficiency": "效率提升",
+      "efficiencyDesc": "营养配比效率提升",
+      "algorithms": "算法模型",
+      "algorithmsDesc": "专业算法模型支持"
+    },
+    "services": {
+      "title": "技术服务",
+      "subtitle": "全方位的技术支持和专业服务",
+      "consultation": {
+        "title": "专业咨询服务",
+        "description": "提供一对一的专业营养咨询和技术支持",
+        "benefits": {
+          "expert": "专家团队支持",
+          "personalized": "个性化方案",
+          "support": "24/7技术支持"
+        }
+      },
+      "monitoring": {
+        "title": "健康监测服务",
+        "description": "实时监测宠物健康状况，及时调整营养方案",
+        "benefits": {
+          "realtime": "实时数据监测",
+          "alerts": "智能预警系统",
+          "reports": "详细健康报告"
+        }
+      },
+      "optimization": {
+        "title": "方案优化服务",
+        "description": "持续优化营养方案，确保最佳效果",
+        "benefits": {
+          "efficiency": "效率持续提升",
+          "cost": "成本有效控制",
+          "performance": "性能不断优化"
+        }
+      }
+    },
+    "process": {
+      "title": "技术研发流程",
+      "subtitle": "严谨的研发流程，确保技术创新和产品质量",
+      "research": {
+        "title": "需求研究",
+        "description": "深入研究宠物营养需求和市场趋势"
+      },
+      "development": {
+        "title": "技术开发",
+        "description": "运用最新技术开发创新解决方案"
+      },
+      "testing": {
+        "title": "测试验证",
+        "description": "严格测试确保产品质量和安全性"
+      },
+      "deployment": {
+        "title": "部署上线",
+        "description": "稳定部署并持续监控优化"
+      }
+    },
+    "cta": {
+      "title": "体验我们的技术",
+      "subtitle": "立即了解ASUPET的技术优势，为您的宠物提供最佳营养方案",
+      "contact": "联系我们",
+      "products": "查看产品"
+    },
+    "team": {
+      "title": "技术团队",
+      "description": "由AI专家、数据科学家和软件工程师组成的专业技术团队"
+    },
+    "service": {
+      "title": "服务模式",
+      "subscription": "订阅制服务",
+      "dual": "双地服务模式"
+    }
+  },
+  "news": {
+    "title": "新闻动态",
+    "hero": {
+      "title": "新闻动态",
+      "subtitle": "了解ASUPET的最新资讯和行业动态"
+    },
+    "search": {
+      "placeholder": "搜索新闻..."
+    },
+    "filter": {
+      "all": "全部"
+    },
+    "noNews": "暂无新闻",
+    "newsletter": {
+      "title": "订阅新闻通讯",
+      "subtitle": "获取ASUPET最新资讯和行业动态",
+      "placeholder": "请输入您的邮箱地址",
+      "subscribe": "订阅"
+    },
+    "categories": {
+      "all": "全部",
+      "company": "公司新闻",
+      "industry": "行业观点",
+      "media": "媒体报道"
+    },
+    "featured": {
+      "title": "精选新闻"
+    },
+    "latest": {
+      "title": "最新新闻"
+    },
+    "readTime": "分钟阅读",
+    "readMore": "阅读更多",
+    "noResults": "没有找到相关新闻",
+    "publishedOn": "发布于",
+    "by": "作者",
+    "detail": {
+      "notFound": "新闻不存在",
+      "backToNews": "返回新闻列表",
+      "share": "分享",
+      "tags": "标签",
+      "related": "相关新闻",
+      "cta": {
+        "title": "想了解更多？",
+        "subtitle": "联系我们获取更多信息和专业建议",
+        "contact": "联系我们",
+        "moreNews": "更多新闻"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们期待与您的合作",
+    "hero": {
+      "title": "联系我们",
+      "subtitle": "我们期待与您的合作，共同为宠物营养事业贡献力量"
+    },
+    "info": {
+      "title": "联系信息",
+      "subtitle": "多种联系方式，随时为您提供专业服务",
+      "address": {
+        "title": "公司地址",
+        "content": "上海市浦东新区张江高科技园区科苑路399号"
+      },
+      "phone": {
+        "title": "联系电话",
+        "content": "+86 400-123-4567"
+      },
+      "email": {
+        "title": "邮箱地址",
+        "content": "contact@asupet.com"
+      },
+      "hours": {
+        "title": "营业时间",
+        "content": "周一至周五 9:00-18:00"
+      }
+    },
+    "map": {
+      "alt": "ASUPET公司位置地图"
+    },
+    "form": {
+      "title": "在线咨询",
+      "name": "姓名",
+      "email": "邮箱",
+      "company": "公司",
+      "phone": "电话",
+      "subject": "咨询主题",
+      "message": "留言内容",
+      "namePlaceholder": "请输入您的姓名",
+      "emailPlaceholder": "请输入您的邮箱地址",
+      "phonePlaceholder": "请输入您的联系电话",
+      "companyPlaceholder": "请输入您的公司名称",
+      "subjectPlaceholder": "请选择咨询主题",
+      "messagePlaceholder": "请详细描述您的需求或问题",
+      "send": "发送消息",
+      "sending": "发送中...",
+      "subjects": {
+        "general": "一般咨询",
+        "products": "产品咨询",
+        "partnership": "商务合作",
+        "support": "技术支持",
+        "media": "媒体联系"
+      },
+      "success": {
+        "title": "提交成功！",
+        "message": "感谢您的咨询，我们会在24小时内回复您"
+      },
+      "error": "提交失败，请稍后重试"
+    },
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "快速了解您关心的问题",
+      "questions": {
+        "response": {
+          "question": "你们的响应时间是多久？",
+          "answer": "我们承诺在收到您的咨询后24小时内回复。对于紧急问题，我们会在2小时内响应。"
+        },
+        "products": {
+          "question": "如何选择适合我宠物的产品？",
+          "answer": "我们的AI推荐系统会根据您宠物的品种、年龄、体重、活动量等因素，为您推荐最适合的营养方案。您也可以咨询我们的专业营养师。"
+        },
+        "partnership": {
+          "question": "如何与ASUPET建立合作关系？",
+          "answer": "我们欢迎各种形式的合作。请通过商务合作渠道联系我们，我们的商务团队会与您详细讨论合作方案。"
+        },
+        "support": {
+          "question": "你们提供哪些技术支持服务？",
+          "answer": "我们提供全方位的技术支持，包括产品使用指导、营养咨询、健康监测等。我们的专业团队随时为您提供帮助。"
+        }
+      }
+    }
+  },
+  "footer": {
+    "company": "ASUPET",
+    "description": "科技驱动的专业宠物消费新生态",
+    "address": "台湾 / 香港 / 中国",
+    "phone": "+86 400-123-4567",
+    "email": "contact@asupet.com",
+    "quickLinks": "快速链接",
+    "followUs": "关注我们",
+    "newsletter": "订阅我们的新闻通讯",
+    "emailPlaceholder": "请输入您的邮箱地址",
+    "subscribe": "订阅",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "links": {
+      "about": "关于我们",
+      "products": "产品理念",
+      "technology": "技术优势",
+      "news": "新闻动态",
+      "contact": "联系我们"
+    },
+    "copyright": "© {{year}} ASUPET. 保留所有权利。"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "subtitle": "我们重视您的隐私，致力于保护您的个人信息",
+    "backToHome": "返回首页",
+    "lastUpdated": "最后更新",
+    "introduction": {
+      "title": "引言",
+      "content": "ASUPET（以下简称\"我们\"）尊重并保护用户的隐私权。本隐私政策说明了我们如何收集、使用、存储和保护您的个人信息。使用我们的服务即表示您同意本隐私政策的条款。"
+    },
+    "collection": {
+      "title": "信息收集",
+      "description": "我们可能收集以下类型的信息：",
+      "personal": "个人身份信息（姓名、邮箱地址、电话号码等）",
+      "pet": "宠物信息（品种、年龄、体重、健康状况等）",
+      "usage": "使用数据（访问时间、页面浏览、功能使用等）",
+      "device": "设备信息（IP地址、浏览器类型、操作系统等）"
+    },
+    "usage": {
+      "title": "信息使用",
+      "description": "我们使用收集的信息用于：",
+      "service": "提供和改进我们的服务",
+      "recommendation": "为您的宠物提供个性化营养建议",
+      "communication": "与您沟通服务相关事宜",
+      "improvement": "分析和改进我们的产品和服务"
+    },
+    "sharing": {
+      "title": "信息共享",
+      "description": "我们不会出售、交易或转让您的个人信息给第三方，除非：",
+      "partners": "与可信的服务提供商共享，以提供更好的服务",
+      "legal": "法律要求或保护我们的权利和安全",
+      "consent": "获得您的明确同意"
+    },
+    "security": {
+      "title": "数据安全",
+      "description": "我们采用行业标准的安全措施来保护您的个人信息，包括加密传输、安全存储和访问控制。我们定期审查和更新安全措施以确保数据安全。"
+    },
+    "rights": {
+      "title": "您的权利",
+      "description": "您对自己的个人信息享有以下权利：",
+      "access": "访问和查看您的个人信息",
+      "correction": "更正不准确或不完整的信息",
+      "deletion": "请求删除您的个人信息",
+      "portability": "请求数据可携带性"
+    },
+    "cookies": {
+      "title": "Cookie使用",
+      "description": "我们使用Cookie和类似技术来改善用户体验、分析网站使用情况和提供个性化内容。您可以通过浏览器设置管理Cookie偏好。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "description": "如果您对本隐私政策有任何疑问或需要行使您的权利，请通过以下方式联系我们：",
+      "email": "邮箱",
+      "address": "地址"
+    }
+  },
+  "terms": {
+    "title": "服务条款",
+    "subtitle": "使用我们的服务前，请仔细阅读以下条款",
+    "backToHome": "返回首页",
+    "lastUpdated": "最后更新",
+    "introduction": {
+      "title": "引言",
+      "content": "欢迎使用ASUPET的服务。这些服务条款（以下简称\"条款\"）规定了您使用我们服务的条件。使用我们的服务即表示您同意遵守这些条款。"
+    },
+    "acceptance": {
+      "title": "条款接受",
+      "content": "通过访问或使用我们的服务，您确认已阅读、理解并同意受这些条款的约束。如果您不同意这些条款，请不要使用我们的服务。"
+    },
+    "services": {
+      "title": "服务描述",
+      "description": "ASUPET提供以下服务：",
+      "nutrition": "宠物营养分析和建议",
+      "recommendation": "个性化产品推荐",
+      "consultation": "专业营养师咨询",
+      "monitoring": "宠物健康监测"
+    },
+    "responsibilities": {
+      "title": "用户责任",
+      "description": "作为我们服务的用户，您同意：",
+      "accurate": "提供准确、完整的信息",
+      "lawful": "以合法和适当的方式使用服务",
+      "security": "保护您的账户安全",
+      "respect": "尊重其他用户和我们的权利"
+    },
+    "prohibited": {
+      "title": "禁止使用",
+      "description": "您不得将我们的服务用于：",
+      "illegal": "任何非法或未经授权的目的",
+      "harmful": "传播有害、威胁或冒犯性内容",
+      "unauthorized": "未经授权访问我们的系统",
+      "interference": "干扰或破坏服务的正常运行"
+    },
+    "intellectual": {
+      "title": "知识产权",
+      "content": "我们的服务及其所有内容、功能和特性均为ASUPET及其许可方的专有财产，受版权、商标和其他知识产权法律保护。"
+    },
+    "disclaimers": {
+      "title": "免责声明",
+      "description": "我们的服务按\"现状\"提供，我们不保证：",
+      "accuracy": "信息的准确性或完整性",
+      "availability": "服务的持续可用性",
+      "medical": "我们的建议不能替代专业兽医建议"
+    },
+    "liability": {
+      "title": "责任限制",
+      "content": "在法律允许的最大范围内，ASUPET不对因使用或无法使用我们的服务而产生的任何直接、间接、偶然或后果性损害承担责任。"
+    },
+    "termination": {
+      "title": "服务终止",
+      "content": "我们保留在任何时候暂停或终止您对服务的访问权限的权利，特别是在您违反这些条款的情况下。"
+    },
+    "changes": {
+      "title": "条款变更",
+      "content": "我们可能会不时更新这些条款。重大变更将通过我们的网站或其他适当方式通知您。继续使用服务即表示接受修订后的条款。"
+    },
+    "governing": {
+      "title": "适用法律",
+      "content": "这些条款受中华人民共和国法律管辖，任何争议将在上海市有管辖权的法院解决。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "description": "如果您对这些条款有任何疑问，请联系我们：",
+      "email": "邮箱",
+      "address": "地址"
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "出错了",
+    "retry": "重试",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确认",
+    "close": "关闭"
+  },
+  "admin": {
+    "title": "管理后台",
+    "login": {
+      "title": "管理员登录",
+      "username": "用户名",
+      "password": "密码",
+      "submit": "登录",
+      "error": "用户名或密码错误"
+    },
+    "nav": {
+      "dashboard": "仪表板",
+      "news": "新闻管理",
+      "categories": "分类管理",
+      "settings": "设置",
+      "logout": "退出登录"
+    },
+    "dashboard": {
+      "title": "仪表板",
+      "stats": {
+        "total": "总计",
+        "published": "已发布",
+        "draft": "草稿",
+        "thisMonth": "本月新增"
+      },
+      "quickActions": "快速操作",
+      "recentNews": "最新新闻",
+      "createNews": "创建新闻",
+      "manageNews": "管理新闻",
+      "categories": "分类管理",
+      "noNews": "暂无新闻文章",
+      "getStarted": "开始创建新闻文章"
+    },
+    "news": {
+      "title": "新闻管理",
+      "create": "创建新闻",
+      "edit": "编辑新闻",
+      "list": "新闻列表",
+      "search": "搜索新闻...",
+      "category": "分类",
+      "featured": "精选",
+      "status": "状态",
+      "actions": "操作",
+      "delete": "删除",
+      "batchDelete": "批量删除",
+      "selectAll": "全选",
+      "confirmDelete": "确认删除",
+      "deleteMessage": "确定要删除这些新闻吗？此操作不可撤销。",
+      "preview": "预览",
+      "form": {
+        "titleZh": "中文标题",
+        "titleEn": "英文标题",
+        "contentZh": "中文内容",
+        "contentEn": "英文内容",
+        "category": "分类",
+        "selectCategory": "选择分类",
+        "featured": "设为精选",
+        "publishDate": "发布日期",
+        "images": "图片",
+        "uploadImages": "上传图片",
+        "dragDrop": "拖拽文件到此处或点击上传",
+        "maxFiles": "最多上传5张图片",
+        "submit": "提交",
+        "submitting": "提交中...",
+        "success": "操作成功",
+        "error": "操作失败"
+      }
+    },
+    "categories": {
+      "title": "分类管理",
+      "create": "创建分类",
+      "edit": "编辑分类",
+      "name": "分类名称",
+      "nameZh": "中文名称",
+      "nameEn": "英文名称",
+      "description": "描述",
+      "descriptionZh": "中文描述",
+      "descriptionEn": "英文描述",
+      "color": "颜色",
+      "actions": "操作",
+      "delete": "删除",
+      "confirmDelete": "确认删除",
+      "deleteMessage": "确定要删除这个分类吗？",
+      "cannotDelete": "无法删除",
+      "categoryInUse": "该分类正在被新闻使用，无法删除",
+      "form": {
+        "nameZhPlaceholder": "请输入中文名称",
+        "nameEnPlaceholder": "请输入英文名称",
+        "descriptionZhPlaceholder": "请输入中文描述",
+        "descriptionEnPlaceholder": "请输入英文描述",
+        "submit": "保存",
+        "submitting": "保存中...",
+        "success": "操作成功",
+        "error": "操作失败"
+      }
+    }
+  },
+  "cats": {
+    "title": "猫咪专区",
+    "subtitle": "专为猫咪设计的营养方案，让每一只猫咪都能健康快乐成长",
+    "shopCatFood": "选购猫粮",
+    "nutritionGuide": "营养指南",
+    "careGuides": {
+      "title": "猫咪护理指南",
+      "subtitle": "根据猫咪不同生长阶段，提供专业的护理建议",
+      "kitten": {
+        "title": "幼猫营养指南",
+        "description": "0-12个月幼猫的科学喂养方案"
+      },
+      "adult": {
+        "title": "成猫健康管理",
+        "description": "1-7岁成猫的日常护理要点"
+      },
+      "senior": {
+        "title": "老年猫特殊护理",
+        "description": "7岁以上老年猫的贴心照顾"
+      },
+      "learnMore": "了解更多"
+    },
+    "breeds": {
+      "title": "热门猫咪品种",
+      "subtitle": "了解不同品种猫咪的特点和营养需求",
+      "nutritionTips": "营养建议",
+      "britishShorthair": {
+        "name": "英国短毛猫",
+        "traits": ["温顺", "易护理", "适应性强"],
+        "nutritionTips": "需要控制体重，选择低脂肪高蛋白食物"
+      },
+      "ragdoll": {
+        "name": "布偶猫",
+        "traits": ["温柔", "亲人", "毛发丰厚"],
+        "nutritionTips": "需要美毛营养，注意毛球问题预防"
+      },
+      "americanShorthair": {
+        "name": "美国短毛猫",
+        "traits": ["活泼", "健康", "适应性强"],
+        "nutritionTips": "均衡营养即可，注意运动量配合"
+      }
+    },
+    "sizes": {
+      "small": {
+        "size": "小型犬",
+        "weight": "< 10kg",
+        "examples": ["泰迪", "比熊", "博美"],
+        "features": ["新陈代谢快", "少食多餐", "营养密度高"]
+      },
+      "medium": {
+        "size": "中型犬",
+        "weight": "10-25kg",
+        "examples": ["柯基", "边牧", "哈士奇"],
+        "features": ["均衡营养", "适量运动", "关节保护"]
+      },
+      "large": {
+        "size": "大型犬",
+        "weight": "> 25kg",
+        "examples": ["金毛", "拉布拉多", "德牧"],
+        "features": ["控制生长速度", "关节保护", "心脏健康"]
+      }
+    },
+    "products": {
+      "title": "猫咪专用产品",
+      "subtitle": "精选优质猫粮，满足猫咪的营养需求",
+      "viewMore": "查看更多猫咪产品"
+    },
+    "community": {
+      "title": "猫咪社区",
+      "subtitle": "与其他猫咪主人分享经验，交流养猫心得",
+      "group": {
+        "title": "养猫交流群",
+        "description": "加入我们的猫咪主人交流群，分享养猫经验，获取专业建议",
+        "join": "加入社区"
+      },
+      "consultation": {
+        "title": "专家在线咨询",
+        "description": "专业宠物营养师在线答疑，为您的猫咪提供个性化建议",
+        "consult": "咨询专家"
+      }
+    }
+  },
+  "dogs": {
+    "title": "狗狗专区",
+    "subtitle": "专为狗狗设计的营养方案，让每一只狗狗都能健康快乐成长",
+    "shopDogFood": "选购狗粮",
+    "nutritionGuide": "营养指南",
+    "sizeCategories": {
+      "title": "按体型选择",
+      "subtitle": "不同体型的狗狗有不同的营养需求",
+      "weight": "体重",
+      "examples": "代表品种",
+      "features": "营养特点"
+    },
+    "careGuides": {
+      "title": "狗狗护理指南",
+      "subtitle": "根据狗狗不同生长阶段，提供专业的护理建议",
+      "puppy": {
+        "title": "幼犬营养指南",
+        "description": "0-12个月幼犬的科学喂养方案"
+      },
+      "adult": {
+        "title": "成犬健康管理",
+        "description": "1-7岁成犬的日常护理要点"
+      },
+      "senior": {
+        "title": "老年犬特殊护理",
+        "description": "7岁以上老年犬的贴心照顾"
+      },
+      "learnMore": "了解更多"
+    },
+    "breeds": {
+      "title": "热门狗狗品种",
+      "subtitle": "了解不同品种狗狗的特点和营养需求",
+      "nutritionTips": "营养建议",
+      "goldenRetriever": {
+        "name": "金毛寻回犬",
+        "traits": ["友善", "聪明", "活跃"],
+        "nutritionTips": "需要高蛋白食物，注意关节健康"
+      },
+      "labrador": {
+        "name": "拉布拉多",
+        "traits": ["温顺", "忠诚", "易训练"],
+        "nutritionTips": "控制食量，防止肥胖，选择优质蛋白"
+      },
+
+      "poodle": {
+        "name": "泰迪犬",
+        "traits": ["聪明", "活泼", "不掉毛"],
+        "nutritionTips": "小型犬专用配方，少食多餐"
+      }
+    },
+    "products": {
+      "title": "狗狗专用产品",
+      "subtitle": "精选优质狗粮，满足狗狗的营养需求",
+      "viewMore": "查看更多狗狗产品"
+    },
+    "community": {
+      "title": "狗狗社区",
+      "subtitle": "与其他狗狗主人分享经验，交流养狗心得",
+      "group": {
+        "title": "养狗交流群",
+        "description": "加入我们的狗狗主人交流群，分享养狗经验，获取专业建议",
+        "join": "加入社区"
+      },
+      "consultation": {
+        "title": "专家在线咨询",
+        "description": "专业宠物营养师在线答疑，为您的狗狗提供个性化建议",
+        "consult": "咨询专家"
+      }
+    }
+  },
+  "nutritionGuide": {
+    "title": "营养指南",
+    "subtitle": "科学喂养，让宠物健康成长",
+    "tabs": {
+      "cats": "猫咪营养",
+      "dogs": "狗狗营养"
+    },
+    "cats": {
+      "kitten": {
+        "title": "幼猫营养指南 (0-12个月)",
+        "description": "幼猫正处于快速生长期，需要高质量的营养支持",
+        "tips": [
+          "高蛋白质含量 (至少35%)",
+          "富含DHA支持大脑发育",
+          "少食多餐，每天3-4次",
+          "充足的钙质和磷质",
+          "易消化的优质食材"
+        ],
+        "feeding": {
+          "title": "喂食建议",
+          "2-4months": "每天4次，每次20-30g",
+          "4-6months": "每天3次，每次30-40g",
+          "6-12months": "每天2-3次，每次40-60g"
+        },
+        "warnings": {
+          "title": "注意事项",
+          "items": [
+            "避免喂食牛奶，可能导致腹泻",
+            "不要给予成猫粮，营养不够充足",
+            "避免过度喂食导致肥胖"
+          ]
+        }
+      },
+      "adult": {
+        "title": "成猫营养指南 (1-7岁)",
+        "description": "成猫需要均衡的营养来维持健康的体重和活力",
+        "tips": [
+          "蛋白质含量26-30%",
+          "适量脂肪含量 (9-15%)",
+          "控制碳水化合物摄入",
+          "充足的水分摄入",
+          "定时定量喂食"
+        ],
+        "feeding": {
+          "title": "喂食建议",
+          "indoor": "每天2次，每次40-60g",
+          "outdoor": "每天2次，每次50-70g",
+          "neutered": "每天2次，每次35-50g"
+        },
+        "warnings": {
+          "title": "注意事项",
+          "items": [
+            "避免过度喂食零食",
+            "注意体重变化",
+            "定期检查牙齿健康"
+          ]
+        }
+      },
+      "senior": {
+        "title": "老年猫营养指南 (7岁以上)",
+        "description": "老年猫需要特殊的营养配方来支持健康老化",
+        "tips": [
+          "易消化的高质量蛋白质",
+          "适量降低热量摄入",
+          "增加纤维含量",
+          "补充关节保健成分",
+          "定期健康检查"
+        ],
+        "feeding": {
+          "title": "喂食建议",
+          "general": "每天2次，每次30-50g",
+          "special": "根据健康状况调整"
+        },
+        "warnings": {
+          "title": "注意事项",
+          "items": [
+            "监控体重变化",
+            "注意肾脏健康",
+            "定期兽医检查"
+          ]
+        }
+      }
+    },
+    "dogs": {
+      "puppy": {
+        "title": "幼犬营养指南 (0-12个月)",
+        "description": "幼犬快速成长期需要充足的营养支持",
+        "tips": [
+          "高蛋白质含量 (至少22%)",
+          "适量脂肪支持发育",
+          "少食多餐，每天3-4次",
+          "充足的钙磷比例",
+          "易消化配方"
+        ],
+        "feeding": {
+          "title": "喂食建议",
+          "small": "小型犬：每天3-4次",
+          "medium": "中型犬：每天3次",
+          "large": "大型犬：每天2-3次"
+        },
+        "warnings": {
+          "title": "注意事项",
+          "items": [
+            "避免过度喂食",
+            "不要给予成犬粮",
+            "注意食物过敏"
+          ]
+        }
+      },
+      "adult": {
+        "title": "成犬营养指南 (1-7岁)",
+        "description": "成犬需要均衡营养维持最佳健康状态",
+        "tips": [
+          "蛋白质含量18-25%",
+          "适量脂肪含量",
+          "控制热量摄入",
+          "充足运动配合",
+          "定时定量喂食"
+        ],
+        "feeding": {
+          "title": "喂食建议",
+          "small": "小型犬：每天2次",
+          "medium": "中型犬：每天2次",
+          "large": "大型犬：每天1-2次"
+        },
+        "warnings": {
+          "title": "注意事项",
+          "items": [
+            "控制零食摄入",
+            "监控体重",
+            "定期运动"
+          ]
+        }
+      },
+      "senior": {
+        "title": "老年犬营养指南 (7岁以上)",
+        "description": "老年犬需要特殊营养支持健康老化",
+        "tips": [
+          "易消化蛋白质",
+          "降低热量密度",
+          "增加纤维含量",
+          "关节保健成分",
+          "心脏健康支持"
+        ],
+        "feeding": {
+          "title": "喂食建议",
+          "general": "每天2次，适量减少",
+          "special": "根据健康状况调整"
+        },
+        "warnings": {
+          "title": "注意事项",
+          "items": [
+            "定期健康检查",
+            "监控体重变化",
+            "注意关节健康"
+          ]
+        }
+      }
+    },
+    "common": {
+      "nutritionTips": "营养要点",
+      "feedingSchedule": "喂食时间表",
+      "importantNotes": "重要提醒",
+      "ageRange": "年龄范围",
+      "indoorCat": "室内猫",
+      "outdoorCat": "户外猫",
+      "neuteredCat": "绝育猫",
+      "smallDog": "小型犬",
+      "mediumDog": "中型犬",
+      "largeDog": "大型犬"
+    },
+    "commonMistakes": {
+      "title": "常见喂养误区",
+      "subtitle": "避免这些常见错误，让您的宠物更健康",
+      "correctApproach": "正确做法",
+      "mistakes": [
+        {
+          "mistake": "人类食物喂食",
+          "description": "许多人类食物对宠物有害",
+          "solution": "坚持使用专业宠物食品",
+          "severity": "high"
+        },
+        {
+          "mistake": "过度喂食",
+          "description": "肥胖会导致多种健康问题",
+          "solution": "按照体重和年龄科学喂食",
+          "severity": "medium"
+        },
+        {
+          "mistake": "频繁更换食物",
+          "description": "突然更换食物可能导致肠胃不适",
+          "solution": "逐渐过渡，7-10天完成换粮",
+          "severity": "medium"
+        },
+        {
+          "mistake": "忽视饮水",
+          "description": "水分不足影响肾脏健康",
+          "solution": "提供充足清洁的饮用水",
+          "severity": "high"
+        }
+      ]
+    },
+    "cta": {
+      "title": "需要个性化营养建议？",
+      "subtitle": "我们的专业营养师团队为您提供一对一咨询服务",
+      "consultButton": "咨询营养师",
+      "shopButton": "选购产品"
+    }
+  },
+  "shop": {
+    "title": "ASUPET严选商品",
+    "subtitle": "为您的爱宠提供最优质的营养产品",
+    "search": {
+      "placeholder": "搜索商品...",
+      "allCategories": "全部分类"
+    },
+    "sort": {
+      "featured": "推荐商品",
+      "newest": "最新上架",
+      "priceLow": "价格从低到高",
+      "priceHigh": "价格从高到低"
+    },
+    "product": {
+      "featured": "推荐",
+      "sale": "特价",
+      "inStock": "现货充足",
+      "lowStock": "仅剩{{count}}件",
+      "outOfStock": "暂时缺货",
+      "addToCart": "加入购物车",
+      "weight": "{{weight}}kg"
+    },
+    "comparison": {
+      "title": "商品对比",
+      "viewComparison": "查看对比",
+      "count": "({{current}}/{{max}})"
+    },
+    "empty": {
+      "title": "暂无商品",
+      "description": "我们正在努力为您准备更多优质商品"
+    },
+    "error": {
+      "title": "商城暂时无法访问",
+      "description": "我们正在努力为您准备精彩的商品，请稍后再试。"
+    }
+  },
+  "community": {
+    "title": "宠物社区",
+    "subtitle": "与千万宠物主人分享经验，获取专业建议，让爱宠更健康快乐",
+    "tabs": {
+      "posts": "社区动态",
+      "experts": "专家问答",
+      "groups": "兴趣小组"
+    },
+    "posts": {
+      "createTitle": "分享你的宠物故事",
+      "placeholder": "分享你和宠物的故事，或者提出问题...",
+      "addImage": "添加图片",
+      "publish": "发布",
+      "share": "分享",
+      "timeAgo": {
+        "hours": "{{count}}小时前",
+        "days": "{{count}}天前"
+      }
+    },
+    "experts": {
+      "title": "专家问答",
+      "subtitle": "专业兽医和营养师为您解答宠物健康问题",
+      "askTitle": "向专家提问",
+      "questionPlaceholder": "请输入您的问题标题...",
+      "detailPlaceholder": "详细描述您的问题，包括宠物品种、年龄、症状等...",
+      "submit": "提交问题",
+      "viewDetails": "查看详情"
+    },
+    "groups": {
+      "title": "兴趣小组",
+      "subtitle": "加入志同道合的宠物主人群体，分享经验和快乐",
+      "members": "{{count}}人",
+      "join": "加入小组"
+    },
+    "cta": {
+      "title": "加入ASUPET宠物社区",
+      "subtitle": "与专业营养师和万千宠物主人一起，为爱宠提供最好的照顾",
+      "contactUs": "联系我们",
+      "shopProducts": "选购产品"
+    }
+  },
+  "userCenter": {
+    "title": "个人中心",
+    "overview": "概览",
+    "myOrders": "我的订单",
+    "myFavorites": "我的收藏",
+    "parentInfo": "家长信息",
+    "petInfo": "宝贝信息",
+    "addresses": "收货地址",
+    "notifications": "消息通知",
+    "memberBenefits": "会员权益",
+    "settings": "账户设置",
+    "memberLevel": "会员等级",
+    "points": "积分",
+    "joinDate": "成为ASUPET伙伴的日子",
+    "editProfile": "编辑资料",
+    "cart": "购物车",
+    "favorites": "收藏",
+    "recentOrders": "最近订单",
+    "viewAll": "查看全部",
+    "quickActions": "快速操作",
+    "continueShopping": "继续购物",
+    "noOrders": "暂无订单记录",
+    "noFavorites": "暂无收藏",
+    "noAddresses": "暂无收货地址",
+    "addAddress": "添加地址",
+    "orderStatus": {
+      "delivered": "已送达",
+      "shipping": "配送中",
+      "processing": "处理中",
+      "cancelled": "已取消"
+    },
+    "basicInfo": "基本信息",
+    "securitySettings": "安全设置",
+    "changePassword": "修改密码",
+    "twoFactorAuth": "两步验证",
+    "orderDetails": "查看详情",
+    "buyAgain": "再次购买",
+    "startShopping": "开始购物",
+    "parent": {
+      "title": "家长信息",
+      "name": "姓名",
+      "birthday": "生日",
+      "phone": "手机号",
+      "email": "邮箱",
+      "address": "地址",
+      "edit": "编辑",
+      "save": "保存",
+      "cancel": "取消"
+    },
+    "pets": {
+      "title": "宝贝信息",
+      "addPet": "添加宝贝",
+      "add": "添加成员",
+      "feedingReport": "科学喂养建议报告",
+      "noPets": "暂无宝贝信息",
+      "noPetsDesc": "添加您的宠物信息，获得更好的购物体验",
+      "name": "姓名",
+      "breed": "品种",
+      "birthday": "生日",
+      "gender": "性别",
+      "weight": "体重",
+      "color": "毛色",
+      "male": "公",
+      "female": "母",
+      "edit": "编辑",
+      "delete": "删除"
+    },
+    "notifications": "消息通知",
+    "notificationDetails": {
+      "title": "消息通知",
+      "markAllRead": "全部标记为已读",
+      "noNotifications": "暂无新消息",
+      "orderUpdate": "订单状态更新",
+      "orderUpdateMessage": "您的订单 ORD001 已发货",
+      "promotion": "限时优惠",
+      "promotionMessage": "宠物营养品8折优惠，仅限今日",
+      "system": "系统通知",
+      "petCare": "宠物护理提醒",
+      "petCareMessage": "小白该接种疫苗了",
+      "hoursAgo": "{{count}}小时前",
+      "daysAgo": "{{count}}天前"
+    },
+    "memberBenefits": "会员权益",
+    "memberBenefitDetails": {
+      "title": "会员权益",
+      "currentLevel": "当前等级",
+      "nextLevel": "下一等级",
+      "pointsToNext": "距离下一等级还需",
+      "benefits": "专属权益",
+      "discount": "专享折扣",
+      "freeShipping": "免费配送",
+      "prioritySupport": "优先客服",
+      "exclusiveProducts": "专属商品",
+      "terms": {
+        "title": "会员权益条款",
+        "general": {
+          "title": "通用条款",
+          "validity": "会员权益自获得之日起一年内有效",
+          "transfer": "会员权益不可转让，仅限本人使用",
+          "combination": "会员权益不可与其他优惠活动叠加使用",
+          "modification": "公司保留修改会员权益的权利，如有变更将提前通知"
+        },
+        "levels": {
+          "bronze": {
+            "name": "青铜会员",
+            "requirement": "累计消费满500元",
+            "discount": "全场商品9.5折优惠",
+            "points": "购物积分1.2倍",
+            "shipping": "满99元免运费",
+            "support": "标准客服支持"
+          },
+          "silver": {
+            "name": "白银会员",
+            "requirement": "累计消费满2000元",
+            "discount": "全场商品9折优惠",
+            "points": "购物积分1.5倍",
+            "shipping": "全场免运费",
+            "support": "优先客服支持",
+            "birthday": "生日月专属8折券",
+            "earlyAccess": "新品提前24小时购买"
+          },
+          "gold": {
+            "name": "黄金会员",
+            "requirement": "累计消费满5000元",
+            "discount": "全场商品8.5折优惠",
+            "points": "购物积分2倍",
+            "shipping": "全场免运费+优先配送",
+            "support": "专属客服热线",
+            "birthday": "生日月专属7.5折券",
+            "earlyAccess": "新品提前48小时购买",
+            "exclusive": "专属限量商品购买权",
+            "returns": "30天无理由退换货"
+          },
+          "platinum": {
+            "name": "铂金会员",
+            "requirement": "累计消费满10000元",
+            "discount": "全场商品8折优惠",
+            "points": "购物积分3倍",
+            "shipping": "全场免运费+当日达",
+            "support": "专属客服经理",
+            "birthday": "生日月专属7折券",
+            "earlyAccess": "新品提前72小时购买",
+            "exclusive": "专属定制商品服务",
+            "returns": "60天无理由退换货",
+            "consultation": "免费宠物营养咨询",
+            "events": "专属会员活动邀请"
+          }
+        },
+        "pointsSystem": {
+          "title": "积分系统说明",
+          "earning": "每消费1元获得1积分（会员倍率加成）",
+          "redemption": "100积分=1元，可用于抵扣订单金额",
+          "expiry": "积分有效期为获得之日起2年",
+          "minimum": "单次使用积分不少于100分",
+          "maximum": "单笔订单最多可使用50%积分抵扣"
+        },
+        "specialOffers": {
+          "title": "特殊优惠说明",
+          "birthdayMonth": "生日月优惠券需在生日当月使用完毕",
+          "earlyAccess": "新品抢购权仅限会员等级对应时间段",
+          "exclusiveProducts": "专属商品数量有限，先到先得",
+          "freeShipping": "免运费不包含偏远地区及特殊商品"
+        }
+      }
+    },
+    "benefits": {
+      "title": "会员权益",
+      "vipLevel": "VIP等级",
+      "currentLevel": "当前等级",
+      "levelDesc": "享受专属会员特权",
+      "discount": "专属折扣",
+      "points": "积分倍率",
+      "exclusive": "专属权益",
+      "freeShipping": "免费配送",
+      "freeShippingDesc": "全场包邮，无门槛限制",
+      "earlyAccess": "优先体验",
+      "earlyAccessDesc": "新品抢先购买权",
+      "birthday": "生日特权",
+      "birthdayDesc": "生日月专属优惠券",
+      "support": "专属客服",
+      "supportDesc": "VIP专线服务"
+    },
+    "languageSettings": {
+      "title": "语言设置",
+      "current": "当前语言",
+      "chinese": "简体中文",
+      "traditionalChinese": "繁体中文",
+      "english": "English"
+    },
+    "basicInfo": "基本信息",
+    "name": "姓名",
+    "email": "邮箱",
+    "phone": "手机号",
+    "securitySettings": "安全设置",
+    "changePassword": "修改密码",
+    "changePasswordDesc": "定期更新密码以保护账户安全",
+    "modify": "修改",
+    "twoFactorAuth": "两步验证",
+    "twoFactorAuthDesc": "为账户添加额外的安全保护",
+    "setup": "设置"
+  },
+  "cart": {
+    "title": "购物车",
+    "backToShop": "返回商城",
+    "itemCount": "共 {{count}} 件商品",
+    "clearCart": "清空购物车",
+    "productList": "商品清单",
+    "unitPrice": "单价",
+    "removeItem": "移除商品",
+    "orderSummary": "订单摘要",
+    "subtotal": "商品总计",
+    "shipping": "运费",
+    "freeShipping": "免费",
+    "total": "总计",
+    "checkout": "立即结账",
+    "processing": "处理中...",
+    "continueShopping": "继续购物",
+    "emptyCart": "您的购物车是空的",
+    "startShopping": "去购物"
+  },
+  "favorites": {
+    "title": "我的收藏",
+    "backToShop": "返回商城",
+    "itemCount": "共 {{count}} 件商品",
+    "clearFavorites": "清空收藏",
+    "addToCart": "加购物车",
+    "removeFavorite": "取消收藏",
+    "emptyFavorites": "您还没有收藏任何商品",
+    "startShopping": "去购物"
+  },
+  "petProfile": {
+    "title": "宠物档案",
+    "basicInfo": "基本信息",
+    "healthInfo": "健康信息",
+    "dietInfo": "饮食信息",
+    "fields": {
+      "name": "宠物姓名",
+      "breed": "品种",
+      "birthday": "生日",
+      "age": "年龄",
+      "gender": "性别",
+      "weight": "体重",
+      "color": "毛色",
+      "isNeutered": "是否绝育",
+      "bodyCondition": "体型状况",
+      "activityLevel": "活跃程度",
+      "foodPreference": "食物偏好",
+      "pickinessLevel": "挑食程度",
+      "allergies": "过敏或敏感食物",
+      "healthIssues": "健康问题",
+      "dailyTreats": "每日零食量"
+    },
+    "options": {
+      "gender": {
+        "male": "公",
+        "female": "母",
+        "unknown": "未知"
+      },
+      "neutered": {
+        "yes": "已绝育",
+        "no": "未绝育",
+        "unknown": "不确定"
+      },
+      "bodyCondition": {
+        "underweight": "偏瘦",
+        "normal": "正常",
+        "overweight": "偏胖",
+        "obese": "肥胖"
+      },
+      "activityLevel": {
+        "low": "低活跃度",
+        "moderate": "中等活跃度",
+        "high": "高活跃度",
+        "veryHigh": "极高活跃度"
+      },
+      "foodPreference": {
+        "kibble": "膨化粮",
+        "baked": "烘焙粮",
+        "freezeDried": "冻干粮",
+        "frozenRaw": "冷冻生食",
+        "frozenCooked": "冷冻鲜食",
+        "homemade": "家庭现做鲜食",
+        "mixed": "混合喂养"
+      },
+      "pickinessLevel": {
+        "notPicky": "喜欢吃任何东西",
+        "slightlyPicky": "只喜欢吃部分东西",
+        "moderatelyPicky": "有时很挑剔",
+        "veryPicky": "非常挑剔"
+      },
+      "dailyTreats": {
+        "none": "不给零食",
+        "minimal": "很少（1-2块）",
+        "moderate": "适量（3-5块）",
+        "frequent": "较多（6-10块）",
+        "excessive": "很多（10块以上）"
+      }
+    },
+    "placeholders": {
+      "name": "请输入宠物姓名",
+      "breed": "请选择或输入品种",
+      "weight": "请输入体重（公斤）",
+      "color": "请输入毛色",
+      "allergies": "请输入过敏食物，多个用逗号分隔",
+      "healthIssues": "请输入已确诊的健康问题"
+    },
+    "commonAllergies": {
+      "title": "常见过敏源",
+      "chicken": "鸡肉",
+      "beef": "牛肉",
+      "dairy": "乳制品",
+      "wheat": "小麦",
+      "corn": "玉米",
+      "soy": "大豆",
+      "fish": "鱼类",
+      "eggs": "鸡蛋",
+      "lamb": "羊肉",
+      "rice": "大米"
+    },
+    "commonHealthIssues": {
+      "title": "常见健康问题",
+      "diabetes": "糖尿病",
+      "kidneyDisease": "肾脏疾病",
+      "heartDisease": "心脏病",
+      "arthritis": "关节炎",
+      "allergies": "过敏症",
+      "digestiveIssues": "消化问题",
+      "skinConditions": "皮肤病",
+      "dental": "牙齿问题",
+      "obesity": "肥胖症",
+      "anxiety": "焦虑症"
+    },
+    "nutritionRecommendations": {
+      "title": "营养建议",
+      "basedOnProfile": "基于您宠物的档案信息，我们为您推荐：",
+      "weightManagement": "体重管理建议",
+      "activityAdjustment": "活动量调整建议",
+      "allergyAvoidance": "过敏源避免建议",
+      "healthSupport": "健康支持建议"
+    },
+    "actions": {
+       "save": "保存档案",
+       "edit": "编辑档案",
+       "delete": "删除档案",
+       "addNew": "添加新宠物",
+       "generateRecommendation": "生成营养建议"
+     }
+   },
+   "payment": {
+     "title": "结算支付",
+     "orderSummary": "订单摘要",
+     "productList": "商品清单",
+     "quantity": "数量",
+     "subtotal": "商品小计",
+     "shipping": "运费",
+     "processingFee": "手续费",
+     "total": "订单总计",
+     "shippingAddress": "收货地址",
+     "addNewAddress": "添加新地址",
+     "editAddress": "编辑地址",
+     "setAsDefault": "设为默认",
+     "paymentMethod": "支付方式",
+     "alipay": "支付宝",
+     "wechatPay": "微信支付",
+     "unionPay": "银联支付",
+     "creditCard": "信用卡",
+     "cardNumber": "卡号",
+     "expiryDate": "有效期",
+     "cvv": "CVV",
+     "cardholderName": "持卡人姓名",
+     "placeOrder": "提交订单",
+     "processing": "处理中...",
+     "paymentSuccess": "支付成功",
+     "paymentFailed": "支付失败",
+     "orderNumber": "订单号",
+     "thankYou": "感谢您的购买！",
+     "backToShop": "返回商城",
+     "viewOrder": "查看订单",
+     "addressForm": {
+       "title": "地址信息",
+       "name": "收货人姓名",
+       "phone": "联系电话",
+       "province": "省份",
+       "city": "城市",
+       "district": "区县",
+       "address": "详细地址",
+       "save": "保存地址",
+       "cancel": "取消"
+     }
+   }
+ }

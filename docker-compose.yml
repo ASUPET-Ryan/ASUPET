@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  asupet-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    container_name: asupet-web
+    environment:
+      - NODE_ENV=production
+    # 如果需要挂载配置文件
+    # volumes:
+    #   - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    
+    # 健康检查
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+# 如果需要网络配置
+networks:
+  default:
+    name: asupet-network
