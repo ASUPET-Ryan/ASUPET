@@ -166,7 +166,7 @@ export default function ProductReviews({ productId, reviews = mockReviews }: Pro
         
         <button
           onClick={() => setShowReviewForm(!showReviewForm)}
-          className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700"
+          className="btn-primary px-4 py-2 text-sm"
         >
           写评价
         </button>
@@ -218,7 +218,7 @@ export default function ProductReviews({ productId, reviews = mockReviews }: Pro
             <div className="flex gap-3">
               <button
                 type="submit"
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700"
+                className="btn-primary px-6 py-2"
               >
                 提交评价
               </button>

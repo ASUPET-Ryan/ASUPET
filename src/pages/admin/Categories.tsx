@@ -214,7 +214,7 @@ const Categories: React.FC = () => {
             resetForm();
             setShowModal(true);
           }}
-          className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md btn-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
         >
           <Plus className="-ml-1 mr-2 h-4 w-4" />
           Add Category
@@ -268,7 +268,7 @@ const Categories: React.FC = () => {
                   <div className="flex items-center space-x-2">
                     <button
                       onClick={() => handleEdit(category)}
-                      className="p-2 text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded-md"
+                      className="p-2 text-primary-600 hover:text-primary-800 hover:bg-primary-50 rounded-md"
                       title="Edit"
                     >
                       <Edit className="h-4 w-4" />
@@ -414,7 +414,7 @@ const Categories: React.FC = () => {
                 </button>
                 <button
                   type="submit"
-                  className="flex-1 inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="flex-1 inline-flex items-center justify-center px-4 py-2 btn-primary text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary-500"
                 >
                   <Save className="h-4 w-4 mr-2" />
                   {editingCategory ? 'Update' : 'Create'}

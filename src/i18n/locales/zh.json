@@ -29,6 +29,20 @@
       },
       "imageAlt": "快乐的金毛犬正在享用优质宠物食品"
     },
+    "banner": {
+      "badge": "专业营养科学配比",
+      "title": "精致养宠，潮造生活",
+      "subtitle": "科技驱动的专业宠物消费新生态",
+      "cta": {
+        "primary": "立即体验",
+        "secondary": "了解更多"
+      },
+      "stats": {
+        "activeUsers": "活跃用户",
+        "satisfaction": "满意度",
+        "products": "优质商品"
+      }
+    },
     "features": {
       "title": "核心优势",
       "subtitle": "三大核心优势，为您的宠物提供最优质的营养解决方案",
@@ -609,6 +623,7 @@
     "nav": {
       "dashboard": "仪表板",
       "news": "新闻管理",
+      "products": "商品管理",
       "categories": "分类管理",
       "settings": "设置",
       "logout": "退出登录"
@@ -625,6 +640,8 @@
       "recentNews": "最新新闻",
       "createNews": "创建新闻",
       "manageNews": "管理新闻",
+      "createProduct": "创建商品",
+      "manageProducts": "管理商品",
       "categories": "分类管理",
       "noNews": "暂无新闻文章",
       "getStarted": "开始创建新闻文章"
@@ -690,6 +707,62 @@
         "submitting": "保存中...",
         "success": "操作成功",
         "error": "操作失败"
+      }
+    },
+    "products": {
+      "title": "商品管理",
+      "create": "创建商品",
+      "edit": "编辑商品",
+      "list": "商品列表",
+      "search": "搜索商品...",
+      "category": "分类",
+      "featured": "精选",
+      "active": "启用",
+      "status": "状态",
+      "actions": "操作",
+      "delete": "删除",
+      "batchDelete": "批量删除",
+      "selectAll": "全选",
+      "confirmDelete": "确认删除",
+      "deleteMessage": "确定要删除这些商品吗？此操作不可撤销。",
+      "preview": "预览",
+      "form": {
+        "nameZh": "中文名称",
+        "nameEn": "英文名称",
+        "nameTw": "繁体中文名称",
+        "descriptionZh": "中文描述",
+        "descriptionEn": "英文描述",
+        "descriptionTw": "繁体中文描述",
+        "shortDescriptionZh": "中文简介",
+        "shortDescriptionEn": "英文简介",
+        "shortDescriptionTw": "繁体中文简介",
+        "sku": "商品编码",
+        "price": "价格",
+        "comparePrice": "对比价格",
+        "weight": "重量",
+        "category": "分类",
+        "selectCategory": "选择分类",
+        "tags": "标签",
+        "addTag": "添加标签",
+        "images": "商品图片",
+        "uploadImages": "上传图片",
+        "dragDrop": "拖拽文件到此处或点击上传",
+        "maxFiles": "最多上传10张图片",
+        "specifications": "规格参数",
+        "ingredients": "成分配料",
+        "feedingGuide": "喂养指南",
+        "nutritionalAnalysis": "营养分析",
+        "stockQuantity": "库存数量",
+        "isActive": "启用商品",
+        "isFeatured": "设为精选",
+        "submit": "提交",
+        "submitting": "提交中...",
+        "success": "操作成功",
+        "error": "操作失败",
+        "required": "此字段为必填项",
+        "invalidPrice": "请输入有效的价格",
+        "invalidWeight": "请输入有效的重量",
+        "invalidStock": "请输入有效的库存数量"
       }
     }
   },

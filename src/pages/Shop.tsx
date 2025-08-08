@@ -1,11 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { mockProducts, mockCategories, Product, Category } from '../data/mockShopData';
+import { mockCategories, Category } from '../data/mockShopData';
 import { ShoppingCart, Filter, Search, Star, Heart, BarChart3 } from 'lucide-react';
 import { useCart } from '../contexts/CartContext';
 import { useFavorites } from '../contexts/FavoritesContext';
 import ProductComparison from '../components/ProductComparison';
+import { useCurrency } from '../utils/currency';
+import { supabase } from '../lib/supabase';
+
+// 从Supabase获取的商品接口
+export interface Product {
+  id: string;
+  name: { zh: string; en: string };
+  description?: { zh: string; en: string };
+  short_description?: { zh: string; en: string };
+  sku: string;
+  price: number;
+  compare_price?: number;
+  weight?: number;
+  category_id: string;
+  tags: string[];
+  images: Array<{ url: string; alt: string; sort: number }>;
+  specifications?: { zh: Record<string, string>; en: Record<string, string> };
+  ingredients?: { zh: string[]; en: string[] };
+  feeding_guide?: { zh: Record<string, string>; en: Record<string, string> };
+  nutritional_analysis?: { zh: Record<string, string>; en: Record<string, string> };
+  stock_quantity: number;
+  is_active: boolean;
+  is_featured: boolean;
+  created_at: string;
+}
 
 
 
@@ -13,33 +38,61 @@ const Shop: React.FC = () => {
   const { t, i18n } = useTranslation();
   const { addToCart } = useCart();
   const { addToFavorites, removeFromFavorites, isFavorite } = useFavorites();
-  const [products, setProducts] = useState<Product[]>(mockProducts);
+  const { convertPrice } = useCurrency();
+  const [products, setProducts] = useState<Product[]>([]);
   const [categories, setCategories] = useState<Category[]>(mockCategories);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('featured');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   const [compareProducts, setCompareProducts] = useState<Product[]>([]);
   const [showComparison, setShowComparison] = useState(false);
 
+  // 从Supabase获取商品数据
+  const fetchProducts = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      
+      const { data, error: fetchError } = await supabase
+        .from('products')
+        .select('*')
+        .eq('is_active', true)
+        .order('created_at', { ascending: false });
+      
+      if (fetchError) {
+        console.error('Error fetching products:', fetchError);
+        setError('获取商品数据失败');
+        return;
+      }
+      
+      setProducts(data || []);
+    } catch (err) {
+      console.error('Unexpected error:', err);
+      setError('获取商品数据时发生错误');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // 组件加载时获取商品数据
   useEffect(() => {
-    // 使用模拟数据，无需异步获取
-    setProducts(mockProducts);
-    setCategories(mockCategories);
+    fetchProducts();
   }, []);
 
-  const fetchProducts = () => {
-    let filteredProducts = mockProducts;
+  // 过滤和排序商品
+  const filteredProducts = React.useMemo(() => {
+    let filtered = products;
     
     // 分类过滤
     if (selectedCategory !== 'all') {
-      filteredProducts = filteredProducts.filter(product => product.category_id === selectedCategory);
+      filtered = filtered.filter(product => product.category_id === selectedCategory);
     }
     
     // 搜索过滤
     if (searchTerm) {
-      filteredProducts = filteredProducts.filter(product => {
+      filtered = filtered.filter(product => {
         const name = typeof product.name === 'object' ? product.name.zh || product.name.en : product.name;
         const description = typeof product.description === 'object' ? product.description.zh || product.description.en : product.description;
         return name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -49,19 +102,20 @@ const Shop: React.FC = () => {
     }
     
     // 排序
+    const sorted = [...filtered];
     switch (sortBy) {
       case 'price_low':
-        filteredProducts.sort((a, b) => a.price - b.price);
+        sorted.sort((a, b) => a.price - b.price);
         break;
       case 'price_high':
-        filteredProducts.sort((a, b) => b.price - a.price);
+        sorted.sort((a, b) => b.price - a.price);
         break;
       case 'newest':
-        filteredProducts.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+        sorted.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
         break;
       case 'featured':
       default:
-        filteredProducts.sort((a, b) => {
+        sorted.sort((a, b) => {
           if (a.is_featured && !b.is_featured) return -1;
           if (!a.is_featured && b.is_featured) return 1;
           return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();
@@ -69,12 +123,10 @@ const Shop: React.FC = () => {
         break;
     }
     
-    setProducts(filteredProducts);
-  };
+    return sorted;
+  }, [products, selectedCategory, searchTerm, sortBy]);
 
-  useEffect(() => {
-    fetchProducts();
-  }, [selectedCategory, searchTerm, sortBy]);
+
 
   const getLocalizedText = (text: any) => {
     if (typeof text === 'object' && text !== null) {
@@ -85,21 +137,19 @@ const Shop: React.FC = () => {
 
 
 
-  const getProductImage = (imagesObj: any) => {
-    if (typeof imagesObj === 'object' && Array.isArray(imagesObj) && imagesObj.length > 0) {
-      return imagesObj[0].url;
+  const getProductImage = (images: any) => {
+    if (Array.isArray(images) && images.length > 0) {
+      return images[0].url;
     }
-    return 'https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=premium%20pet%20food%20product%20placeholder&image_size=square';
+    return 'https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=pet%20food%20product%20placeholder&image_size=square';
   };
 
-  const handleAddToCart = (product: Product) => {
-    addToCart({
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      image: getProductImage(product.images),
-      maxStock: product.stock_quantity
-    });
+  const handleAddToCart = async (product: Product) => {
+    try {
+      await addToCart(product.id, 1);
+    } catch (error) {
+      console.error('Failed to add to cart:', error);
+    }
   };
 
   const handleToggleFavorite = (product: Product) => {
@@ -210,7 +260,7 @@ const Shop: React.FC = () => {
               </div>
             ))}
           </div>
-        ) : products.length === 0 ? (
+        ) : filteredProducts.length === 0 ? (
           <div className="text-center py-16">
             <div className="text-gray-400 mb-4">
               <ShoppingCart className="w-16 h-16 mx-auto" />
@@ -220,7 +270,7 @@ const Shop: React.FC = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {products.map((product) => (
+            {filteredProducts.map((product) => (
               <div key={product.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
                 <Link to={`/product/${product.id}`} className="block">
                   {/* 商品图片 */}
@@ -258,9 +308,9 @@ const Shop: React.FC = () => {
                     {/* 价格 */}
                     <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center gap-2">
-                        <span className="text-lg font-bold text-red-600">¥{product.price}</span>
+                        <span className="text-lg font-bold text-red-600">{convertPrice(product.price).formatted}</span>
                         {product.compare_price && product.compare_price > product.price && (
-                          <span className="text-sm text-gray-500 line-through">¥{product.compare_price}</span>
+                          <span className="text-sm text-gray-500 line-through">{convertPrice(product.compare_price).formatted}</span>
                         )}
                       </div>
                       {product.weight && (
@@ -290,7 +340,7 @@ const Shop: React.FC = () => {
                   <button 
                     className={`w-full py-2 px-4 rounded-lg font-medium transition-colors ${
                       product.stock_quantity > 0
-                        ? 'bg-blue-600 text-white hover:bg-blue-700'
+                        ? 'btn-primary'
                         : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                     }`}
                     disabled={product.stock_quantity === 0}

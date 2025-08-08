@@ -35,7 +35,7 @@ import PetProfileForm from '../components/PetProfileForm';
 
 export default function UserCenter() {
   const { t, i18n } = useTranslation();
-  const { state: cartState } = useCart();
+  const { itemCount } = useCart();
   const { state: favoritesState } = useFavorites();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('overview');
@@ -285,7 +285,7 @@ export default function UserCenter() {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-sm text-neutral-600">{t('userCenter.cart')}</p>
-                    <p className="text-2xl font-bold text-neutral-900">{cartState.itemCount}</p>
+                    <p className="text-2xl font-bold text-neutral-900">{itemCount}</p>
                   </div>
                   <ShoppingCart className="w-8 h-8 text-primary-500 group-hover:scale-110 transition-transform duration-300" />
                 </div>
@@ -432,11 +432,11 @@ export default function UserCenter() {
                             </div>
                           </div>
                           <div className="flex justify-end space-x-3">
-                            <button className="px-4 py-2 border border-neutral-300 text-neutral-700 rounded-cute hover:bg-neutral-50 transition-colors duration-300">
+                            <button className="btn-secondary px-4 py-2 rounded-cute">
                               查看详情
                             </button>
                             {order.status === 'delivered' && (
-                              <button className="px-4 py-2 bg-primary-600 text-white rounded-cute hover:bg-primary-700 transition-colors duration-300">
+                              <button className="btn-primary px-4 py-2 rounded-cute">
                                 再次购买
                               </button>
                             )}
@@ -451,7 +451,7 @@ export default function UserCenter() {
                       <p className="text-neutral-600 mb-6">您还没有任何订单记录</p>
                       <Link
                         to="/shop"
-                        className="bg-primary-600 text-white px-6 py-3 rounded-cute hover:bg-primary-700 inline-flex items-center space-x-2 transition-colors duration-300"
+                        className="btn-primary px-6 py-3 rounded-cute inline-flex items-center space-x-2"
                       >
                         <ShoppingCart className="w-5 h-5" />
                         <span>开始购物</span>
@@ -483,7 +483,7 @@ export default function UserCenter() {
                     <p className="text-neutral-600 mb-6">收藏您喜欢的商品，方便下次查看</p>
                     <Link
                       to="/shop"
-                      className="bg-primary-600 text-white px-6 py-3 rounded-cute hover:bg-primary-700 inline-flex items-center space-x-2 transition-colors duration-300"
+                      className="btn-primary px-6 py-3 rounded-cute inline-flex items-center space-x-2"
                     >
                       <ShoppingCart className="w-5 h-5" />
                       <span>去购物</span>
@@ -498,7 +498,7 @@ export default function UserCenter() {
                 <div className="px-6 py-4 border-b border-neutral-100">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg font-semibold text-neutral-900">收货地址</h3>
-                    <button className="bg-primary-600 text-white px-4 py-2 rounded-cute hover:bg-primary-700 transition-colors duration-300">
+                    <button className="btn-primary px-4 py-2 rounded-cute">
                       添加地址
                     </button>
                   </div>
@@ -508,7 +508,7 @@ export default function UserCenter() {
                     <MapPin className="w-24 h-24 text-neutral-300 mx-auto mb-6" />
                     <h3 className="text-xl font-semibold text-neutral-900 mb-2">暂无收货地址</h3>
                     <p className="text-neutral-600 mb-6">添加收货地址，让购物更便捷</p>
-                    <button className="bg-primary-600 text-white px-6 py-3 rounded-cute hover:bg-primary-700 transition-colors duration-300">
+                    <button className="btn-primary px-6 py-3 rounded-cute">
                       添加地址
                     </button>
                   </div>
@@ -593,7 +593,7 @@ export default function UserCenter() {
                         setEditingPet(null);
                         setShowPetForm(true);
                       }}
-                      className="bg-primary-600 text-white px-4 py-2 rounded-cute hover:bg-primary-700 transition-colors duration-300 flex items-center space-x-2"
+                      className="btn-primary px-4 py-2 rounded-cute flex items-center space-x-2"
                     >
                       <Plus className="w-4 h-4" />
                       <span>{t('userCenter.pets.add')}</span>
@@ -659,7 +659,7 @@ export default function UserCenter() {
                           setEditingPet(null);
                           setShowPetForm(true);
                         }}
-                        className="bg-primary-600 text-white px-6 py-3 rounded-cute hover:bg-primary-700 transition-colors duration-300 flex items-center space-x-2 mx-auto"
+                        className="btn-primary px-6 py-3 rounded-cute flex items-center space-x-2 mx-auto"
                       >
                         <Plus className="w-5 h-5" />
                         <span>{t('userCenter.pets.add')}</span>

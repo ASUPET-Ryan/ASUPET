@@ -35,7 +35,7 @@ interface ShippingAddress {
 export default function PaymentPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { state: cartState, clearCart } = useCart();
+  const { items, total, clearCart } = useCart();
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('alipay');
   const [isProcessing, setIsProcessing] = useState(false);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
@@ -140,7 +140,7 @@ export default function PaymentPage() {
     );
   }
 
-  if (cartState.items.length === 0) {
+  if (items.length === 0) {
     return (
       <div className="min-h-screen bg-gray-50 py-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -218,13 +218,13 @@ export default function PaymentPage() {
                     <div className="flex space-x-3">
                       <button
                         onClick={handleAddAddress}
-                        className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                        className="px-4 py-2 btn-primary rounded-lg"
                       >
                         保存
                       </button>
                       <button
                         onClick={() => setShowAddressForm(false)}
-                        className="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50"
+                        className="px-4 py-2 btn-secondary rounded-lg"
                       >
                         取消
                       </button>
@@ -239,7 +239,7 @@ export default function PaymentPage() {
                     key={index}
                     className={`p-4 border rounded-lg cursor-pointer transition-colors ${
                       selectedAddress === index
-                        ? 'border-blue-500 bg-blue-50'
+                        ? 'border-primary-500 bg-primary-50'
                         : 'border-gray-200 hover:border-gray-300'
                     }`}
                     onClick={() => setSelectedAddress(index)}
@@ -247,7 +247,7 @@ export default function PaymentPage() {
                     <div className="flex items-start space-x-3">
                       <div className={`w-4 h-4 rounded-full border-2 mt-1 ${
                         selectedAddress === index
-                          ? 'border-blue-500 bg-blue-500'
+                          ? 'border-primary-500 bg-primary-500'
                           : 'border-gray-300'
                       }`} />
                       <div className="flex-1">
@@ -255,7 +255,7 @@ export default function PaymentPage() {
                           <span className="font-medium text-gray-900">{address.name}</span>
                           <span className="text-gray-600">{address.phone}</span>
                           {address.isDefault && (
-                            <span className="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">默认</span>
+                            <span className="px-2 py-1 bg-primary-100 text-primary-800 text-xs rounded">默认</span>
                           )}
                         </div>
                         <p className="text-gray-600 text-sm">{address.address}</p>
@@ -270,7 +270,7 @@ export default function PaymentPage() {
             <div className="bg-white rounded-lg shadow-sm p-6">
               <h2 className="text-lg font-semibold text-gray-900 mb-4">商品清单</h2>
               <div className="space-y-4">
-                {cartState.items.map((item) => (
+                {items.map((item) => (
                   <div key={item.id} className="flex items-center space-x-4 py-4 border-b border-gray-100 last:border-b-0">
                     <img
                       src={item.image}
@@ -279,7 +279,7 @@ export default function PaymentPage() {
                     />
                     <div className="flex-1">
                       <h3 className="font-medium text-gray-900">{item.name.zh}</h3>
-                      <p className="text-sm text-gray-600">库存: {item.maxStock}</p>
+                      <p className="text-sm text-gray-600">库存: {item.stock}</p>
                     </div>
                     <div className="text-right">
                       <p className="font-medium text-gray-900">¥{item.price.toFixed(2)}</p>
@@ -299,7 +299,7 @@ export default function PaymentPage() {
                     key={method.id}
                     className={`p-4 border rounded-lg cursor-pointer transition-colors ${
                       selectedPaymentMethod === method.id
-                        ? 'border-blue-500 bg-blue-50'
+                        ? 'border-primary-500 bg-primary-50'
                         : 'border-gray-200 hover:border-gray-300'
                     }`}
                     onClick={() => setSelectedPaymentMethod(method.id)}
@@ -307,7 +307,7 @@ export default function PaymentPage() {
                     <div className="flex items-center space-x-3">
                       <div className={`w-4 h-4 rounded-full border-2 ${
                         selectedPaymentMethod === method.id
-                          ? 'border-blue-500 bg-blue-500'
+                          ? 'border-primary-500 bg-primary-500'
                           : 'border-gray-300'
                       }`} />
                       {method.icon}
@@ -340,7 +340,7 @@ export default function PaymentPage() {
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-600">商品总计</span>
-                  <span className="text-gray-900">¥{cartState.total.toFixed(2)}</span>
+                  <span className="text-gray-900">¥{total.toFixed(2)}</span>
                 </div>
                 
                 <div className="flex justify-between text-sm">
@@ -351,7 +351,7 @@ export default function PaymentPage() {
                 {selectedPaymentMethod === 'credit' && (
                   <div className="flex justify-between text-sm">
                     <span className="text-gray-600">手续费</span>
-                    <span className="text-gray-900">¥{(cartState.total * 0.006).toFixed(2)}</span>
+                    <span className="text-gray-900">¥{(total * 0.006).toFixed(2)}</span>
                   </div>
                 )}
                 
@@ -359,7 +359,7 @@ export default function PaymentPage() {
                   <div className="flex justify-between text-base font-semibold">
                     <span className="text-gray-900">应付总额</span>
                     <span className="text-gray-900">
-                      ¥{(cartState.total + (selectedPaymentMethod === 'credit' ? cartState.total * 0.006 : 0)).toFixed(2)}
+                      ¥{(total + (selectedPaymentMethod === 'credit' ? total * 0.006 : 0)).toFixed(2)}
                     </span>
                   </div>
                 </div>
@@ -368,7 +368,7 @@ export default function PaymentPage() {
               <button
                 onClick={handlePayment}
                 disabled={isProcessing}
-                className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center"
+                className="w-full btn-primary py-3 px-4 font-medium disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isProcessing ? (
                   <>
@@ -385,9 +385,9 @@ export default function PaymentPage() {
               
               <div className="mt-4 text-xs text-gray-500 text-center">
                 点击"立即支付"即表示您同意我们的
-                <Link to="/terms" className="text-blue-600 hover:text-blue-700">服务条款</Link>
+                <Link to="/terms" className="text-primary-600 hover:text-primary-700">服务条款</Link>
                 和
-                <Link to="/privacy" className="text-blue-600 hover:text-blue-700">隐私政策</Link>
+                <Link to="/privacy" className="text-primary-600 hover:text-primary-700">隐私政策</Link>
               </div>
             </div>
           </div>

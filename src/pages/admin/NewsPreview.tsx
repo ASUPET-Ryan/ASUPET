@@ -55,7 +55,7 @@ const NewsPreview: React.FC = () => {
           <p className="text-gray-600 mb-6">请先在编辑页面保存草稿后再预览</p>
           <button
             onClick={handleBack}
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+            className="btn-primary px-6 py-2 transition-colors"
           >
             返回编辑
           </button>
@@ -98,7 +98,7 @@ const NewsPreview: React.FC = () => {
               
               <button
                 onClick={handleEdit}
-                className="flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                className="flex items-center btn-primary px-4 py-2 transition-colors"
               >
                 <Edit className="w-4 h-4 mr-2" />
                 编辑
@@ -127,7 +127,7 @@ const NewsPreview: React.FC = () => {
             <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-6">
               <div className="flex items-center">
                 <Calendar className="w-4 h-4 mr-1" />
-                {new Date(previewData.publish_date).toLocaleDateString(currentLang === 'zh' ? 'zh-CN' : 'en-US')}
+                {new Date(previewData.publish_date).toLocaleDateString(currentLang === 'zh' ? 'zh' : 'en-US')}
               </div>
               
               {previewData.author && (

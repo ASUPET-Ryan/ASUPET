@@ -29,6 +29,20 @@
       },
       "imageAlt": "快樂的金毛犬正在享用優質寵物食品"
     },
+    "banner": {
+      "badge": "專業營養科學配比",
+      "title": "精緻養寵，潮造生活",
+      "subtitle": "科技驅動的專業寵物消費新生態",
+      "cta": {
+        "primary": "立即體驗",
+        "secondary": "了解更多"
+      },
+      "stats": {
+        "activeUsers": "活躍用戶",
+        "satisfaction": "滿意度",
+        "products": "優質商品"
+      }
+    },
     "features": {
       "title": "核心優勢",
       "subtitle": "三大核心優勢，為您的寵物提供最優質的營養解決方案",
@@ -609,6 +623,7 @@
     "nav": {
       "dashboard": "儀表板",
       "news": "新聞管理",
+      "products": "商品管理",
       "categories": "分類管理",
       "settings": "設定",
       "logout": "退出登入"
@@ -625,6 +640,8 @@
       "recentNews": "最新新聞",
       "createNews": "建立新聞",
       "manageNews": "管理新聞",
+      "createProduct": "建立商品",
+      "manageProducts": "管理商品",
       "categories": "分類管理",
       "noNews": "暫無新聞文章",
       "getStarted": "開始建立新聞文章"
@@ -690,6 +707,62 @@
         "submitting": "儲存中...",
         "success": "操作成功",
         "error": "操作失敗"
+      }
+    },
+    "products": {
+      "title": "商品管理",
+      "create": "建立商品",
+      "edit": "編輯商品",
+      "list": "商品列表",
+      "search": "搜尋商品...",
+      "category": "分類",
+      "featured": "精選",
+      "active": "啟用",
+      "status": "狀態",
+      "actions": "操作",
+      "delete": "刪除",
+      "batchDelete": "批量刪除",
+      "selectAll": "全選",
+      "confirmDelete": "確認刪除",
+      "deleteMessage": "確定要刪除這些商品嗎？此操作不可撤銷。",
+      "preview": "預覽",
+      "form": {
+        "nameZh": "中文名稱",
+        "nameEn": "英文名稱",
+        "nameTw": "繁體中文名稱",
+        "descriptionZh": "中文描述",
+        "descriptionEn": "英文描述",
+        "descriptionTw": "繁體中文描述",
+        "shortDescriptionZh": "中文簡介",
+        "shortDescriptionEn": "英文簡介",
+        "shortDescriptionTw": "繁體中文簡介",
+        "sku": "商品編碼",
+        "price": "價格",
+        "comparePrice": "對比價格",
+        "weight": "重量",
+        "category": "分類",
+        "selectCategory": "選擇分類",
+        "tags": "標籤",
+        "addTag": "新增標籤",
+        "images": "商品圖片",
+        "uploadImages": "上傳圖片",
+        "dragDrop": "拖拽檔案到此處或點擊上傳",
+        "maxFiles": "最多上傳10張圖片",
+        "specifications": "規格參數",
+        "ingredients": "成分配料",
+        "feedingGuide": "餵養指南",
+        "nutritionalAnalysis": "營養分析",
+        "stockQuantity": "庫存數量",
+        "isActive": "啟用商品",
+        "isFeatured": "設為精選",
+        "submit": "提交",
+        "submitting": "提交中...",
+        "success": "操作成功",
+        "error": "操作失敗",
+        "required": "此欄位為必填項",
+        "invalidPrice": "請輸入有效的價格",
+        "invalidWeight": "請輸入有效的重量",
+        "invalidStock": "請輸入有效的庫存數量"
       }
     }
   },

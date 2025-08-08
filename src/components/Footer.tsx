@@ -57,14 +57,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 lg:col-span-2">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 flex items-center justify-center">
+              <div className="w-32 h-32 flex items-center justify-center">
                 <img 
                   src="/asupet-logo-02.svg" 
                   alt="ASUPET Logo" 
                   className="w-full h-full object-contain filter brightness-0 invert"
                 />
               </div>
-              <span className="ml-4 text-3xl font-display font-bold text-white">ASUPET</span>
             </div>
             <p className="text-neutral-300 mb-8 max-w-md text-lg leading-relaxed">
               {t('footer.description')}

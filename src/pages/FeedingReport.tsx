@@ -97,7 +97,7 @@ const FeedingReport: React.FC = () => {
       
       reports.push({
         id: `report-${i}`,
-        date: reportDate.toLocaleDateString('zh-CN'),
+        date: reportDate.toLocaleDateString('zh'),
         petWeight: `${historicalWeight.toFixed(1)}kg`,
         petAge: ageAtTime,
         recommendations: generateRecommendations(mockPetForHistory),
@@ -330,7 +330,7 @@ const FeedingReport: React.FC = () => {
   }
 
   const recommendations = generateRecommendations(pet);
-  const currentDate = new Date().toLocaleDateString('zh-CN');
+  const currentDate = new Date().toLocaleDateString('zh');
 
   const getImportanceColor = (importance: string) => {
     switch (importance) {

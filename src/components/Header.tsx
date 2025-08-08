@@ -10,10 +10,10 @@ const Header = () => {
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const location = useLocation();
-  const { state: cartState } = useCart();
+  const { itemCount } = useCart();
   const { state: favoritesState } = useFavorites();
 
-  const cartItemsCount = cartState.itemCount;
+  const cartItemsCount = itemCount;
 
   const navigation = [
     { name: t('header.nav.home'), href: '/' },
@@ -27,7 +27,7 @@ const Header = () => {
   const languages = [
     { code: 'en', name: 'English' },
     { code: 'zh-TW', name: '繁體中文' },
-    { code: 'zh-CN', name: 'Simplified Chinese' },
+    { code: 'zh', name: '简体中文' },
   ];
 
   const changeLanguage = (lng: string) => {
@@ -46,10 +46,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center group">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                <Heart className="w-6 h-6 text-white" />
-              </div>
-              <span className="ml-3 text-2xl font-display font-bold text-neutral-900">ASUPET</span>
+              <img 
+                src="/asupet-logo-02.svg" 
+                alt="ASUPET Logo" 
+                className="h-24 sm:h-28 w-auto transition-all duration-300 group-hover:scale-110"
+              />
             </Link>
           </div>
 
@@ -75,9 +76,9 @@ const Header = () => {
             {/* Cart */}
               <Link to="/cart" className="relative p-2 rounded-lg text-neutral-700 hover:bg-neutral-100 hover:text-primary-600 transition-all duration-300">
                 <ShoppingCart className="w-6 h-6" />
-                {cartState.itemCount > 0 && (
+                {itemCount > 0 && (
                   <span className="absolute -top-1 -right-1 bg-gradient-to-r from-primary-500 to-secondary-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">
-                    {cartState.itemCount}
+                    {itemCount}
                   </span>
                 )}
               </Link>
@@ -102,7 +103,7 @@ const Header = () => {
               >
                 <Globe className="w-5 h-5" />
                 <span className="text-sm font-medium">
-                  {i18n.language === 'zh-CN' ? 'ZH' : i18n.language === 'zh-TW' ? '繁中' : 'EN'}
+                  {i18n.language === 'zh' ? 'ZH' : i18n.language === 'zh-TW' ? '繁中' : 'EN'}
                 </span>
               </button>
               {isLanguageOpen && (

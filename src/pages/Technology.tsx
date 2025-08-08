@@ -319,7 +319,7 @@ const Technology = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
+              className="inline-flex items-center justify-center px-8 py-3 btn-primary font-medium transition-colors duration-200"
             >
               {t('technology.cta.contact')}
               <ArrowRight className="ml-2 w-5 h-5" />

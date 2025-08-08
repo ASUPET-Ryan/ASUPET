@@ -3,11 +3,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import { ShoppingCart, Plus, Minus, Trash2, ArrowLeft, CreditCard } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useCart } from '../contexts/CartContext';
+import { useCurrency } from '../utils/currency';
 
 export default function CartPage() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const { state: cartState, updateQuantity, removeFromCart, clearCart } = useCart();
+  const { items, total, itemCount, loading, updateQuantity, removeFromCart, clearCart } = useCart();
+  const { convertPrice } = useCurrency();
   const [isCheckingOut, setIsCheckingOut] = useState(false);
 
   const getLocalizedText = (text: { zh: string; en: string }) => {
@@ -18,7 +20,7 @@ export default function CartPage() {
     navigate('/payment');
   };
 
-  if (cartState.items.length === 0) {
+  if (items.length === 0) {
     return (
       <div className="min-h-screen bg-gray-50 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,7 +39,7 @@ export default function CartPage() {
             <p className="text-gray-600 mb-8">还没有添加任何商品，快去挑选您喜欢的商品吧！</p>
             <Link
               to="/shop"
-              className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center btn-primary px-6 py-3 transition-colors"
             >
               <ShoppingCart className="w-5 h-5 mr-2" />
               {t('cart.startShopping')}
@@ -63,11 +65,11 @@ export default function CartPage() {
             </Link>
             <div>
               <h1 className="text-3xl font-bold text-gray-900">{t('cart.title')}</h1>
-              <p className="text-gray-600 mt-1">{t('cart.itemCount', { count: cartState.itemCount })}</p>
+              <p className="text-gray-600 mt-1">{t('cart.itemCount', { count: itemCount })}</p>
             </div>
           </div>
           
-          {cartState.items.length > 0 && (
+          {items.length > 0 && (
             <button
               onClick={clearCart}
               className="text-red-600 hover:text-red-700 flex items-center"
@@ -86,9 +88,9 @@ export default function CartPage() {
                 <h2 className="text-lg font-semibold text-gray-900 mb-4">{t('cart.productList')}</h2>
                 
                 <div className="space-y-4">
-                  {cartState.items.map((item, index) => (
+                  {items.map((item, index) => (
                     <div key={`${item.id}-${index}`} className="flex items-center space-x-4 p-4 border border-gray-200 rounded-lg">
-                      <Link to={`/product/${item.id}`} className="flex-shrink-0">
+                      <Link to={`/product/${item.productId}`} className="flex-shrink-0">
                         <img
                           src={item.image}
                           alt={getLocalizedText(item.name)}
@@ -101,13 +103,13 @@ export default function CartPage() {
                       </Link>
                       
                       <div className="flex-1 min-w-0">
-                        <Link to={`/product/${item.id}`} className="block">
+                        <Link to={`/product/${item.productId}`} className="block">
                           <h3 className="text-sm font-medium text-gray-900 truncate">
                             {getLocalizedText(item.name)}
                           </h3>
                         </Link>
                         <p className="text-sm text-gray-500 mt-1">
-                          {t('cart.unitPrice')}: ¥{item.price.toFixed(2)}
+                          {t('cart.unitPrice')}: {convertPrice(item.price).formatted}
                         </p>
                       </div>
                       
@@ -127,7 +129,7 @@ export default function CartPage() {
                         
                         <button
                           onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                          disabled={item.quantity >= item.maxStock}
+                          disabled={item.quantity >= item.stock}
                           className="p-1 rounded-full hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                           <Plus className="w-4 h-4" />
@@ -137,7 +139,7 @@ export default function CartPage() {
                       {/* 小计 */}
                       <div className="text-right">
                         <p className="text-sm font-medium text-gray-900">
-                          ¥{(item.price * item.quantity).toFixed(2)}
+                          {convertPrice(item.price * item.quantity).formatted}
                         </p>
                       </div>
                       
@@ -164,7 +166,7 @@ export default function CartPage() {
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-600">{t('cart.subtotal')}</span>
-                  <span className="text-gray-900">¥{cartState.total.toFixed(2)}</span>
+                  <span className="text-gray-900">{convertPrice(total).formatted}</span>
                 </div>
                 
                 <div className="flex justify-between text-sm">
@@ -175,15 +177,15 @@ export default function CartPage() {
                 <div className="border-t pt-3">
                   <div className="flex justify-between text-base font-semibold">
                     <span className="text-gray-900">{t('cart.total')}</span>
-                    <span className="text-gray-900">¥{cartState.total.toFixed(2)}</span>
+                    <span className="text-gray-900">{convertPrice(total).formatted}</span>
                   </div>
                 </div>
               </div>
               
               <button
                 onClick={handleCheckout}
-                disabled={isCheckingOut || cartState.items.length === 0}
-                className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center"
+                disabled={isCheckingOut || items.length === 0 || loading}
+                className="w-full btn-primary py-3 px-4 font-medium disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 <CreditCard className="w-5 h-5 mr-2" />
                 {isCheckingOut ? t('cart.processing') : t('cart.checkout')}

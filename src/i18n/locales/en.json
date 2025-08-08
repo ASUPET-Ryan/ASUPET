@@ -29,6 +29,20 @@
       },
       "imageAlt": "Happy golden retriever enjoying premium pet food"
     },
+    "banner": {
+      "badge": "Professional Nutrition Science Formula",
+      "title": "Refined Pet Care, Crafting Life",
+      "subtitle": "Technology-Driven Professional Pet Consumer Ecosystem",
+      "cta": {
+        "primary": "Experience Now",
+        "secondary": "Learn More"
+      },
+      "stats": {
+        "activeUsers": "Active Users",
+        "satisfaction": "Satisfaction",
+        "products": "Premium Products"
+      }
+    },
     "features": {
       "title": "Core Advantages",
       "subtitle": "Three core advantages providing the best nutrition solutions for your pets",
@@ -609,6 +623,7 @@
     "nav": {
       "dashboard": "Dashboard",
       "news": "News Management",
+      "products": "Product Management",
       "categories": "Categories",
       "settings": "Settings",
       "logout": "Logout"
@@ -625,6 +640,8 @@
       "recentNews": "Recent News",
       "createNews": "Create News",
       "manageNews": "Manage News",
+      "createProduct": "Create Product",
+      "manageProducts": "Manage Products",
       "categories": "Categories",
       "noNews": "No news articles",
       "getStarted": "Get started by creating a new news article"
@@ -690,6 +707,62 @@
         "submitting": "Saving...",
         "success": "Operation successful",
         "error": "Operation failed"
+      }
+    },
+    "products": {
+      "title": "Product Management",
+      "create": "Create Product",
+      "edit": "Edit Product",
+      "list": "Product List",
+      "search": "Search products...",
+      "category": "Category",
+      "featured": "Featured",
+      "active": "Active",
+      "status": "Status",
+      "actions": "Actions",
+      "delete": "Delete",
+      "batchDelete": "Batch Delete",
+      "selectAll": "Select All",
+      "confirmDelete": "Confirm Delete",
+      "deleteMessage": "Are you sure you want to delete these products? This action cannot be undone.",
+      "preview": "Preview",
+      "form": {
+        "nameZh": "Chinese Name",
+        "nameEn": "English Name",
+        "nameTw": "Traditional Chinese Name",
+        "descriptionZh": "Chinese Description",
+        "descriptionEn": "English Description",
+        "descriptionTw": "Traditional Chinese Description",
+        "shortDescriptionZh": "Chinese Short Description",
+        "shortDescriptionEn": "English Short Description",
+        "shortDescriptionTw": "Traditional Chinese Short Description",
+        "sku": "SKU",
+        "price": "Price",
+        "comparePrice": "Compare Price",
+        "weight": "Weight",
+        "category": "Category",
+        "selectCategory": "Select a category",
+        "tags": "Tags",
+        "addTag": "Add Tag",
+        "images": "Product Images",
+        "uploadImages": "Upload Images",
+        "dragDrop": "Drag and drop files here or click to upload",
+        "maxFiles": "Maximum 10 images",
+        "specifications": "Specifications",
+        "ingredients": "Ingredients",
+        "feedingGuide": "Feeding Guide",
+        "nutritionalAnalysis": "Nutritional Analysis",
+        "stockQuantity": "Stock Quantity",
+        "isActive": "Active Product",
+        "isFeatured": "Set as Featured",
+        "submit": "Submit",
+        "submitting": "Submitting...",
+        "success": "Operation successful",
+        "error": "Operation failed",
+        "required": "This field is required",
+        "invalidPrice": "Please enter a valid price",
+        "invalidWeight": "Please enter a valid weight",
+        "invalidStock": "Please enter a valid stock quantity"
       }
     }
   },
