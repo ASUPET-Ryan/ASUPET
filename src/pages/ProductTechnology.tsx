@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { 
   Leaf, Shield, Heart, Star, Award, CheckCircle, 
-  Brain, Database, Zap, Users, BarChart3, ArrowRight 
+  Brain, Database, Zap, ArrowRight 
 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import type { ProductSeries } from '../lib/supabase';

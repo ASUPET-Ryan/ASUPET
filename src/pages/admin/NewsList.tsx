@@ -8,8 +8,6 @@ import {
   Trash2, 
   Eye, 
   Star,
-  Calendar,
-  Filter,
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';

@@ -177,7 +177,7 @@ const NewsCreate: React.FC = () => {
         tags: []
       };
 
-      const { data, error } = await supabase
+      const { error } = await supabase
         .from('news')
         .insert([newsData])
         .select()

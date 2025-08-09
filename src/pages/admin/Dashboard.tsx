@@ -7,8 +7,6 @@ import {
   Eye, 
   TrendingUp, 
   Calendar,
-  Users,
-  BarChart3,
   Tag
 } from 'lucide-react';
 

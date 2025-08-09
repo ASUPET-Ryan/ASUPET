@@ -7,7 +7,6 @@ import {
   Package, 
   Settings, 
   Bell, 
-  CreditCard,
   MapPin,
   Phone,
   Mail,
@@ -15,17 +14,12 @@ import {
   ArrowRight,
   Star,
   Clock,
-  CheckCircle,
   Users,
   PawPrint,
   Calendar,
-  Camera,
   Plus,
   Gift,
   Crown,
-  Globe,
-  ChevronDown,
-  Check,
   Trash2
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -34,7 +28,7 @@ import { useFavorites } from '../contexts/FavoritesContext';
 import PetProfileForm from '../components/PetProfileForm';
 
 export default function UserCenter() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const { state: cartState } = useCart();
   const { state: favoritesState } = useFavorites();
   const navigate = useNavigate();
@@ -129,7 +123,7 @@ export default function UserCenter() {
   };
 
   // 语言切换状态
-  const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
+  // const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
   
   // 通知数据
   const notifications = [
@@ -172,20 +166,20 @@ export default function UserCenter() {
   ];
 
   // 语言切换函数
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-    setShowLanguageDropdown(false);
-  };
+  // const changeLanguage = (lng: string) => {
+  //   i18n.changeLanguage(lng);
+  //   setShowLanguageDropdown(false);
+  // };
 
   // 获取当前语言显示名称
-  const getCurrentLanguageName = () => {
-    switch (i18n.language) {
-      case 'zh': return t('userCenter.languageSettings.chinese');
-      case 'zh-TW': return t('userCenter.languageSettings.traditionalChinese');
-      case 'en': return t('userCenter.languageSettings.english');
-      default: return t('userCenter.languageSettings.chinese');
-    }
-  };
+  // const getCurrentLanguageName = () => {
+  //   switch (i18n.language) {
+  //     case 'zh': return t('userCenter.languageSettings.chinese');
+  //     case 'zh-TW': return t('userCenter.languageSettings.traditionalChinese');
+  //     case 'en': return t('userCenter.languageSettings.english');
+  //     default: return t('userCenter.languageSettings.chinese');
+  //   }
+  // };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-neutral-50 to-primary-50/30">
