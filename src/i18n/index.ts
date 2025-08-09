@@ -7,7 +7,7 @@ import zhTWTranslations from './locales/zh-TW.json';
 import enTranslations from './locales/en.json';
 
 const resources = {
-  'zh-CN': {
+  zh: {
     translation: zhCNTranslations,
   },
   'zh-TW': {
@@ -23,7 +23,7 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'zh-CN',
+    fallbackLng: 'zh',
     debug: false,
     interpolation: {
       escapeValue: false,

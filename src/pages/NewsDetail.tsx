@@ -11,39 +11,74 @@ const NewsDetail = () => {
   const [article, setArticle] = useState<News | null>(null);
   const [relatedNews, setRelatedNews] = useState<News[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchArticle = async () => {
-      if (!id) return;
+      console.log('NewsDetail: Starting to fetch article with id:', id);
+      if (!id) {
+        console.error('NewsDetail: No id parameter found');
+        return;
+      }
       
+      setLoading(true);
       try {
+        console.log('NewsDetail: Fetching article from Supabase...');
+        setError(null);
         // Fetch the main article
         const { data: articleData, error: articleError } = await supabase
           .from('news')
-          .select('*')
+          .select(`
+            *,
+            news_categories (
+              id,
+              name_en,
+              name_zh,
+              color
+            )
+          `)
           .eq('id', id)
           .single();
 
-        if (articleError) throw articleError;
+        if (articleError) {
+          console.error('NewsDetail: Supabase error:', articleError);
+          throw articleError;
+        }
+        
+        console.log('NewsDetail: Article data received:', articleData);
         setArticle(articleData);
 
         // Fetch related articles
-        if (articleData) {
+        if (articleData && articleData.category_id) {
           const { data: relatedData, error: relatedError } = await supabase
             .from('news')
-            .select('*')
-            .eq('category', typeof articleData.category === 'string' ? articleData.category : articleData.category[i18n.language as 'zh' | 'en'] || articleData.category.zh)
+            .select(`
+              *,
+              news_categories (
+                id,
+                name_en,
+                name_zh,
+                color
+              )
+            `)
+            .eq('category_id', articleData.category_id)
             .neq('id', id)
             .order('publish_date', { ascending: false })
             .limit(3);
 
-          if (relatedError) throw relatedError;
-          setRelatedNews(relatedData || []);
+          if (relatedError) {
+            console.error('NewsDetail: Related news error:', relatedError);
+          } else {
+            console.log('NewsDetail: Related news data:', relatedData);
+            setRelatedNews(relatedData || []);
+          }
         }
       } catch (error) {
-        console.error('Error fetching article:', error);
+        console.error('NewsDetail: Error fetching article:', error);
+        setError(error instanceof Error ? error.message : 'Failed to load article');
       } finally {
         setLoading(false);
+        console.log('NewsDetail: Loading finished');
       }
     };
 
@@ -77,29 +112,65 @@ const NewsDetail = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
-      </div>
-    );
-  }
-
-  if (!article) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">
-            {t('news.detail.notFound')}
-          </h1>
-          <Link
-            to="/news"
-            className="inline-flex items-center text-blue-600 hover:text-blue-700"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            {t('news.detail.backToNews')}
-          </Link>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">{t('common.loading') || 'Loading...'}</p>
         </div>
       </div>
     );
   }
+
+  if (error) {
+     return (
+       <div className="min-h-screen flex items-center justify-center">
+         <div className="text-center">
+           <h1 className="text-2xl font-bold text-red-600 mb-4">
+             {t('common.error') || 'Error'}
+           </h1>
+           <p className="text-gray-600 mb-6">{error}</p>
+           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+             <button
+               onClick={() => window.location.reload()}
+               className="inline-flex items-center px-4 py-2 btn-primary transition-colors duration-200"
+             >
+               {t('common.retry') || 'Retry'}
+             </button>
+             <Link
+               to="/news"
+               className="inline-flex items-center px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+             >
+               <ArrowLeft className="w-4 h-4 mr-2" />
+               {t('news.detail.backToNews') || 'Back to News'}
+             </Link>
+           </div>
+         </div>
+       </div>
+     );
+   }
+
+   if (!loading && !article) {
+     return (
+       <div className="min-h-screen flex items-center justify-center">
+         <div className="text-center">
+           <h1 className="text-2xl font-bold text-gray-800 mb-4">
+             {t('news.detail.notFound') || 'Article Not Found'}
+           </h1>
+           <p className="text-gray-600 mb-6">
+             {t('news.detail.notFoundMessage') || 'The article you are looking for does not exist or has been removed.'}
+           </p>
+           <Link
+             to="/news"
+             className="inline-flex items-center px-4 py-2 btn-primary transition-colors duration-200"
+           >
+             <ArrowLeft className="w-4 h-4 mr-2" />
+             {t('news.detail.backToNews') || 'Back to News'}
+           </Link>
+         </div>
+       </div>
+     );
+   }
+
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -120,9 +191,17 @@ const NewsDetail = () => {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="mb-8">
           <div className="flex items-center gap-4 mb-6">
-            <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
-              {typeof article.category === 'string' ? article.category : article.category[i18n.language as 'zh' | 'en'] || article.category.zh}
-            </span>
+            {article.news_categories && (
+              <span 
+                className="inline-block px-3 py-1 text-sm font-medium rounded-full"
+                style={{
+                  backgroundColor: `${article.news_categories.color}20`,
+                  color: article.news_categories.color
+                }}
+              >
+                {i18n.language === 'zh' ? article.news_categories.name_zh : article.news_categories.name_en}
+              </span>
+            )}
             <div className="flex items-center text-gray-500 text-sm">
               <Calendar className="w-4 h-4 mr-1" />
               {formatDate(article.publish_date)}
@@ -248,9 +327,17 @@ const NewsDetail = () => {
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="inline-block px-2 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">
-                        {typeof relatedArticle.category === 'string' ? relatedArticle.category : relatedArticle.category[i18n.language as 'zh' | 'en'] || relatedArticle.category.zh}
-                      </span>
+                      {relatedArticle.news_categories && (
+                        <span 
+                          className="inline-block px-2 py-1 text-xs font-medium rounded-full"
+                          style={{
+                            backgroundColor: `${relatedArticle.news_categories.color}20`,
+                            color: relatedArticle.news_categories.color
+                          }}
+                        >
+                          {i18n.language === 'zh' ? relatedArticle.news_categories.name_zh : relatedArticle.news_categories.name_en}
+                        </span>
+                      )}
                       <div className="flex items-center text-gray-500 text-xs">
                         <Calendar className="w-3 h-3 mr-1" />
                         {formatDate(relatedArticle.publish_date)}
@@ -282,7 +369,7 @@ const NewsDetail = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
+              className="inline-flex items-center justify-center px-6 py-3 btn-primary font-medium transition-colors duration-200"
             >
               {t('news.detail.cta.contact')}
             </Link>

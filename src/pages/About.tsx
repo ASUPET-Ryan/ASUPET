@@ -198,7 +198,7 @@ const About = () => {
                     )}
                     <div className="flex items-center text-sm text-neutral-500 mb-3">
                       <Calendar className="w-4 h-4 mr-2" />
-                      {new Date(news.publish_date).toLocaleDateString('zh-CN')}
+                      {new Date(news.publish_date).toLocaleDateString('zh')}
                     </div>
                     <h3 className="text-xl font-semibold text-neutral-800 mb-3 group-hover:text-primary-600 transition-colors">
                       {title}

@@ -42,6 +42,17 @@ export interface ProductSeries {
   created_at: string;
 }
 
+export interface NewsCategory {
+  id: string;
+  name_en: string;
+  name_zh: string;
+  description_en?: string;
+  description_zh?: string;
+  color: string;
+  created_at: string;
+  updated_at: string;
+}
+
 export interface News {
   id: string;
   title: {
@@ -57,6 +68,8 @@ export interface News {
     en: string;
   };
   category: { zh: string; en: string };
+  category_id?: string;
+  news_categories?: NewsCategory;
   publish_date: string;
   featured_image_url?: string;
   tags?: string[];

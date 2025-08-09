@@ -14,14 +14,12 @@ export default function Favorites() {
     return text[i18n.language as keyof typeof text] || text.zh;
   };
 
-  const handleAddToCart = (item: any) => {
-    addToCart({
-      id: item.id,
-      name: item.name,
-      price: item.price,
-      image: item.image,
-      maxStock: 100 // 默认库存
-    });
+  const handleAddToCart = async (item: any) => {
+    try {
+      await addToCart(item.id, 1);
+    } catch (error) {
+      console.error('Failed to add to cart:', error);
+    }
   };
 
   if (favoritesState.items.length === 0) {
@@ -43,7 +41,7 @@ export default function Favorites() {
             <p className="text-gray-600 mb-8">去商城发现更多精彩商品吧！</p>
             <Link
               to="/shop"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 inline-flex items-center"
+              className="btn-primary px-6 py-3 inline-flex items-center"
             >
               <ShoppingCart className="w-5 h-5 mr-2" />
               {t('favorites.startShopping')}
@@ -121,7 +119,7 @@ export default function Favorites() {
               <div className="p-4 pt-0 flex gap-2">
                 <button
                   onClick={() => handleAddToCart(item)}
-                  className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg text-sm hover:bg-blue-700 flex items-center justify-center"
+                  className="flex-1 btn-primary py-2 px-4 text-sm flex items-center justify-center"
                 >
                   <ShoppingCart className="w-4 h-4 mr-1" />
                   {t('favorites.addToCart')}

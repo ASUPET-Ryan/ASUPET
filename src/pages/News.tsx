@@ -283,7 +283,7 @@ const News = () => {
               placeholder={t('news.newsletter.placeholder')}
               className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
             />
-            <button className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200">
+            <button className="btn-primary px-8 py-3 font-medium">
               {t('news.newsletter.subscribe')}
             </button>
           </div>

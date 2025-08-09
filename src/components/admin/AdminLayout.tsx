@@ -10,7 +10,9 @@ import {
   Settings, 
   LogOut,
   User,
-  Tag
+  Tag,
+  Package,
+  ShoppingBag
 } from 'lucide-react';
 
 const AdminLayout: React.FC = () => {
@@ -22,6 +24,8 @@ const AdminLayout: React.FC = () => {
     { name: 'Dashboard', href: '/admin', icon: Home },
     { name: 'News List', href: '/admin/news', icon: FileText },
     { name: 'Create News', href: '/admin/news/create', icon: Plus },
+    { name: 'Products', href: '/admin/products', icon: Package },
+    { name: 'Create Product', href: '/admin/products/create', icon: ShoppingBag },
     { name: 'Categories', href: '/admin/categories', icon: Tag },
     { name: 'Settings', href: '/admin/settings', icon: Settings },
   ];
@@ -58,7 +62,7 @@ const AdminLayout: React.FC = () => {
                     to={item.href}
                     className={`group flex items-center px-2 py-2 text-base font-medium rounded-md ${
                       isActive
-                        ? 'bg-blue-100 text-blue-900'
+                        ? 'bg-primary-100 text-primary-900'
                         : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                     }`}
                     onClick={() => setSidebarOpen(false)}
@@ -98,7 +102,7 @@ const AdminLayout: React.FC = () => {
                     to={item.href}
                     className={`group flex items-center px-2 py-2 text-sm font-medium rounded-md ${
                       isActive
-                        ? 'bg-blue-100 text-blue-900'
+                        ? 'bg-primary-100 text-primary-900'
                         : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                     }`}
                   >

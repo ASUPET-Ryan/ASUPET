@@ -1,0 +1,303 @@
+{
+  "banner": {
+    "id": "asupet-hero-banner",
+    "layout": {
+      "type": "flex",
+      "direction": "row",
+      "alignment": "center",
+      "spacing": "60px",
+      "padding": {
+        "top": "80px",
+        "bottom": "80px",
+        "left": "120px",
+        "right": "120px"
+      }
+    },
+    "background": {
+      "type": "gradient",
+      "colors": [
+        {
+          "color": "#F5F3FF",
+          "position": "0%"
+        },
+        {
+          "color": "#EDE9FE",
+          "position": "50%"
+        },
+        {
+          "color": "#DDD6FE",
+          "position": "100%"
+        }
+      ],
+      "direction": "135deg"
+    },
+    "content": {
+      "left_section": {
+        "width": "55%",
+        "spacing": "32px",
+        "elements": [
+          {
+            "type": "badge",
+            "text": "专业营养科学配比",
+            "style": {
+              "background": "rgba(89, 78, 161, 0.1)",
+              "color": "#594EA1",
+              "border_radius": "24px",
+              "padding": "8px 16px",
+              "font_size": "14px",
+              "font_weight": "600"
+            }
+          },
+          {
+            "type": "heading",
+            "text": "精致养宠，潮造生活",
+            "level": "h1",
+            "style": {
+              "font_size": "52px",
+              "font_weight": "800",
+              "line_height": "1.1",
+              "color": "#594EA1",
+              "margin_bottom": "16px",
+              "letter_spacing": "-0.02em",
+              "font_family": "system-ui, -apple-system, sans-serif"
+            }
+          },
+          {
+            "type": "subtitle",
+            "text": "科技驱动的专业宠物消费新生态",
+            "style": {
+              "font_size": "20px",
+              "font_weight": "400",
+              "color": "#6B7280",
+              "line_height": "1.5",
+              "margin_bottom": "40px"
+            }
+          },
+          {
+            "type": "cta_group",
+            "layout": "horizontal",
+            "spacing": "16px",
+            "buttons": [
+              {
+                "type": "primary",
+                "text": "立即体验",
+                "icon": "arrow-right",
+                "action": "/products",
+                "style": {
+                  "background": "#594EA1",
+                  "color": "#FFFFFF",
+                  "padding": "18px 36px",
+                  "border_radius": "8px",
+                  "font_size": "16px",
+                  "font_weight": "700",
+                  "box_shadow": "0 4px 16px rgba(89, 78, 161, 0.4)",
+                  "hover": {
+                    "background": "#4C4085",
+                    "transform": "translateY(-1px)",
+                    "box_shadow": "0 6px 24px rgba(89, 78, 161, 0.5)"
+                  }
+                }
+              },
+              {
+                "type": "secondary",
+                "text": "了解更多",
+                "icon": "play-circle",
+                "action": "/about",
+                "style": {
+                  "background": "transparent",
+                  "color": "#594EA1",
+                  "border": "2px solid #594EA1",
+                  "padding": "16px 32px",
+                  "border_radius": "8px",
+                  "font_size": "16px",
+                  "font_weight": "600",
+                  "hover": {
+                    "background": "rgba(89, 78, 161, 0.05)",
+                    "border_color": "#4C4085"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "stats",
+            "layout": "horizontal",
+            "spacing": "40px",
+            "items": [
+              {
+                "value": "50万+",
+                "label": "活跃用户",
+                "style": {
+                  "value_color": "#594EA1",
+                  "value_size": "28px",
+                  "value_weight": "800",
+                  "label_color": "#8B7DB8",
+                  "label_size": "14px"
+                }
+              },
+              {
+                "value": "98%",
+                "label": "满意度",
+                "style": {
+                  "value_color": "#1F2937",
+                  "value_size": "24px",
+                  "value_weight": "700",
+                  "label_color": "#9CA3AF",
+                  "label_size": "14px"
+                }
+              },
+              {
+                "value": "1000+",
+                "label": "优质商品",
+                "style": {
+                  "value_color": "#1F2937",
+                  "value_size": "24px",
+                  "value_weight": "700",
+                  "label_color": "#9CA3AF",
+                  "label_size": "14px"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "right_section": {
+        "width": "45%",
+        "type": "visual",
+        "elements": [
+          {
+            "type": "illustration",
+            "content": "pet-care-scene",
+            "style": {
+              "width": "100%",
+              "max_width": "520px",
+              "height": "auto",
+              "filter": "drop-shadow(0 20px 40px rgba(89, 78, 161, 0.15))"
+            },
+            "animation": {
+              "type": "float",
+              "duration": "3s",
+              "timing": "ease-in-out",
+              "iteration": "infinite"
+            }
+          },
+          {
+            "type": "floating_elements",
+            "items": [
+              {
+                "icon": "heart",
+                "position": {
+                  "top": "15%",
+                  "right": "20%"
+                },
+                "style": {
+                  "background": "#EF4444",
+                  "color": "#FFFFFF",
+                  "size": "48px",
+                  "border_radius": "50%",
+                  "box_shadow": "0 8px 24px rgba(239, 68, 68, 0.3)"
+                },
+                "animation": {
+                  "type": "pulse",
+                  "delay": "0.5s"
+                }
+              },
+              {
+                "icon": "star",
+                "position": {
+                  "top": "60%",
+                  "left": "10%"
+                },
+                "style": {
+                  "background": "#F59E0B",
+                  "color": "#FFFFFF",
+                  "size": "40px",
+                  "border_radius": "50%",
+                  "box_shadow": "0 6px 20px rgba(245, 158, 11, 0.3)"
+                },
+                "animation": {
+                  "type": "bounce",
+                  "delay": "1s"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "responsive": {
+      "tablet": {
+        "layout": {
+          "direction": "column",
+          "spacing": "40px"
+        },
+        "content": {
+          "left_section": {
+            "width": "100%",
+            "text_align": "center"
+          },
+          "right_section": {
+            "width": "100%",
+            "order": 1
+          }
+        }
+      },
+      "mobile": {
+        "layout": {
+          "padding": {
+            "top": "40px",
+            "bottom": "40px",
+            "left": "20px",
+            "right": "20px"
+          }
+        },
+        "content": {
+          "left_section": {
+            "elements": [
+              {
+                "type": "heading",
+                "style": {
+                  "font_size": "32px"
+                }
+              },
+              {
+                "type": "subtitle",
+                "style": {
+                  "font_size": "18px"
+                }
+              },
+              {
+                "type": "cta_group",
+                "layout": "vertical",
+                "spacing": "12px"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "accessibility": {
+      "alt_texts": {
+        "illustration": "可爱的宠物护理场景插画，展现专业的宠物照护服务"
+      },
+      "aria_labels": {
+        "primary_button": "立即体验ASUPET专业宠物服务",
+        "secondary_button": "了解更多关于ASUPET的信息"
+      }
+    },
+    "analytics": {
+      "tracking_events": [
+        {
+          "element": "primary_button",
+          "event": "banner_cta_primary_click",
+          "category": "engagement"
+        },
+        {
+          "element": "secondary_button",
+          "event": "banner_cta_secondary_click",
+          "category": "engagement"
+        }
+      ]
+    }
+  }
+}

@@ -159,13 +159,13 @@ const ProductTechnology = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#products"
-                className="inline-flex items-center justify-center px-8 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors duration-200"
+                className="inline-flex items-center justify-center px-8 py-3 btn-secondary font-medium transition-colors duration-200"
               >
                 了解产品理念
               </a>
               <a
                 href="#technology"
-                className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                className="inline-flex items-center justify-center px-8 py-3 btn-primary font-medium transition-colors duration-200"
               >
                 探索技术优势
               </a>
@@ -543,7 +543,7 @@ const ProductTechnology = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/shop"
-              className="inline-flex items-center justify-center px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
+              className="inline-flex items-center justify-center px-8 py-3 btn-primary font-medium transition-colors duration-200"
             >
               立即购买
               <ArrowRight className="ml-2 w-5 h-5" />

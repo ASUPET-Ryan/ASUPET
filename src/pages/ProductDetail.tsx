@@ -6,6 +6,7 @@ import { mockProducts, Product } from '../data/mockShopData';
 import { useCart } from '../contexts/CartContext';
 import { useFavorites } from '../contexts/FavoritesContext';
 import ProductReviews from '../components/ProductReviews';
+import { useCurrency } from '../utils/currency';
 
 const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -13,6 +14,7 @@ const ProductDetail: React.FC = () => {
   const { t, i18n } = useTranslation();
   const { addToCart } = useCart();
   const { addToFavorites, removeFromFavorites, isFavorite } = useFavorites();
+  const { convertPrice } = useCurrency();
   const [product, setProduct] = useState<Product | null>(null);
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
@@ -141,11 +143,11 @@ const ProductDetail: React.FC = () => {
               {/* 价格 */}
               <div className="flex items-center space-x-4">
                 <span className="text-3xl font-bold text-red-600">
-                  ¥{product.price.toFixed(2)}
+                  {convertPrice(product.price).formatted}
                 </span>
                 {product.compare_price && product.compare_price > product.price && (
                   <span className="text-lg text-gray-500 line-through">
-                    ¥{product.compare_price.toFixed(2)}
+                    {convertPrice(product.compare_price).formatted}
                   </span>
                 )}
               </div>
@@ -185,21 +187,18 @@ const ProductDetail: React.FC = () => {
                 {/* 操作按钮 */}
                 <div className="flex space-x-4">
                   <button
-                     onClick={() => {
+                     onClick={async () => {
                        setIsAddingToCart(true);
-                       for (let i = 0; i < quantity; i++) {
-                         addToCart({
-                           id: product.id,
-                           name: product.name,
-                           price: product.price,
-                           image: getProductImage(product.images),
-                           maxStock: product.stock_quantity
-                         });
+                       try {
+                         await addToCart(product.id, quantity);
+                       } catch (error) {
+                         console.error('Failed to add to cart:', error);
+                       } finally {
+                         setIsAddingToCart(false);
                        }
-                       setIsAddingToCart(false);
                      }}
                      disabled={product.stock_quantity === 0 || isAddingToCart}
-                     className="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center"
+                     className="flex-1 btn-primary px-6 py-3 font-medium disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center"
                    >
                      <ShoppingCart className="h-5 w-5 mr-2" />
                      {isAddingToCart ? '添加中...' : '加入购物车'}
@@ -220,7 +219,7 @@ const ProductDetail: React.FC = () => {
                      className={`px-6 py-3 border rounded-lg flex items-center justify-center ${
                        isFavorite(product.id)
                          ? 'border-red-300 text-red-600 bg-red-50 hover:bg-red-100'
-                         : 'border-gray-300 text-gray-700 hover:bg-gray-50'
+                         : 'btn-secondary'
                      }`}
                    >
                      <Heart className={`h-5 w-5 ${isFavorite(product.id) ? 'fill-current' : ''}`} />
@@ -264,7 +263,7 @@ const ProductDetail: React.FC = () => {
                   onClick={() => setActiveTab(tab.key)}
                   className={`px-6 py-4 text-sm font-medium border-b-2 ${
                     activeTab === tab.key
-                      ? 'border-blue-500 text-blue-600'
+                      ? 'border-primary-500 text-primary-600'
                       : 'border-transparent text-gray-500 hover:text-gray-700'
                   }`}
                 >

@@ -1,7 +1,7 @@
 import React from 'react';
 import { X, Star, ShoppingCart } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Product } from '../data/mockShopData';
+import { Product } from '../pages/Shop';
 import { useCart } from '../contexts/CartContext';
 
 interface ProductComparisonProps {
@@ -20,28 +20,26 @@ export default function ProductComparison({
   const { i18n } = useTranslation();
   const { addToCart } = useCart();
 
-  const getLocalizedText = (text: { zh: string; en: string }) => {
-    return text[i18n.language as keyof typeof text] || text.zh;
+  const getLocalizedText = (text: any) => {
+    if (typeof text === 'object' && text !== null) {
+      return text[i18n.language] || text.zh || text.en || '';
+    }
+    return text || '';
   };
 
-  const getProductImage = (images: string[] | string) => {
+  const getProductImage = (images: any) => {
     if (Array.isArray(images) && images.length > 0) {
-      return images[0];
+      return images[0].url;
     }
-    if (typeof images === 'string') {
-      return images;
-    }
-    return 'https://via.placeholder.com/300x200?text=No+Image';
+    return 'https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=pet%20food%20product%20placeholder&image_size=square';
   };
 
-  const handleAddToCart = (product: Product) => {
-    addToCart({
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      image: getProductImage(product.images),
-      maxStock: product.stock_quantity
-    });
+  const handleAddToCart = async (product: Product) => {
+    try {
+      await addToCart(product.id, 1);
+    } catch (error) {
+      console.error('Failed to add to cart:', error);
+    }
   };
 
   if (!isOpen || products.length === 0) return null;
@@ -153,7 +151,7 @@ export default function ProductComparison({
                     <button
                       onClick={() => handleAddToCart(product)}
                       disabled={product.stock_quantity === 0}
-                      className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                      className="w-full btn-primary py-2 font-medium disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                     >
                       <ShoppingCart className="w-4 h-4" />
                       {product.stock_quantity > 0 ? '加入购物车' : '暂时缺货'}

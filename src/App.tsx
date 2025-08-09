@@ -36,6 +36,9 @@ import NewsEdit from './pages/admin/NewsEdit';
 import NewsPreview from './pages/admin/NewsPreview';
 import Categories from './pages/admin/Categories';
 import Settings from './pages/admin/Settings';
+import ProductsList from './pages/admin/ProductsList';
+import ProductCreate from './pages/admin/ProductCreate';
+import ProductEdit from './pages/admin/ProductEdit';
 
 function App() {
   return (
@@ -72,7 +75,7 @@ function App() {
               <>
                 <Header />
                 <main className="flex-1">
-                  <ProductTechnology />
+                  <Products />
                 </main>
                 <Footer />
               </>
@@ -144,7 +147,7 @@ function App() {
               <>
                 <Header />
                 <main className="flex-1">
-                  <ProductTechnology />
+                  <Technology />
                 </main>
                 <Footer />
               </>
@@ -243,6 +246,9 @@ function App() {
               <Route path="news/create" element={<AdminNewsCreate />} />
               <Route path="news/edit/:id" element={<NewsEdit />} />
               <Route path="news/preview" element={<NewsPreview />} />
+              <Route path="products" element={<ProductsList />} />
+              <Route path="products/create" element={<ProductCreate />} />
+              <Route path="products/edit/:id" element={<ProductEdit />} />
               <Route path="categories" element={<Categories />} />
               <Route path="settings" element={<Settings />} />
             </Route>
