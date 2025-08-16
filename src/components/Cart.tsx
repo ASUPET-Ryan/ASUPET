@@ -74,52 +74,59 @@ export default function Cart({ isOpen, onClose }: CartProps) {
             </div>
           ) : (
             <div className="p-4 space-y-4">
-              {items.map((item) => (
-                <div key={item.id} className="flex gap-3 bg-neutral-50 p-3 rounded-xl border border-neutral-100">
-                  <img
-                    src={item.image}
-                    alt={getLocalizedText(item.name)}
-                    className="w-16 h-16 object-cover rounded-lg"
-                  />
-                  <div className="flex-1">
-                    <h3 className="font-medium text-sm mb-1 line-clamp-2 text-neutral-900">
-                      {getLocalizedText(item.name)}
-                    </h3>
-                    <p className="text-primary-600 font-semibold mb-2">
-                      {convertPrice(item.price).formatted}
-                    </p>
-                    
-                    {/* 数量控制 */}
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
+              {items.map((item) => {
+                const product = item.product;
+                const productImage = product?.images?.[0]?.url || 'https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=pet%20food%20product%20placeholder&image_size=square';
+                const productName = product?.name || { zh: '商品', en: 'Product' };
+                const productStock = product?.stock_quantity || 0;
+                
+                return (
+                  <div key={item.id} className="flex gap-3 bg-neutral-50 p-3 rounded-xl border border-neutral-100">
+                    <img
+                      src={productImage}
+                      alt={getLocalizedText(productName)}
+                      className="w-16 h-16 object-cover rounded-lg"
+                    />
+                    <div className="flex-1">
+                      <h3 className="font-medium text-sm mb-1 line-clamp-2 text-neutral-900">
+                        {getLocalizedText(productName)}
+                      </h3>
+                      <p className="text-primary-600 font-semibold mb-2">
+                        {convertPrice(item.price).formatted}
+                      </p>
+                      
+                      {/* 数量控制 */}
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          <button
+                            onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                            className="w-6 h-6 flex items-center justify-center bg-neutral-200 rounded-lg hover:bg-neutral-300 transition-colors duration-300"
+                            disabled={item.quantity <= 1 || loading}
+                          >
+                            <Minus className="w-3 h-3" />
+                          </button>
+                          <span className="w-8 text-center text-sm font-medium">{item.quantity}</span>
+                          <button
+                            onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                            className="w-6 h-6 flex items-center justify-center bg-neutral-200 rounded-lg hover:bg-neutral-300 transition-colors duration-300"
+                            disabled={item.quantity >= productStock || loading}
+                          >
+                            <Plus className="w-3 h-3" />
+                          </button>
+                        </div>
+                        
                         <button
-                          onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                          className="w-6 h-6 flex items-center justify-center bg-neutral-200 rounded-lg hover:bg-neutral-300 transition-colors duration-300"
-                          disabled={item.quantity <= 1 || loading}
+                          onClick={() => removeFromCart(item.id)}
+                          className="p-1 text-red-500 hover:bg-red-50 rounded-lg transition-colors duration-300"
+                          disabled={loading}
                         >
-                          <Minus className="w-3 h-3" />
-                        </button>
-                        <span className="w-8 text-center text-sm font-medium">{item.quantity}</span>
-                        <button
-                          onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                          className="w-6 h-6 flex items-center justify-center bg-neutral-200 rounded-lg hover:bg-neutral-300 transition-colors duration-300"
-                          disabled={item.quantity >= item.stock || loading}
-                        >
-                          <Plus className="w-3 h-3" />
+                          <Trash2 className="w-4 h-4" />
                         </button>
                       </div>
-                      
-                      <button
-                        onClick={() => removeFromCart(item.id)}
-                        className="p-1 text-red-500 hover:bg-red-50 rounded-lg transition-colors duration-300"
-                        disabled={loading}
-                      >
-                        <Trash2 className="w-4 h-4" />
-                      </button>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>

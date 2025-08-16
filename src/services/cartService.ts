@@ -32,6 +32,10 @@ export interface CartItem {
   created_at: string;
   updated_at: string;
   product?: Product;
+  // 为了向后兼容，添加直接属性
+  name?: { zh: string; en: string };
+  image?: string;
+  stock?: number;
 }
 
 export interface ShoppingCart {

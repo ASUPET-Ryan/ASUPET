@@ -1,7 +1,7 @@
 import React from 'react';
 import { X, Star, ShoppingCart } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { Product } from '../pages/Shop';
+import { Product } from '../services/cartService';
 import { useCart } from '../contexts/CartContext';
 
 interface ProductComparisonProps {
