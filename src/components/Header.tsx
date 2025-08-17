@@ -1,27 +1,21 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Globe, ShoppingCart, Heart, User } from 'lucide-react';
-import { useCart } from '../contexts/CartContext';
-import { useFavorites } from '../contexts/FavoritesContext';
+import { Menu, X, Globe, User } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const location = useLocation();
-  const { itemCount } = useCart();
-  const { state: favoritesState } = useFavorites();
 
-  const cartItemsCount = itemCount;
 
   const navigation = [
     { name: t('header.nav.home'), href: '/' },
     { name: t('header.nav.cats'), href: '/cats' },
     { name: t('header.nav.dogs'), href: '/dogs' },
     { name: t('header.nav.nutrition'), href: '/nutrition-guide' },
-    { name: t('header.nav.shop'), href: '/shop' },
-    { name: t('header.nav.community'), href: '/community' },
+    { name: t('nav.about'), href: '/about' },
   ];
 
   const languages = [
@@ -71,26 +65,8 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Cart, Language Switcher & Mobile Menu Button */}
+          {/* Language Switcher & Mobile Menu Button */}
           <div className="flex items-center space-x-3">
-            {/* Cart */}
-              <Link to="/cart" className="relative p-2 rounded-lg text-neutral-700 hover:bg-neutral-100 hover:text-primary-600 transition-all duration-300">
-                <ShoppingCart className="w-6 h-6" />
-                {itemCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-gradient-to-r from-primary-500 to-secondary-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">
-                    {itemCount}
-                  </span>
-                )}
-              </Link>
-            {/* Favorites */}
-             <Link to="/favorites" className="relative p-2 rounded-lg text-neutral-700 hover:bg-neutral-100 hover:text-primary-600 transition-all duration-300">
-               <Heart className={`w-6 h-6 ${favoritesState.items?.length > 0 ? 'fill-current text-red-500' : ''} transition-colors duration-300`} />
-               {favoritesState.items?.length > 0 && (
-                 <span className="absolute -top-1 -right-1 bg-gradient-to-r from-primary-500 to-secondary-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">
-                   {favoritesState.items.length}
-                 </span>
-               )}
-             </Link>
             {/* User Center */}
              <Link to="/user-center" className="p-2 rounded-lg text-neutral-700 hover:bg-neutral-100 hover:text-primary-600 transition-all duration-300">
                <User className="w-6 h-6" />

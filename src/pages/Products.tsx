@@ -22,6 +22,8 @@ const Products = () => {
         setProductSeries(data || []);
       } catch (error) {
         console.error('Error fetching product series:', error);
+        // 如果数据库连接失败，使用空数组，页面仍然可以显示基本内容
+        setProductSeries([]);
       } finally {
         setLoading(false);
       }

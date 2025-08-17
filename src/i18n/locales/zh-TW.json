@@ -4,9 +4,7 @@
       "home": "首頁",
       "cats": "貓咪專區",
       "dogs": "狗狗專區",
-      "nutrition": "營養指南",
-      "shop": "嚴選商品",
-      "community": "寵物社區"
+      "nutrition": "營養指南"
     }
   },
   "nav": {
@@ -79,6 +77,31 @@
   },
   "about": {
     "title": "關於我們",
+    "heroDescription": "科技驅動的專業寵物消費新生態，致力於為每隻寵物提供個人化營養解決方案",
+    "brandIntroduction": "品牌介紹",
+    "latestNews": "最新動態",
+    "contactUs": "聯絡我們",
+    "brandStory": "品牌故事",
+    "brandStoryDescription": "ASUPET的創立理念與使命願景，為寵物提供最專業的營養解決方案",
+    "ourMission": "我們的使命",
+    "missionDescription1": "ASUPET致力於通過科技創新和專業營養學知識，為每隻寵物提供個人化的營養解決方案。我們相信，每隻寵物都是獨特的，它們的營養需求也應該是個人化的。",
+    "missionDescription2": "我們的團隊由資深寵物營養師、獸醫和技術專家組成，運用最新的AI技術和大數據分析，為寵物主人提供科學、專業、便捷的營養指導服務。",
+    "professionalTeam": "專業團隊",
+    "teamDescription": "由資深營養師和技術專家組成",
+    "coreValues": "核心價值觀",
+    "valuesDescription": "我們堅持的理念和原則，指導著我們為寵物提供最好的服務",
+    "care": "用心關愛",
+    "careDescription": "每一個產品都源於對寵物的深深關愛，我們相信愛是最好的營養",
+    "professional": "專業品質",
+    "professionalDescription": "嚴格的品質控制和科學的營養配方，確保每一份產品都達到最高標準",
+    "innovation": "持續創新",
+    "innovationDescription": "運用最新的AI技術和營養科學，不斷創新產品和服務",
+    "newsDescription": "了解我們的最新消息、產品發布和行業動態",
+    "readMore": "查看詳情",
+    "viewMoreNews": "查看更多動態",
+    "contactDescription": "有任何問題或建議？我們很樂意聽到您的聲音",
+    "sendEmail": "發送郵件",
+    "onlineConsultation": "線上諮詢",
     "hero": {
       "title": "關於ASUPET",
       "subtitle": "科技驅動的專業寵物消費新生態，致力於為每隻寵物提供個人化營養解決方案"
@@ -812,20 +835,6 @@
       "title": "貓咪專用產品",
       "subtitle": "精選優質貓糧，滿足貓咪的營養需求",
       "viewMore": "查看更多貓咪產品"
-    },
-    "community": {
-      "title": "貓咪社區",
-      "subtitle": "與其他貓咪主人分享經驗，交流養貓心得",
-      "group": {
-        "title": "養貓交流群",
-        "description": "加入我們的貓咪主人交流群，分享養貓經驗，獲取專業建議",
-        "join": "加入社區"
-      },
-      "consultation": {
-        "title": "專家線上諮詢",
-        "description": "專業寵物營養師線上答疑，為您的貓咪提供個人化建議",
-        "consult": "諮詢專家"
-      }
     }
   },
   "dogs": {
@@ -875,20 +884,6 @@
       "title": "狗狗專用產品",
       "subtitle": "精選優質狗糧，滿足狗狗的營養需求",
       "viewMore": "查看更多狗狗產品"
-    },
-    "community": {
-      "title": "狗狗社區",
-      "subtitle": "與其他狗狗主人分享經驗，交流養狗心得",
-      "group": {
-        "title": "養狗交流群",
-        "description": "加入我們的狗狗主人交流群，分享養狗經驗，獲取專業建議",
-        "join": "加入社區"
-      },
-      "consultation": {
-        "title": "專家線上諮詢",
-        "description": "專業寵物營養師線上答疑，為您的狗狗提供個人化建議",
-        "consult": "諮詢專家"
-      }
     }
   },
   "nutritionGuide": {
@@ -1136,47 +1131,7 @@
       "description": "我們正在努力為您準備精彩的商品，請稍後再試。"
     }
   },
-  "community": {
-    "title": "寵物社區",
-    "subtitle": "與千萬寵物主人分享經驗，獲取專業建議，讓愛寵更健康快樂",
-    "tabs": {
-      "posts": "社區動態",
-      "experts": "專家問答",
-      "groups": "興趣小組"
-    },
-    "posts": {
-      "createTitle": "分享你的寵物故事",
-      "placeholder": "分享你和寵物的故事，或者提出問題...",
-      "addImage": "添加圖片",
-      "publish": "發布",
-      "share": "分享",
-      "timeAgo": {
-        "hours": "{{count}}小時前",
-        "days": "{{count}}天前"
-      }
-    },
-    "experts": {
-      "title": "專家問答",
-      "subtitle": "專業獸醫和營養師為您解答寵物健康問題",
-      "askTitle": "向專家提問",
-      "questionPlaceholder": "請輸入您的問題標題...",
-      "detailPlaceholder": "詳細描述您的問題，包括寵物品種、年齡、症狀等...",
-      "submit": "提交問題",
-      "viewDetails": "查看詳情"
-    },
-    "groups": {
-      "title": "興趣小組",
-      "subtitle": "加入志同道合的寵物主人群體，分享經驗和快樂",
-      "members": "{{count}}人",
-      "join": "加入小組"
-    },
-    "cta": {
-      "title": "加入ASUPET寵物社區",
-      "subtitle": "與專業營養師和萬千寵物主人一起，為愛寵提供最好的照顧",
-      "contactUs": "聯繫我們",
-      "shopProducts": "選購產品"
-    }
-  },
+
   "userCenter": {
     "title": "個人中心",
     "overview": "概覽",

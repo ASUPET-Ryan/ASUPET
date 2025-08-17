@@ -20,39 +20,8 @@ interface ProductReviewsProps {
   reviews?: Review[];
 }
 
-// 模拟评价数据
-const mockReviews: Review[] = [
-  {
-    id: '1',
-    userId: 'user1',
-    userName: '宠物爱好者',
-    rating: 5,
-    comment: '我家狗狗非常喜欢这款狗粮，营养丰富，毛发也变得更亮了。包装很好，没有破损。会继续购买！',
-    createdAt: '2024-01-15',
-    helpful: 12,
-    verified: true
-  },
-  {
-    id: '2',
-    userId: 'user2',
-    userName: '小猫咪的主人',
-    rating: 4,
-    comment: '质量不错，猫咪爱吃。就是价格稍微有点贵，但是考虑到营养价值还是值得的。',
-    createdAt: '2024-01-10',
-    helpful: 8,
-    verified: true
-  },
-  {
-    id: '3',
-    userId: 'user3',
-    userName: '新手铲屎官',
-    rating: 5,
-    comment: '第一次买这个牌子，朋友推荐的。狗狗很喜欢，吃完后精神状态很好。客服态度也很好，解答了很多问题。',
-    createdAt: '2024-01-08',
-    helpful: 15,
-    verified: false
-  }
-];
+// TODO: 从API获取评价数据
+const mockReviews: Review[] = [];
 
 export default function ProductReviews({ productId, reviews = mockReviews }: ProductReviewsProps) {
   const { i18n } = useTranslation();

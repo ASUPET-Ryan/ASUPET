@@ -6,48 +6,26 @@ import { useTranslation } from 'react-i18next';
 
 const Dogs = () => {
   const { t } = useTranslation();
-  const [dogProducts, setDogProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchDogProducts = async () => {
-      try {
-        const { data, error } = await supabase
-          .from('products')
-          .select('*')
-          .ilike('name', '%狗%')
-          .limit(6);
-
-        if (error) throw error;
-        setDogProducts(data || []);
-      } catch (error) {
-        console.error('Error fetching dog products:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchDogProducts();
-  }, []);
 
   const dogCareGuides = [
     {
-      title: '幼犬营养指南',
-      description: '0-12个月幼犬的科学喂养方案',
+      title: t('dogs.careGuides.puppy.title'),
+      description: t('dogs.careGuides.puppy.description'),
       icon: Heart,
       color: 'from-orange-500 to-red-500',
       link: '/nutrition-guide/puppy'
     },
     {
-      title: '成犬健康管理',
-      description: '1-7岁成犬的日常护理要点',
+      title: t('dogs.careGuides.adult.title'),
+      description: t('dogs.careGuides.adult.description'),
       icon: Shield,
       color: 'from-blue-500 to-cyan-500',
       link: '/nutrition-guide/adult-dog'
     },
     {
-      title: '老年犬特殊护理',
-      description: '7岁以上老年犬的贴心照顾',
+      title: t('dogs.careGuides.senior.title'),
+      description: t('dogs.careGuides.senior.description'),
       icon: Star,
       color: 'from-purple-500 to-indigo-500',
       link: '/nutrition-guide/senior-dog'
@@ -135,10 +113,10 @@ const Dogs = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/shop?category=dog"
+                to="/nutrition-guide"
                 className="btn-primary inline-flex items-center px-8 py-4 text-lg font-semibold"
               >
-                {t('dogs.shopDogFood')}
+                {t('dogs.nutritionGuide')}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link
@@ -317,118 +295,9 @@ const Dogs = () => {
         </div>
       </section>
 
-      {/* Featured Dog Products */}
-      <section className="py-20 bg-gradient-to-br from-orange-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              {t('dogs.products.title')}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('dogs.products.subtitle')}
-            </p>
-          </div>
-          
-          {loading ? (
-            <div className="flex justify-center">
-              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-600"></div>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {dogProducts.map((product: any) => (
-                <Link
-                  key={product.id}
-                  to={`/product/${product.id}`}
-                  className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-gray-100"
-                >
-                  <div className="aspect-w-1 aspect-h-1">
-                    <img
-                      src={product.image_url || 'https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=premium%20dog%20food%20package%2C%20modern%20design%2C%20high%20quality&image_size=square'}
-                      alt={product.name}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors duration-300">
-                      {product.name}
-                    </h3>
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                      {product.description}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-primary-600">
-                        ¥{product.price}
-                      </span>
-                      <div className="flex items-center text-yellow-500">
-                        <Star className="w-4 h-4 fill-current" />
-                        <span className="ml-1 text-sm text-gray-600">4.8</span>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          )}
-          
-          <div className="text-center mt-12">
-            <Link
-              to="/shop?category=dog"
-              className="btn-primary inline-flex items-center px-8 py-4 text-lg font-semibold"
-            >
-              {t('dogs.products.viewMore')}
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Link>
-          </div>
-        </div>
-      </section>
 
-      {/* Community Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              {t('dogs.community.title')}
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('dogs.community.subtitle')}
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="flex items-center mb-6">
-                <Users className="w-8 h-8 text-orange-600 mr-3" />
-                <h3 className="text-xl font-bold text-gray-900">{t('dogs.community.group.title')}</h3>
-              </div>
-              <p className="text-gray-600 mb-6">
-                {t('dogs.community.group.description')}
-              </p>
-              <Link
-                to="/community"
-                className="btn-primary inline-flex items-center"
-              >
-                {t('dogs.community.group.join')}
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <div className="flex items-center mb-6">
-                <Clock className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-bold text-gray-900">{t('dogs.community.consultation.title')}</h3>
-              </div>
-              <p className="text-gray-600 mb-6">
-                {t('dogs.community.consultation.description')}
-              </p>
-              <Link
-                to="/contact"
-                className="btn-secondary inline-flex items-center"
-              >
-                {t('dogs.community.consultation.consult')}
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+
+
     </div>
   );
 };

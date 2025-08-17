@@ -4,9 +4,7 @@
       "home": "Home",
       "cats": "Cat Zone",
       "dogs": "Dog Zone",
-      "nutrition": "Nutrition Guide",
-      "shop": "Premium Shop",
-      "community": "Pet Community"
+      "nutrition": "Nutrition Guide"
     }
   },
   "nav": {
@@ -14,7 +12,6 @@
     "about": "About Us",
     "products": "Products",
     "technology": "Technology",
-    "news": "News",
     "contact": "Contact",
     "language": "Language"
   },
@@ -66,11 +63,6 @@
       "awards": "Awards Received",
       "satisfaction": "Customer Satisfaction"
     },
-    "news": {
-      "title": "Latest News",
-      "subtitle": "Stay updated with ASUPET's latest news and industry insights",
-      "viewAll": "View All"
-    },
     "cta": {
       "title": "Start Your Pet's Nutrition Journey",
       "subtitle": "Let us provide the most professional nutrition solutions for your pet",
@@ -79,6 +71,31 @@
   },
   "about": {
     "title": "About Us",
+    "heroDescription": "Technology-driven professional pet consumer ecosystem, dedicated to providing personalized nutrition solutions for every pet",
+    "brandIntroduction": "Brand Introduction",
+    "latestNews": "Latest News",
+    "contactUs": "Contact Us",
+    "brandStory": "Brand Story",
+    "brandStoryDescription": "ASUPET's founding philosophy and mission vision, providing the most professional nutrition solutions for pets",
+    "ourMission": "Our Mission",
+    "missionDescription1": "ASUPET is committed to providing personalized nutrition solutions for every pet through technological innovation and professional nutritional knowledge. We believe that every pet is unique, and their nutritional needs should be personalized too.",
+    "missionDescription2": "Our team consists of senior pet nutritionists, veterinarians, and technical experts, utilizing the latest AI technology and big data analysis to provide scientific, professional, and convenient nutritional guidance services for pet owners.",
+    "professionalTeam": "Professional Team",
+    "teamDescription": "Composed of senior nutritionists and technical experts",
+    "coreValues": "Core Values",
+    "valuesDescription": "The principles and beliefs we uphold, guiding us to provide the best services for pets",
+    "care": "Caring Love",
+    "careDescription": "Every product stems from deep love for pets, we believe love is the best nutrition",
+    "professional": "Professional Quality",
+    "professionalDescription": "Strict quality control and scientific nutrition formulas ensure every product meets the highest standards",
+    "innovation": "Continuous Innovation",
+    "innovationDescription": "Utilizing the latest AI technology and nutritional science to continuously innovate products and services",
+    "newsDescription": "Stay updated with our latest news, product releases, and industry insights",
+    "readMore": "Read More",
+    "viewMoreNews": "View More News",
+    "contactDescription": "Have any questions or suggestions? We'd love to hear from you",
+    "sendEmail": "Send Email",
+    "onlineConsultation": "Online Consultation",
     "hero": {
       "title": "About ASUPET",
       "subtitle": "Technology-driven professional pet consumer ecosystem, dedicated to providing personalized nutrition solutions for every pet"
@@ -812,20 +829,6 @@
       "title": "Cat-Specific Products",
       "subtitle": "Premium cat food selection to meet your cat's nutritional needs",
       "viewMore": "View More Cat Products"
-    },
-    "community": {
-      "title": "Cat Community",
-      "subtitle": "Share experiences with other cat owners and exchange cat care insights",
-      "group": {
-        "title": "Cat Owner Group",
-        "description": "Join our cat owner community to share experiences and get professional advice",
-        "join": "Join Community"
-      },
-      "consultation": {
-        "title": "Expert Online Consultation",
-        "description": "Professional pet nutritionists answer questions and provide personalized advice for your cat",
-        "consult": "Consult Expert"
-      }
     }
   },
   "dogs": {
@@ -902,20 +905,6 @@
       "title": "Dog-Specific Products",
       "subtitle": "Premium dog food selection to meet your dog's nutritional needs",
       "viewMore": "View More Dog Products"
-    },
-    "community": {
-      "title": "Dog Community",
-      "subtitle": "Share experiences with other dog owners and exchange dog care insights",
-      "group": {
-        "title": "Dog Owner Group",
-        "description": "Join our dog owner community to share experiences and get professional advice",
-        "join": "Join Community"
-      },
-      "consultation": {
-        "title": "Expert Online Consultation",
-        "description": "Professional pet nutritionists answer questions and provide personalized advice for your dog",
-        "consult": "Consult Expert"
-      }
     }
   },
   "nutritionGuide": {
@@ -1163,47 +1152,7 @@
       "description": "We are working hard to prepare exciting products for you, please try again later."
     }
   },
-  "community": {
-    "title": "Pet Community",
-    "subtitle": "Share experiences with millions of pet owners, get professional advice, and make your pets healthier and happier",
-    "tabs": {
-      "posts": "Community Posts",
-      "experts": "Expert Q&A",
-      "groups": "Interest Groups"
-    },
-    "posts": {
-      "createTitle": "Share Your Pet Story",
-      "placeholder": "Share your story with your pet, or ask a question...",
-      "addImage": "Add Image",
-      "publish": "Publish",
-      "share": "Share",
-      "timeAgo": {
-        "hours": "{{count}} hours ago",
-        "days": "{{count}} days ago"
-      }
-    },
-    "experts": {
-      "title": "Expert Q&A",
-      "subtitle": "Professional veterinarians and nutritionists answer your pet health questions",
-      "askTitle": "Ask an Expert",
-      "questionPlaceholder": "Please enter your question title...",
-      "detailPlaceholder": "Describe your question in detail, including pet breed, age, symptoms, etc...",
-      "submit": "Submit Question",
-      "viewDetails": "View Details"
-    },
-    "groups": {
-      "title": "Interest Groups",
-      "subtitle": "Join like-minded pet owner communities, share experiences and joy",
-      "members": "{{count}} members",
-      "join": "Join Group"
-    },
-    "cta": {
-      "title": "Join ASUPET Pet Community",
-      "subtitle": "Work with professional nutritionists and thousands of pet owners to provide the best care for your beloved pets",
-      "contactUs": "Contact Us",
-      "shopProducts": "Shop Products"
-    }
-  },
+
   "userCenter": {
     "title": "User Center",
     "overview": "Overview",
@@ -1360,26 +1309,5 @@
     "removeFavorite": "Remove Favorite",
     "emptyFavorites": "You haven't favorited any products yet",
     "startShopping": "Start Shopping"
-  },
-  "about": {
-    "heroDescription": "ASUPET is committed to providing the highest quality nutrition solutions for pets, making every pet enjoy a healthy and happy life through technological innovation and professional services.",
-    "brandIntroduction": "Brand Introduction",
-    "latestNews": "Latest News",
-    "contactUs": "Contact Us",
-    "brandStory": "Brand Story",
-    "brandStoryDescription": "Starting from a simple idea, we are committed to changing the future of pet nutrition",
-    "ourMission": "Our Mission",
-    "missionDescription1": "Founded in 2020, ASUPET believes that every pet deserves the best nutrition. By combining traditional pet nutrition science with modern AI technology, we provide personalized nutrition solutions for pet owners.",
-    "missionDescription2": "Our team consists of senior pet nutritionists, veterinary experts, and technical engineers, working together to create healthier and more scientific pet food.",
-    "professionalTeam": "Professional Team",
-    "teamDescription": "50+ professionals safeguarding your pet's health",
-    "coreValues": "Core Values",
-    "valuesDescription": "Our values guide every decision and action we make",
-    "care": "Care",
-    "careDescription": "Treat every pet with love and care, craft every product with heart",
-    "professional": "Professional",
-    "professionalDescription": "Based on scientific research, providing professional nutrition solutions",
-    "innovation": "Innovation",
-    "innovationDescription": "Continuous innovation, using technology to improve pets' quality of life"
   }
 }

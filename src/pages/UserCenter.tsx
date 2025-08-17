@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { 
-  User, 
-  Heart, 
-  ShoppingCart, 
-  Package, 
-  Settings, 
-  Bell, 
+import {
+  User,
+  Package,
+  Settings,
+  Bell,
   MapPin,
   Phone,
   Mail,
@@ -20,93 +18,46 @@ import {
   Plus,
   Gift,
   Crown,
-  Trash2
+  Trash2,
+  ShoppingCart,
+  Heart
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { useCart } from '../contexts/CartContext';
-import { useFavorites } from '../contexts/FavoritesContext';
 import PetProfileForm from '../components/PetProfileForm';
 
 export default function UserCenter() {
   const { t, i18n } = useTranslation();
-  const { itemCount } = useCart();
-  const { state: favoritesState } = useFavorites();
+
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('overview');
   const [showPetForm, setShowPetForm] = useState(false);
   const [editingPet, setEditingPet] = useState(null);
 
-  // 模拟用户数据
+  // TODO: 从API获取用户数据
   const userData = {
-    name: '张小宠',
-    email: 'zhangxiaochong@example.com',
-    phone: '+86 138 0013 8000',
-    avatar: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9Ijc1IiBjeT0iNjAiIHI9IjI1IiBmaWxsPSIjOUI5QkEzIi8+CjxwYXRoIGQ9Ik0zMCAxMjBDMzAgMTA0IDQzIDkwIDc1IDkwUzEyMCAxMDQgMTIwIDEyMFYxNTBIMzBWMTIwWiIgZmlsbD0iIzlCOUJBMyIvPgo8L3N2Zz4K',
-    memberLevel: 'VIP',
-    points: 2580,
-    joinDate: '2023-06-15'
+    name: '',
+    email: '',
+    phone: '',
+    avatar: '',
+    memberLevel: '',
+    points: 0,
+    joinDate: ''
   };
 
-  // 模拟家长信息数据
+  // TODO: 从API获取家长信息数据
   const parentInfo = {
-    name: '张小明',
-    birthday: '1990-05-15',
-    phone: '138****8888',
-    email: 'zhangxiaoming@example.com',
-    address: '上海市浦东新区张江高科技园区'
+    name: '',
+    birthday: '',
+    phone: '',
+    email: '',
+    address: ''
   };
 
-  // 模拟宝贝信息数据
-  const petInfo = [
-    {
-      id: 1,
-      name: '小白',
-      breed: '金毛寻回犬',
-      birthday: '2022-03-10',
-      gender: '公',
-      photo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iNTAiIGZpbGw9IiNGRkQ3MDAiLz4KPHN2ZyB4PSIyNSIgeT0iMjUiIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiPgo8cGF0aCBkPSJtOSA5IDMgM0wyMCA0Ii8+CjxwYXRoIGQ9Im0yMSAxNS0zLTMtMyAzIi8+CjxwYXRoIGQ9Ik0yMCAxMmgtOCIvPgo8cGF0aCBkPSJtMyA5IDMgMyAzLTMiLz4KPHN2Zz4KPC9zdmc+',
-      weight: '25kg',
-      color: '金黄色'
-    },
-    {
-      id: 2,
-      name: '咪咪',
-      breed: '英国短毛猫',
-      birthday: '2021-08-22',
-      gender: '母',
-      photo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iNTAiIGZpbGw9IiMzNzM3MzciLz4KPHN2ZyB4PSIyNSIgeT0iMjUiIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiPgo8cGF0aCBkPSJtOSA5IDMgM0wyMCA0Ii8+CjxwYXRoIGQ9Im0yMSAxNS0zLTMtMyAzIi8+CjxwYXRoIGQ9Ik0yMCAxMmgtOCIvPgo8cGF0aCBkPSJtMyA5IDMgMyAzLTMiLz4KPHN2Zz4KPC9zdmc+',
-      weight: '4.5kg',
-      color: '银渐层'
-    }
-  ];
+  // TODO: 从API获取宠物信息数据
+  const petInfo: any[] = [];
 
-  // 模拟订单数据
-  const recentOrders = [
-    {
-      id: 'ORD001',
-      date: '2024-01-15',
-      status: 'delivered',
-      total: 299.00,
-      items: 3,
-      image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiByeD0iOCIgZmlsbD0iIzM0RDM5OSIvPgo8c3ZnIHg9IjIwIiB5PSIyMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiI+CjxwYXRoIGQ9Ik0xNiAxNmw0LTQtNC00Ii8+CjxwYXRoIGQ9Im0yMCAxMi04Ii8+CjxwYXRoIGQ9Ik04IDZIDE0gNCA0IDAgMCAwLTQgNHY0YTQgNCAwIDAgMCA0IDRoNGEiLz4KPGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMiIvPgo8L3N2Zz4KPC9zdmc+'
-    },
-    {
-      id: 'ORD002',
-      date: '2024-01-10',
-      status: 'shipping',
-      total: 156.00,
-      items: 2,
-      image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiByeD0iOCIgZmlsbD0iI0ZCQkYyNCIvPgo8c3ZnIHg9IjIwIiB5PSIyMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiI+CjxwYXRoIGQ9Im0xMiAzLTEuOTEyIDUuODEzYTIgMiAwIDAgMS0xLjI5NSAxLjI5NUwzIDEybDUuODEzIDEuOTEyYTIgMiAwIDAgMSAxLjI5NSAxLjI5NUwxMiAyMWwxLjkxMi01LjgxM2EyIDIgMCAwIDEgMS4yOTUtMS4yOTVMMjEgMTJsLTUuODEzLTEuOTEyYTIgMiAwIDAgMS0xLjI5NS0xLjI5NVoiLz4KPC9zdmc+Cjwvc3ZnPg=='
-    },
-    {
-      id: 'ORD003',
-      date: '2024-01-05',
-      status: 'processing',
-      total: 89.00,
-      items: 1,
-      image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiByeD0iOCIgZmlsbD0iIzk5RjZFNCIvPgo8c3ZnIHg9IjIwIiB5PSIyMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzEwNzI0MiIgc3Ryb2tlLXdpZHRoPSIyIj4KPHN2ZyB4PSIyMCIgeT0iMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMxMDcyNDIiIHN0cm9rZS13aWR0aD0iMiI+CjxwYXRoIGQ9Im0xMiAzLTEuOTEyIDUuODEzYTIgMiAwIDAgMS0xLjI5NSAxLjI5NUwzIDEybDUuODEzIDEuOTEyYTIgMiAwIDAgMSAxLjI5NSAxLjI5NUwxMiAyMWwxLjkxMi01LjgxM2EyIDIgMCAwIDEgMS4yOTUtMS4yOTVMMjEgMTJsLTUuODEzLTEuOTEyYTIgMiAwIDAgMS0xLjI5NS0xLjI5NVoiLz4KPC9zdmc+Cjwvc3ZnPg=='
-    }
-  ];
+  // TODO: 从API获取订单数据
+  const recentOrders: any[] = [];
 
   const getStatusText = (status: string) => {
     return t(`userCenter.orderStatus.${status}`) || status;
@@ -125,38 +76,13 @@ export default function UserCenter() {
   // 语言切换状态
   // const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
   
-  // 通知数据
-  const notifications = [
-    {
-      id: 1,
-      type: 'orderUpdate',
-      title: t('userCenter.notificationDetails.orderUpdate'),
-      message: t('userCenter.notificationDetails.orderUpdateMessage'),
-      time: t('userCenter.notificationDetails.hoursAgo', { count: 2 }),
-      read: false
-    },
-    {
-      id: 2,
-      type: 'promotion',
-      title: t('userCenter.notificationDetails.promotion'),
-      message: t('userCenter.notificationDetails.promotionMessage'),
-      time: t('userCenter.notificationDetails.daysAgo', { count: 1 }),
-      read: false
-    },
-    {
-      id: 3,
-      type: 'petCare',
-      title: t('userCenter.notificationDetails.petCare'),
-      message: t('userCenter.notificationDetails.petCareMessage'),
-      time: t('userCenter.notificationDetails.daysAgo', { count: 3 }),
-      read: true
-    }
-  ];
+  // TODO: 从API获取通知数据
+  const notifications: any[] = [];
 
   const menuItems = [
     { id: 'overview', name: t('userCenter.overview'), icon: User },
     { id: 'orders', name: t('userCenter.myOrders'), icon: Package },
-    { id: 'favorites', name: t('userCenter.myFavorites'), icon: Heart },
+
     { id: 'parent', name: t('userCenter.parentInfo'), icon: Users },
     { id: 'pets', name: t('userCenter.petInfo'), icon: PawPrint },
     { id: 'addresses', name: t('userCenter.addresses'), icon: MapPin },
@@ -272,31 +198,7 @@ export default function UserCenter() {
 
             {/* 快速统计 */}
             <div className="mt-6 grid grid-cols-1 gap-4">
-              <Link
-                to="/cart"
-                className="bg-white rounded-xl shadow-soft border border-neutral-100 p-4 hover:shadow-glow transition-all duration-300 group"
-              >
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-neutral-600">{t('userCenter.cart')}</p>
-                    <p className="text-2xl font-bold text-neutral-900">{itemCount}</p>
-                  </div>
-                  <ShoppingCart className="w-8 h-8 text-primary-500 group-hover:scale-110 transition-transform duration-300" />
-                </div>
-              </Link>
-              
-              <Link
-                to="/favorites"
-                className="bg-white rounded-xl shadow-soft border border-neutral-100 p-4 hover:shadow-glow transition-all duration-300 group"
-              >
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-neutral-600">{t('userCenter.favorites')}</p>
-                    <p className="text-2xl font-bold text-neutral-900">{favoritesState.items?.length || 0}</p>
-                  </div>
-                  <Heart className="w-8 h-8 text-accent-500 group-hover:scale-110 transition-transform duration-300" />
-                </div>
-              </Link>
+
             </div>
           </div>
 
@@ -359,21 +261,7 @@ export default function UserCenter() {
                   </div>
                   <div className="p-6">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                      <Link
-                        to="/shop"
-                        className="flex flex-col items-center p-4 bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl hover:shadow-soft transition-all duration-300 group"
-                      >
-                        <ShoppingCart className="w-8 h-8 text-primary-600 mb-2 group-hover:scale-110 transition-transform duration-300" />
-                        <span className="text-sm font-medium text-primary-700">{t('userCenter.continueShopping')}</span>
-                      </Link>
-                      
-                      <button
-                        onClick={() => setActiveTab('favorites')}
-                        className="flex flex-col items-center p-4 bg-gradient-to-br from-accent-50 to-accent-100 rounded-xl hover:shadow-soft transition-all duration-300 group"
-                      >
-                        <Heart className="w-8 h-8 text-accent-600 mb-2 group-hover:scale-110 transition-transform duration-300" />
-                        <span className="text-sm font-medium text-accent-700">{t('userCenter.myFavorites')}</span>
-                      </button>
+
                       
                       <button
                         onClick={() => setActiveTab('addresses')}
@@ -456,36 +344,7 @@ export default function UserCenter() {
               </div>
             )}
 
-            {activeTab === 'favorites' && (
-              <div className="bg-white rounded-2xl shadow-soft border border-neutral-100 overflow-hidden">
-                <div className="px-6 py-4 border-b border-neutral-100">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-neutral-900">我的收藏</h3>
-                    <Link
-                      to="/favorites"
-                      className="text-primary-600 hover:text-primary-700 text-sm font-medium flex items-center space-x-1"
-                    >
-                      <span>查看全部</span>
-                      <ArrowRight className="w-4 h-4" />
-                    </Link>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="text-center py-16">
-                    <Heart className="w-24 h-24 text-neutral-300 mx-auto mb-6" />
-                    <h3 className="text-xl font-semibold text-neutral-900 mb-2">暂无收藏</h3>
-                    <p className="text-neutral-600 mb-6">收藏您喜欢的商品，方便下次查看</p>
-                    <Link
-                      to="/shop"
-                      className="btn-primary px-6 py-3 rounded-cute inline-flex items-center space-x-2"
-                    >
-                      <ShoppingCart className="w-5 h-5" />
-                      <span>去购物</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            )}
+
 
             {activeTab === 'addresses' && (
               <div className="bg-white rounded-2xl shadow-soft border border-neutral-100 overflow-hidden">

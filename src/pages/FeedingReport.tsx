@@ -50,29 +50,8 @@ const FeedingReport: React.FC = () => {
   const [selectedHistoryReport, setSelectedHistoryReport] = useState<HistoricalReport | null>(null);
   const [recommendationChanges, setRecommendationChanges] = useState<RecommendationChange[]>([]);
 
-  // Mock pet data - in real app, this would come from API
-  const mockPetData: PetData[] = [
-    {
-      id: '1',
-      name: '小白',
-      breed: '金毛寻回犬',
-      birthday: '2022-03-10',
-      gender: '公',
-      weight: '25kg',
-      color: '金黄色',
-      photo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iNTAiIGZpbGw9IiNGRkQ3MDAiLz4KPHN2ZyB4PSIyNSIgeT0iMjUiIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiPgo8cGF0aCBkPSJtOSA5IDMgM0wyMCA0Ii8+CjxwYXRoIGQ9Im0yMSAxNS0zLTMtMyAzIi8+CjxwYXRoIGQ9Ik0yMCAxMmgtOCIvPgo8cGF0aCBkPSJtMyA5IDMgMyAzLTMiLz4KPHN2Zz4KPC9zdmc+'
-    },
-    {
-      id: '2',
-      name: '小花',
-      breed: '英国短毛猫',
-      birthday: '2021-08-15',
-      gender: '母',
-      weight: '4.5kg',
-      color: '银渐层',
-      photo: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iNTAiIGZpbGw9IiNGRkQ3MDAiLz4KPHN2ZyB4PSIyNSIgeT0iMjUiIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiPgo8cGF0aCBkPSJtOSA5IDMgM0wyMCA0Ii8+CjxwYXRoIGQ9Im0yMSAxNS0zLTMtMyAzIi8+CjxwYXRoIGQ9Ik0yMCAxMmgtOCIvPgo8cGF0aCBkPSJtMyA5IDMgMyAzLTMiLz4KPHN2Zz4KPC9zdmc+'
-    }
-  ];
+  // TODO: 从API获取宠物数据
+  const mockPetData: PetData[] = [];
 
   // Generate mock historical reports
   const generateHistoricalReports = (petData: PetData): HistoricalReport[] => {

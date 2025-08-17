@@ -4,9 +4,7 @@
       "home": "首页",
       "cats": "猫咪专区",
       "dogs": "狗狗专区",
-      "nutrition": "营养指南",
-      "shop": "严选商品",
-      "community": "宠物社区"
+      "nutrition": "营养指南"
     }
   },
   "nav": {
@@ -14,7 +12,6 @@
     "about": "关于我们",
     "products": "产品理念",
     "technology": "技术优势",
-    "news": "新闻动态",
     "contact": "联系我们",
     "language": "语言"
   },
@@ -66,11 +63,6 @@
       "awards": "获得奖项",
       "satisfaction": "客户满意度"
     },
-    "news": {
-      "title": "最新动态",
-      "subtitle": "了解ASUPET的最新资讯和行业动态",
-      "viewAll": "查看全部"
-    },
     "cta": {
       "title": "开始您的宠物营养之旅",
       "subtitle": "让我们为您的宠物提供最专业的营养解决方案",
@@ -79,6 +71,28 @@
   },
   "about": {
     "title": "关于我们",
+    "heroDescription": "科技驱动的专业宠物消费新生态，致力于为每只宠物提供个性化营养解决方案",
+    "brandIntroduction": "品牌介绍",
+    "latestNews": "最新动态",
+    "contactUs": "联系我们",
+    "brandStory": "品牌故事",
+    "brandStoryDescription": "ASUPET的创立理念与使命愿景，为宠物提供最专业的营养解决方案",
+    "ourMission": "我们的使命",
+    "missionDescription1": "ASUPET致力于通过科技创新和专业营养学知识，为每只宠物提供个性化的营养解决方案。我们相信，每只宠物都是独特的，它们的营养需求也应该是个性化的。",
+    "missionDescription2": "我们的团队由资深宠物营养师、兽医和技术专家组成，运用最新的AI技术和大数据分析，为宠物主人提供科学、专业、便捷的营养指导服务。",
+    "professionalTeam": "专业团队",
+    "teamDescription": "由资深营养师和技术专家组成",
+    "coreValues": "核心价值观",
+    "valuesDescription": "我们坚持的理念和原则，指导着我们为宠物提供最好的服务",
+    "care": "用心关爱",
+    "careDescription": "每一个产品都源于对宠物的深深关爱，我们相信爱是最好的营养",
+    "professional": "专业品质",
+    "professionalDescription": "严格的品质控制和科学的营养配方，确保每一份产品都达到最高标准",
+    "innovation": "持续创新",
+    "innovationDescription": "运用最新的AI技术和营养科学，不断创新产品和服务",
+    "contactDescription": "有任何问题或建议？我们很乐意听到您的声音",
+    "sendEmail": "发送邮件",
+    "onlineConsultation": "在线咨询",
     "hero": {
       "title": "关于ASUPET",
       "subtitle": "科技驱动的专业宠物消费新生态，致力于为每只宠物提供个性化营养解决方案"
@@ -319,56 +333,6 @@
       "dual": "双地服务模式"
     }
   },
-  "news": {
-    "title": "新闻动态",
-    "hero": {
-      "title": "新闻动态",
-      "subtitle": "了解ASUPET的最新资讯和行业动态"
-    },
-    "search": {
-      "placeholder": "搜索新闻..."
-    },
-    "filter": {
-      "all": "全部"
-    },
-    "noNews": "暂无新闻",
-    "newsletter": {
-      "title": "订阅新闻通讯",
-      "subtitle": "获取ASUPET最新资讯和行业动态",
-      "placeholder": "请输入您的邮箱地址",
-      "subscribe": "订阅"
-    },
-    "categories": {
-      "all": "全部",
-      "company": "公司新闻",
-      "industry": "行业观点",
-      "media": "媒体报道"
-    },
-    "featured": {
-      "title": "精选新闻"
-    },
-    "latest": {
-      "title": "最新新闻"
-    },
-    "readTime": "分钟阅读",
-    "readMore": "阅读更多",
-    "noResults": "没有找到相关新闻",
-    "publishedOn": "发布于",
-    "by": "作者",
-    "detail": {
-      "notFound": "新闻不存在",
-      "backToNews": "返回新闻列表",
-      "share": "分享",
-      "tags": "标签",
-      "related": "相关新闻",
-      "cta": {
-        "title": "想了解更多？",
-        "subtitle": "联系我们获取更多信息和专业建议",
-        "contact": "联系我们",
-        "moreNews": "更多新闻"
-      }
-    }
-  },
   "contact": {
     "title": "联系我们",
     "subtitle": "我们期待与您的合作",
@@ -468,7 +432,6 @@
       "about": "关于我们",
       "products": "产品理念",
       "technology": "技术优势",
-      "news": "新闻动态",
       "contact": "联系我们"
     },
     "copyright": "© {{year}} ASUPET. 保留所有权利。"
@@ -611,161 +574,6 @@
     "confirm": "确认",
     "close": "关闭"
   },
-  "admin": {
-    "title": "管理后台",
-    "login": {
-      "title": "管理员登录",
-      "username": "用户名",
-      "password": "密码",
-      "submit": "登录",
-      "error": "用户名或密码错误"
-    },
-    "nav": {
-      "dashboard": "仪表板",
-      "news": "新闻管理",
-      "products": "商品管理",
-      "categories": "分类管理",
-      "settings": "设置",
-      "logout": "退出登录"
-    },
-    "dashboard": {
-      "title": "仪表板",
-      "stats": {
-        "total": "总计",
-        "published": "已发布",
-        "draft": "草稿",
-        "thisMonth": "本月新增"
-      },
-      "quickActions": "快速操作",
-      "recentNews": "最新新闻",
-      "createNews": "创建新闻",
-      "manageNews": "管理新闻",
-      "createProduct": "创建商品",
-      "manageProducts": "管理商品",
-      "categories": "分类管理",
-      "noNews": "暂无新闻文章",
-      "getStarted": "开始创建新闻文章"
-    },
-    "news": {
-      "title": "新闻管理",
-      "create": "创建新闻",
-      "edit": "编辑新闻",
-      "list": "新闻列表",
-      "search": "搜索新闻...",
-      "category": "分类",
-      "featured": "精选",
-      "status": "状态",
-      "actions": "操作",
-      "delete": "删除",
-      "batchDelete": "批量删除",
-      "selectAll": "全选",
-      "confirmDelete": "确认删除",
-      "deleteMessage": "确定要删除这些新闻吗？此操作不可撤销。",
-      "preview": "预览",
-      "form": {
-        "titleZh": "中文标题",
-        "titleEn": "英文标题",
-        "contentZh": "中文内容",
-        "contentEn": "英文内容",
-        "category": "分类",
-        "selectCategory": "选择分类",
-        "featured": "设为精选",
-        "publishDate": "发布日期",
-        "images": "图片",
-        "uploadImages": "上传图片",
-        "dragDrop": "拖拽文件到此处或点击上传",
-        "maxFiles": "最多上传5张图片",
-        "submit": "提交",
-        "submitting": "提交中...",
-        "success": "操作成功",
-        "error": "操作失败"
-      }
-    },
-    "categories": {
-      "title": "分类管理",
-      "create": "创建分类",
-      "edit": "编辑分类",
-      "name": "分类名称",
-      "nameZh": "中文名称",
-      "nameEn": "英文名称",
-      "description": "描述",
-      "descriptionZh": "中文描述",
-      "descriptionEn": "英文描述",
-      "color": "颜色",
-      "actions": "操作",
-      "delete": "删除",
-      "confirmDelete": "确认删除",
-      "deleteMessage": "确定要删除这个分类吗？",
-      "cannotDelete": "无法删除",
-      "categoryInUse": "该分类正在被新闻使用，无法删除",
-      "form": {
-        "nameZhPlaceholder": "请输入中文名称",
-        "nameEnPlaceholder": "请输入英文名称",
-        "descriptionZhPlaceholder": "请输入中文描述",
-        "descriptionEnPlaceholder": "请输入英文描述",
-        "submit": "保存",
-        "submitting": "保存中...",
-        "success": "操作成功",
-        "error": "操作失败"
-      }
-    },
-    "products": {
-      "title": "商品管理",
-      "create": "创建商品",
-      "edit": "编辑商品",
-      "list": "商品列表",
-      "search": "搜索商品...",
-      "category": "分类",
-      "featured": "精选",
-      "active": "启用",
-      "status": "状态",
-      "actions": "操作",
-      "delete": "删除",
-      "batchDelete": "批量删除",
-      "selectAll": "全选",
-      "confirmDelete": "确认删除",
-      "deleteMessage": "确定要删除这些商品吗？此操作不可撤销。",
-      "preview": "预览",
-      "form": {
-        "nameZh": "中文名称",
-        "nameEn": "英文名称",
-        "nameTw": "繁体中文名称",
-        "descriptionZh": "中文描述",
-        "descriptionEn": "英文描述",
-        "descriptionTw": "繁体中文描述",
-        "shortDescriptionZh": "中文简介",
-        "shortDescriptionEn": "英文简介",
-        "shortDescriptionTw": "繁体中文简介",
-        "sku": "商品编码",
-        "price": "价格",
-        "comparePrice": "对比价格",
-        "weight": "重量",
-        "category": "分类",
-        "selectCategory": "选择分类",
-        "tags": "标签",
-        "addTag": "添加标签",
-        "images": "商品图片",
-        "uploadImages": "上传图片",
-        "dragDrop": "拖拽文件到此处或点击上传",
-        "maxFiles": "最多上传10张图片",
-        "specifications": "规格参数",
-        "ingredients": "成分配料",
-        "feedingGuide": "喂养指南",
-        "nutritionalAnalysis": "营养分析",
-        "stockQuantity": "库存数量",
-        "isActive": "启用商品",
-        "isFeatured": "设为精选",
-        "submit": "提交",
-        "submitting": "提交中...",
-        "success": "操作成功",
-        "error": "操作失败",
-        "required": "此字段为必填项",
-        "invalidPrice": "请输入有效的价格",
-        "invalidWeight": "请输入有效的重量",
-        "invalidStock": "请输入有效的库存数量"
-      }
-    }
-  },
   "cats": {
     "title": "猫咪专区",
     "subtitle": "专为猫咪设计的营养方案，让每一只猫咪都能健康快乐成长",
@@ -832,20 +640,6 @@
       "title": "猫咪专用产品",
       "subtitle": "精选优质猫粮，满足猫咪的营养需求",
       "viewMore": "查看更多猫咪产品"
-    },
-    "community": {
-      "title": "猫咪社区",
-      "subtitle": "与其他猫咪主人分享经验，交流养猫心得",
-      "group": {
-        "title": "养猫交流群",
-        "description": "加入我们的猫咪主人交流群，分享养猫经验，获取专业建议",
-        "join": "加入社区"
-      },
-      "consultation": {
-        "title": "专家在线咨询",
-        "description": "专业宠物营养师在线答疑，为您的猫咪提供个性化建议",
-        "consult": "咨询专家"
-      }
     }
   },
   "dogs": {
@@ -902,20 +696,6 @@
       "title": "狗狗专用产品",
       "subtitle": "精选优质狗粮，满足狗狗的营养需求",
       "viewMore": "查看更多狗狗产品"
-    },
-    "community": {
-      "title": "狗狗社区",
-      "subtitle": "与其他狗狗主人分享经验，交流养狗心得",
-      "group": {
-        "title": "养狗交流群",
-        "description": "加入我们的狗狗主人交流群，分享养狗经验，获取专业建议",
-        "join": "加入社区"
-      },
-      "consultation": {
-        "title": "专家在线咨询",
-        "description": "专业宠物营养师在线答疑，为您的狗狗提供个性化建议",
-        "consult": "咨询专家"
-      }
     }
   },
   "nutritionGuide": {
@@ -1127,83 +907,8 @@
       "shopButton": "选购产品"
     }
   },
-  "shop": {
-    "title": "ASUPET严选商品",
-    "subtitle": "为您的爱宠提供最优质的营养产品",
-    "search": {
-      "placeholder": "搜索商品...",
-      "allCategories": "全部分类"
-    },
-    "sort": {
-      "featured": "推荐商品",
-      "newest": "最新上架",
-      "priceLow": "价格从低到高",
-      "priceHigh": "价格从高到低"
-    },
-    "product": {
-      "featured": "推荐",
-      "sale": "特价",
-      "inStock": "现货充足",
-      "lowStock": "仅剩{{count}}件",
-      "outOfStock": "暂时缺货",
-      "addToCart": "加入购物车",
-      "weight": "{{weight}}kg"
-    },
-    "comparison": {
-      "title": "商品对比",
-      "viewComparison": "查看对比",
-      "count": "({{current}}/{{max}})"
-    },
-    "empty": {
-      "title": "暂无商品",
-      "description": "我们正在努力为您准备更多优质商品"
-    },
-    "error": {
-      "title": "商城暂时无法访问",
-      "description": "我们正在努力为您准备精彩的商品，请稍后再试。"
-    }
-  },
-  "community": {
-    "title": "宠物社区",
-    "subtitle": "与千万宠物主人分享经验，获取专业建议，让爱宠更健康快乐",
-    "tabs": {
-      "posts": "社区动态",
-      "experts": "专家问答",
-      "groups": "兴趣小组"
-    },
-    "posts": {
-      "createTitle": "分享你的宠物故事",
-      "placeholder": "分享你和宠物的故事，或者提出问题...",
-      "addImage": "添加图片",
-      "publish": "发布",
-      "share": "分享",
-      "timeAgo": {
-        "hours": "{{count}}小时前",
-        "days": "{{count}}天前"
-      }
-    },
-    "experts": {
-      "title": "专家问答",
-      "subtitle": "专业兽医和营养师为您解答宠物健康问题",
-      "askTitle": "向专家提问",
-      "questionPlaceholder": "请输入您的问题标题...",
-      "detailPlaceholder": "详细描述您的问题，包括宠物品种、年龄、症状等...",
-      "submit": "提交问题",
-      "viewDetails": "查看详情"
-    },
-    "groups": {
-      "title": "兴趣小组",
-      "subtitle": "加入志同道合的宠物主人群体，分享经验和快乐",
-      "members": "{{count}}人",
-      "join": "加入小组"
-    },
-    "cta": {
-      "title": "加入ASUPET宠物社区",
-      "subtitle": "与专业营养师和万千宠物主人一起，为爱宠提供最好的照顾",
-      "contactUs": "联系我们",
-      "shopProducts": "选购产品"
-    }
-  },
+
+
   "userCenter": {
     "title": "个人中心",
     "overview": "概览",
