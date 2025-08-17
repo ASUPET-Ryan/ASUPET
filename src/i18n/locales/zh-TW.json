@@ -1,0 +1,1263 @@
+{
+  "header": {
+    "nav": {
+      "home": "首頁",
+      "cats": "貓咪專區",
+      "dogs": "狗狗專區",
+      "nutrition": "營養指南"
+    }
+  },
+  "nav": {
+    "home": "首頁",
+    "about": "關於我們",
+    "products": "產品理念",
+    "technology": "技術優勢",
+    "news": "新聞動態",
+    "contact": "聯絡我們",
+    "language": "語言"
+  },
+  "home": {
+    "hero": {
+      "title": "精緻養寵，溯造生活",
+      "subtitle": "科技驅動的專業寵物消費新生態",
+      "description": "透過AI技術和專業營養師團隊，為每隻寵物提供個人化營養解決方案",
+      "cta": {
+        "primary": "查看產品",
+        "secondary": "了解更多"
+      },
+      "imageAlt": "快樂的金毛犬正在享用優質寵物食品"
+    },
+    "banner": {
+      "badge": "專業營養科學配比",
+      "title": "精緻養寵，溯造生活",
+      "subtitle": "科技驅動的專業寵物消費新生態",
+      "cta": {
+        "primary": "立即體驗",
+        "secondary": "了解更多"
+      },
+      "stats": {
+        "activeUsers": "活躍用戶",
+        "satisfaction": "滿意度",
+        "products": "優質商品"
+      }
+    },
+    "features": {
+      "title": "核心優勢",
+      "subtitle": "三大核心優勢，為您的寵物提供最優質的營養解決方案",
+      "nutrition": {
+        "title": "科學營養配方",
+        "description": "基於寵物營養學研究，精心調配每一種營養成分，確保寵物健康成長"
+      },
+      "safety": {
+        "title": "安全品質保障",
+        "description": "嚴格的品質控制體系，從原料採購到生產包裝，每個環節都確保安全可靠"
+      },
+      "technology": {
+        "title": "AI智能推薦",
+        "description": "運用人工智慧技術，根據寵物的品種、年齡、體重等因素，提供個人化營養建議"
+      }
+    },
+    "stats": {
+      "title": "值得信賴的數據",
+      "subtitle": "用數字見證我們的專業與品質",
+      "customers": "服務客戶",
+      "awards": "獲得獎項",
+      "satisfaction": "客戶滿意度"
+    },
+    "news": {
+      "title": "最新動態",
+      "subtitle": "了解ASUPET的最新資訊和行業動態",
+      "viewAll": "查看全部"
+    },
+    "cta": {
+      "title": "開始您的寵物營養之旅",
+      "subtitle": "讓我們為您的寵物提供最專業的營養解決方案",
+      "button": "立即諮詢"
+    }
+  },
+  "about": {
+    "title": "關於我們",
+    "heroDescription": "科技驅動的專業寵物消費新生態，致力於為每隻寵物提供個人化營養解決方案",
+    "brandIntroduction": "品牌介紹",
+    "latestNews": "最新動態",
+    "contactUs": "聯絡我們",
+    "brandStory": "品牌故事",
+    "brandStoryDescription": "ASUPET的創立理念與使命願景，為寵物提供最專業的營養解決方案",
+    "ourMission": "我們的使命",
+    "missionDescription1": "ASUPET致力於通過科技創新和專業營養學知識，為每隻寵物提供個人化的營養解決方案。我們相信，每隻寵物都是獨特的，它們的營養需求也應該是個人化的。",
+    "missionDescription2": "我們的團隊由資深寵物營養師、獸醫和技術專家組成，運用最新的AI技術和大數據分析，為寵物主人提供科學、專業、便捷的營養指導服務。",
+    "professionalTeam": "專業團隊",
+    "teamDescription": "由資深營養師和技術專家組成",
+    "coreValues": "核心價值觀",
+    "valuesDescription": "我們堅持的理念和原則，指導著我們為寵物提供最好的服務",
+    "care": "用心關愛",
+    "careDescription": "每一個產品都源於對寵物的深深關愛，我們相信愛是最好的營養",
+    "professional": "專業品質",
+    "professionalDescription": "嚴格的品質控制和科學的營養配方，確保每一份產品都達到最高標準",
+    "innovation": "持續創新",
+    "innovationDescription": "運用最新的AI技術和營養科學，不斷創新產品和服務",
+    "newsDescription": "了解我們的最新消息、產品發布和行業動態",
+    "readMore": "查看詳情",
+    "viewMoreNews": "查看更多動態",
+    "contactDescription": "有任何問題或建議？我們很樂意聽到您的聲音",
+    "sendEmail": "發送郵件",
+    "onlineConsultation": "線上諮詢",
+    "hero": {
+      "title": "關於ASUPET",
+      "subtitle": "科技驅動的專業寵物消費新生態，致力於為每隻寵物提供個人化營養解決方案"
+    },
+    "story": {
+      "title": "品牌故事",
+      "subtitle": "ASUPET的創立理念與使命願景",
+      "imageAlt": "ASUPET品牌故事"
+    },
+    "values": {
+      "title": "核心價值觀",
+      "subtitle": "我們堅持的理念和原則",
+      "love": {
+        "title": "因愛而生",
+        "description": "每一個產品都源於對寵物的深深關愛，我們相信愛是最好的營養"
+      },
+      "quality": {
+        "title": "品質至上",
+        "description": "嚴格的品質控制和科學的營養配方，確保每一份產品都達到最高標準"
+      },
+      "innovation": {
+        "title": "持續創新",
+        "description": "運用最新的AI技術和營養科學，不斷創新產品和服務"
+      }
+    },
+    "achievements": {
+      "title": "我們的成就",
+      "subtitle": "數字見證我們的成長與專業",
+      "customers": "服務客戶",
+      "awards": "獲得獎項",
+      "countries": "覆蓋國家"
+    },
+    "team": {
+      "title": "專業團隊",
+      "subtitle": "由資深營養師和技術專家組成的專業團隊"
+    },
+    "cta": {
+      "title": "開始您的寵物營養之旅",
+      "subtitle": "讓我們為您的寵物提供最專業的營養解決方案",
+      "products": "查看產品",
+      "contact": "聯絡我們"
+    }
+  },
+  "products": {
+    "title": "產品理念",
+    "subtitle": "三大產品系列，滿足不同寵物的營養需求",
+    "hero": {
+      "title": "科學營養，因寵而異",
+      "subtitle": "基於AI技術和專業營養學，為每隻寵物提供個人化營養解決方案"
+    },
+    "philosophy": {
+      "title": "產品理念",
+      "subtitle": "以科學為基礎，以愛為驅動，為寵物提供最優質的營養體驗"
+    },
+    "principles": {
+      "natural": {
+        "title": "天然原料",
+        "description": "精選優質天然原料，不添加人工色素、防腐劑和化學添加劑，確保每一口都是純淨營養"
+      },
+      "safety": {
+        "title": "安全保障",
+        "description": "嚴格的品質控制體系，從原料採購到生產包裝，每個環節都經過嚴格檢測，確保產品安全可靠"
+      },
+      "nutrition": {
+        "title": "營養均衡",
+        "description": "基於寵物營養學研究，科學配比蛋白質、脂肪、維生素等營養成分，滿足寵物不同生長階段的營養需求"
+      },
+      "quality": {
+        "title": "品質卓越",
+        "description": "採用先進的生產工藝和設備，確保產品品質穩定，為寵物提供持續優質的營養保障"
+      }
+    },
+    "series": {
+      "title": "產品系列"
+    },
+    "nutrition": {
+      "title": "營養特點",
+      "subtitle": "科學配比，營養全面",
+      "protein": "蛋白質",
+      "fat": "脂肪",
+      "fiber": "纖維",
+      "imageAlt": "營養成分分析圖表"
+    },
+    "benefits": {
+      "digestibility": "易消化吸收",
+      "immunity": "增強免疫力",
+      "coat": "亮澤毛髮",
+      "energy": "提供持久能量",
+      "dental": "口腔健康",
+      "weight": "體重管理"
+    },
+    "quality": {
+      "title": "品質保證",
+      "subtitle": "嚴格的品質控制體系，確保每一份產品都達到最高標準",
+      "certification": {
+        "title": "權威認證",
+        "description": "通過ISO22000、HACCP等國際權威認證，產品品質符合國際標準"
+      },
+      "testing": {
+        "title": "嚴格檢測",
+        "description": "每批產品都經過嚴格的營養成分檢測和安全性檢測，確保產品品質"
+      },
+      "satisfaction": {
+        "title": "滿意保障",
+        "description": "提供100%滿意保障，如有任何品質問題，我們承諾無條件退換貨"
+      }
+    },
+    "scenarios": {
+      "title": "適用場景"
+    },
+    "cases": {
+      "title": "成功案例"
+    },
+    "cta": {
+      "title": "選擇ASUPET，給寵物最好的營養",
+      "subtitle": "立即了解我們的產品，為您的寵物提供科學營養解決方案",
+      "contact": "聯絡我們",
+      "technology": "了解技術"
+    }
+  },
+  "technology": {
+    "title": "技術優勢",
+    "subtitle": "AI驅動的個人化寵物營養解決方案",
+    "hero": {
+      "title": "技術創新引領未來",
+      "subtitle": "運用前沿AI技術，為寵物營養提供智慧化解決方案"
+    },
+    "core": {
+      "title": "核心技術架構",
+      "subtitle": "基於深度學習和大數據分析的智能推薦系統"
+    },
+    "ai": {
+      "title": "AI個人化推薦系統",
+      "description": "透過機器學習演算法分析寵物的品種、年齡、體重、活動量等因素，為每隻寵物提供精準的營養建議",
+      "features": {
+        "analysis": "智能數據分析",
+        "recommendation": "個人化推薦",
+        "monitoring": "即時健康監測",
+        "optimization": "營養方案優化"
+      }
+    },
+    "data": {
+      "title": "大數據處理平台",
+      "description": "構建完整的寵物健康數據生態，提供精準的營養分析和建議",
+      "features": {
+        "collection": "多維數據採集",
+        "processing": "即時數據處理",
+        "insights": "深度洞察分析",
+        "prediction": "健康趨勢預測"
+      }
+    },
+    "security": {
+      "title": "數據安全保障",
+      "description": "採用企業級安全標準，確保用戶和寵物數據的隱私安全",
+      "features": {
+        "encryption": "端到端加密",
+        "privacy": "隱私保護機制",
+        "compliance": "合規性保障",
+        "backup": "安全備份系統"
+      }
+    },
+    "advantages": {
+      "title": "技術優勢",
+      "subtitle": "領先的技術指標，為您提供最可靠的服務",
+      "accuracy": "準確率",
+      "accuracyDesc": "AI推薦準確率",
+      "availability": "可用性",
+      "availabilityDesc": "全天候服務保障",
+      "efficiency": "效率提升",
+      "efficiencyDesc": "營養配比效率提升",
+      "algorithms": "演算法模型",
+      "algorithmsDesc": "專業演算法模型支援"
+    },
+    "services": {
+      "title": "技術服務",
+      "subtitle": "全方位的技術支援和專業服務",
+      "consultation": {
+        "title": "專業諮詢服務",
+        "description": "提供一對一的專業營養諮詢和技術支援",
+        "benefits": {
+          "expert": "專家團隊支援",
+          "personalized": "個人化方案",
+          "support": "24/7技術支援"
+        }
+      },
+      "monitoring": {
+        "title": "健康監測服務",
+        "description": "即時監測寵物健康狀況，及時調整營養方案",
+        "benefits": {
+          "realtime": "即時數據監測",
+          "alerts": "智能預警系統",
+          "reports": "詳細健康報告"
+        }
+      },
+      "optimization": {
+        "title": "方案優化服務",
+        "description": "持續優化營養方案，確保最佳效果",
+        "benefits": {
+          "efficiency": "效率持續提升",
+          "cost": "成本有效控制",
+          "performance": "性能不斷優化"
+        }
+      }
+    },
+    "process": {
+      "title": "技術研發流程",
+      "subtitle": "嚴謹的研發流程，確保技術創新和產品品質",
+      "research": {
+        "title": "需求研究",
+        "description": "深入研究寵物營養需求和市場趨勢"
+      },
+      "development": {
+        "title": "技術開發",
+        "description": "運用最新技術開發創新解決方案"
+      },
+      "testing": {
+        "title": "測試驗證",
+        "description": "嚴格測試確保產品品質和安全性"
+      },
+      "deployment": {
+        "title": "部署上線",
+        "description": "穩定部署並持續監控優化"
+      }
+    },
+    "cta": {
+      "title": "體驗我們的技術",
+      "subtitle": "立即了解ASUPET的技術優勢，為您的寵物提供最佳營養方案",
+      "contact": "聯絡我們",
+      "products": "查看產品"
+    },
+    "team": {
+      "title": "技術團隊",
+      "description": "由AI專家、數據科學家和軟體工程師組成的專業技術團隊"
+    },
+    "service": {
+      "title": "服務模式",
+      "subscription": "訂閱制服務",
+      "dual": "雙地服務模式"
+    }
+  },
+  "news": {
+    "title": "新聞動態",
+    "hero": {
+      "title": "新聞動態",
+      "subtitle": "了解ASUPET的最新資訊和行業動態"
+    },
+    "search": {
+      "placeholder": "搜尋新聞..."
+    },
+    "filter": {
+      "all": "全部"
+    },
+    "noNews": "暫無新聞",
+    "newsletter": {
+      "title": "訂閱新聞通訊",
+      "subtitle": "獲取ASUPET最新資訊和行業動態",
+      "placeholder": "請輸入您的電子郵件地址",
+      "subscribe": "訂閱"
+    },
+    "categories": {
+      "all": "全部",
+      "company": "公司新聞",
+      "industry": "行業觀點",
+      "media": "媒體報導"
+    },
+    "featured": {
+      "title": "精選新聞"
+    },
+    "latest": {
+      "title": "最新新聞"
+    },
+    "readTime": "分鐘閱讀",
+    "readMore": "閱讀更多",
+    "noResults": "沒有找到相關新聞",
+    "publishedOn": "發布於",
+    "by": "作者",
+    "detail": {
+      "notFound": "新聞不存在",
+      "backToNews": "返回新聞列表",
+      "share": "分享",
+      "tags": "標籤",
+      "related": "相關新聞",
+      "cta": {
+        "title": "想了解更多？",
+        "subtitle": "聯絡我們獲取更多資訊和專業建議",
+        "contact": "聯絡我們",
+        "moreNews": "更多新聞"
+      }
+    }
+  },
+  "contact": {
+    "title": "聯絡我們",
+    "subtitle": "我們期待與您的合作",
+    "hero": {
+      "title": "聯絡我們",
+      "subtitle": "我們期待與您的合作，共同為寵物營養事業貢獻力量"
+    },
+    "info": {
+      "title": "聯絡資訊",
+      "subtitle": "多種聯絡方式，隨時為您提供專業服務",
+      "address": {
+        "title": "公司地址",
+        "content": "上海市浦東新區張江高科技園區科苑路399號"
+      },
+      "phone": {
+        "title": "聯絡電話",
+        "content": "+86 400-123-4567"
+      },
+      "email": {
+        "title": "電子郵件地址",
+        "content": "service@asupet.com"
+      },
+      "hours": {
+        "title": "營業時間",
+        "content": "週一至週五 9:00-18:00"
+      }
+    },
+    "map": {
+      "alt": "ASUPET公司位置地圖"
+    },
+    "form": {
+      "title": "線上諮詢",
+      "name": "姓名",
+      "email": "電子郵件",
+      "company": "公司",
+      "phone": "電話",
+      "subject": "諮詢主題",
+      "message": "留言內容",
+      "namePlaceholder": "請輸入您的姓名",
+      "emailPlaceholder": "請輸入您的電子郵件地址",
+      "phonePlaceholder": "請輸入您的聯絡電話",
+      "companyPlaceholder": "請輸入您的公司名稱",
+      "subjectPlaceholder": "請選擇諮詢主題",
+      "messagePlaceholder": "請詳細描述您的需求或問題",
+      "send": "發送訊息",
+      "sending": "發送中...",
+      "subjects": {
+        "general": "一般諮詢",
+        "products": "產品諮詢",
+        "partnership": "商務合作",
+        "support": "技術支援",
+        "media": "媒體聯絡"
+      },
+      "success": {
+        "title": "提交成功！",
+        "message": "感謝您的諮詢，我們會在24小時內回覆您"
+      },
+      "error": "提交失敗，請稍後重試"
+    },
+    "faq": {
+      "title": "常見問題",
+      "subtitle": "快速了解您關心的問題",
+      "questions": {
+        "response": {
+          "question": "你們的回應時間是多久？",
+          "answer": "我們承諾在收到您的諮詢後24小時內回覆。對於緊急問題，我們會在2小時內回應。"
+        },
+        "products": {
+          "question": "如何選擇適合我寵物的產品？",
+          "answer": "我們的AI推薦系統會根據您寵物的品種、年齡、體重、活動量等因素，為您推薦最適合的營養方案。您也可以諮詢我們的專業營養師。"
+        },
+        "partnership": {
+          "question": "如何與ASUPET建立合作關係？",
+          "answer": "我們歡迎各種形式的合作。請透過商務合作管道聯絡我們，我們的商務團隊會與您詳細討論合作方案。"
+        },
+        "support": {
+          "question": "你們提供哪些技術支援服務？",
+          "answer": "我們提供全方位的技術支援，包括產品使用指導、營養諮詢、健康監測等。我們的專業團隊隨時為您提供幫助。"
+        }
+      }
+    }
+  },
+  "footer": {
+    "company": "ASUPET",
+    "description": "科技驅動的專業寵物消費新生態",
+    "address": "中國香港 / 中國台灣 / 中國內地",
+    "phone": "+86 400-123-4567",
+    "email": "service@asupet.com",
+    "quickLinks": "快速連結",
+    "followUs": "關注我們",
+    "newsletter": "訂閱我們的新聞通訊",
+    "emailPlaceholder": "請輸入您的電子郵件地址",
+    "subscribe": "訂閱",
+    "privacy": "隱私政策",
+    "terms": "服務條款",
+    "links": {
+      "about": "關於我們",
+      "products": "產品理念",
+      "technology": "技術優勢",
+      "news": "新聞動態",
+      "contact": "聯絡我們"
+    },
+    "copyright": "© {{year}} ASUPET. 保留所有權利。"
+  },
+  "privacy": {
+    "title": "隱私政策",
+    "subtitle": "我們重視您的隱私，致力於保護您的個人資訊",
+    "backToHome": "返回首頁",
+    "lastUpdated": "最後更新",
+    "introduction": {
+      "title": "引言",
+      "content": "ASUPET（以下簡稱\"我們\"）尊重並保護用戶的隱私權。本隱私政策說明了我們如何收集、使用、儲存和保護您的個人資訊。使用我們的服務即表示您同意本隱私政策的條款。"
+    },
+    "collection": {
+      "title": "資訊收集",
+      "description": "我們可能收集以下類型的資訊：",
+      "personal": "個人身份資訊（姓名、電子郵件地址、電話號碼等）",
+      "pet": "寵物資訊（品種、年齡、體重、健康狀況等）",
+      "usage": "使用數據（訪問時間、頁面瀏覽、功能使用等）",
+      "device": "設備資訊（IP地址、瀏覽器類型、作業系統等）"
+    },
+    "usage": {
+      "title": "資訊使用",
+      "description": "我們使用收集的資訊用於：",
+      "service": "提供和改進我們的服務",
+      "recommendation": "為您的寵物提供個人化營養建議",
+      "communication": "與您溝通服務相關事宜",
+      "improvement": "分析和改進我們的產品和服務"
+    },
+    "sharing": {
+      "title": "資訊共享",
+      "description": "我們不會出售、交易或轉讓您的個人資訊給第三方，除非：",
+      "partners": "與可信的服務提供商共享，以提供更好的服務",
+      "legal": "法律要求或保護我們的權利和安全",
+      "consent": "獲得您的明確同意"
+    },
+    "security": {
+      "title": "數據安全",
+      "description": "我們採用行業標準的安全措施來保護您的個人資訊，包括加密傳輸、安全儲存和訪問控制。我們定期審查和更新安全措施以確保數據安全。"
+    },
+    "rights": {
+      "title": "您的權利",
+      "description": "您對自己的個人資訊享有以下權利：",
+      "access": "訪問和查看您的個人資訊",
+      "correction": "更正不準確或不完整的資訊",
+      "deletion": "請求刪除您的個人資訊",
+      "portability": "請求數據可攜帶性"
+    },
+    "cookies": {
+      "title": "Cookie使用",
+      "description": "我們使用Cookie和類似技術來改善用戶體驗、分析網站使用情況和提供個人化內容。您可以透過瀏覽器設定管理Cookie偏好。"
+    },
+    "contact": {
+      "title": "聯絡我們",
+      "description": "如果您對本隱私政策有任何疑問或需要行使您的權利，請透過以下方式聯絡我們：",
+      "email": "電子郵件",
+      "address": "地址"
+    }
+  },
+  "terms": {
+    "title": "服務條款",
+    "subtitle": "使用我們的服務前，請仔細閱讀以下條款",
+    "backToHome": "返回首頁",
+    "lastUpdated": "最後更新",
+    "introduction": {
+      "title": "引言",
+      "content": "歡迎使用ASUPET的服務。這些服務條款（以下簡稱\"條款\"）規定了您使用我們服務的條件。使用我們的服務即表示您同意遵守這些條款。"
+    },
+    "acceptance": {
+      "title": "條款接受",
+      "content": "透過訪問或使用我們的服務，您確認已閱讀、理解並同意受這些條款的約束。如果您不同意這些條款，請不要使用我們的服務。"
+    },
+    "services": {
+      "title": "服務描述",
+      "description": "ASUPET提供以下服務：",
+      "nutrition": "寵物營養分析和建議",
+      "recommendation": "個人化產品推薦",
+      "consultation": "專業營養師諮詢",
+      "monitoring": "寵物健康監測"
+    },
+    "responsibilities": {
+      "title": "用戶責任",
+      "description": "作為我們服務的用戶，您同意：",
+      "accurate": "提供準確、完整的資訊",
+      "lawful": "以合法和適當的方式使用服務",
+      "security": "保護您的帳戶安全",
+      "respect": "尊重其他用戶和我們的權利"
+    },
+    "prohibited": {
+      "title": "禁止使用",
+      "description": "您不得將我們的服務用於：",
+      "illegal": "任何非法或未經授權的目的",
+      "harmful": "傳播有害、威脅或冒犯性內容",
+      "unauthorized": "未經授權訪問我們的系統",
+      "interference": "干擾或破壞服務的正常運行"
+    },
+    "intellectual": {
+      "title": "智慧財產權",
+      "content": "我們的服務及其所有內容、功能和特性均為ASUPET及其許可方的專有財產，受版權、商標和其他智慧財產權法律保護。"
+    },
+    "disclaimers": {
+      "title": "免責聲明",
+      "description": "我們的服務按\"現狀\"提供，我們不保證：",
+      "accuracy": "資訊的準確性或完整性",
+      "availability": "服務的持續可用性",
+      "medical": "我們的建議不能替代專業獸醫建議"
+    },
+    "liability": {
+      "title": "責任限制",
+      "content": "在法律允許的最大範圍內，ASUPET不對因使用或無法使用我們的服務而產生的任何直接、間接、偶然或後果性損害承擔責任。"
+    },
+    "termination": {
+      "title": "服務終止",
+      "content": "我們保留在任何時候暫停或終止您對服務的訪問權限的權利，特別是在您違反這些條款的情況下。"
+    },
+    "changes": {
+      "title": "條款變更",
+      "content": "我們可能會不時更新這些條款。重大變更將透過我們的網站或其他適當方式通知您。繼續使用服務即表示接受修訂後的條款。"
+    },
+    "governing": {
+      "title": "適用法律",
+      "content": "這些條款受中華人民共和國法律管轄，任何爭議將在上海市有管轄權的法院解決。"
+    },
+    "contact": {
+      "title": "聯絡我們",
+      "description": "如果您對這些條款有任何疑問，請聯絡我們：",
+      "email": "電子郵件",
+      "address": "地址"
+    }
+  },
+  "common": {
+    "loading": "載入中...",
+    "error": "出錯了",
+    "retry": "重試",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "save": "儲存",
+    "cancel": "取消",
+    "confirm": "確認",
+    "close": "關閉"
+  },
+  "admin": {
+    "title": "管理後台",
+    "login": {
+      "title": "管理員登入",
+      "username": "用戶名",
+      "password": "密碼",
+      "submit": "登入",
+      "error": "用戶名或密碼錯誤"
+    },
+    "nav": {
+      "dashboard": "儀表板",
+      "news": "新聞管理",
+      "products": "商品管理",
+      "categories": "分類管理",
+      "settings": "設定",
+      "logout": "退出登入"
+    },
+    "dashboard": {
+      "title": "儀表板",
+      "stats": {
+        "total": "總計",
+        "published": "已發布",
+        "draft": "草稿",
+        "thisMonth": "本月新增"
+      },
+      "quickActions": "快速操作",
+      "recentNews": "最新新聞",
+      "createNews": "建立新聞",
+      "manageNews": "管理新聞",
+      "createProduct": "建立商品",
+      "manageProducts": "管理商品",
+      "categories": "分類管理",
+      "noNews": "暫無新聞文章",
+      "getStarted": "開始建立新聞文章"
+    },
+    "news": {
+      "title": "新聞管理",
+      "create": "建立新聞",
+      "edit": "編輯新聞",
+      "list": "新聞列表",
+      "search": "搜尋新聞...",
+      "category": "分類",
+      "featured": "精選",
+      "status": "狀態",
+      "actions": "操作",
+      "delete": "刪除",
+      "batchDelete": "批量刪除",
+      "selectAll": "全選",
+      "confirmDelete": "確認刪除",
+      "deleteMessage": "確定要刪除這些新聞嗎？此操作不可撤銷。",
+      "preview": "預覽",
+      "form": {
+        "titleZh": "中文標題",
+        "titleEn": "英文標題",
+        "contentZh": "中文內容",
+        "contentEn": "英文內容",
+        "category": "分類",
+        "selectCategory": "選擇分類",
+        "featured": "設為精選",
+        "publishDate": "發布日期",
+        "images": "圖片",
+        "uploadImages": "上傳圖片",
+        "dragDrop": "拖拽檔案到此處或點擊上傳",
+        "maxFiles": "最多上傳5張圖片",
+        "submit": "提交",
+        "submitting": "提交中...",
+        "success": "操作成功",
+        "error": "操作失敗"
+      }
+    },
+    "categories": {
+      "title": "分類管理",
+      "create": "建立分類",
+      "edit": "編輯分類",
+      "name": "分類名稱",
+      "nameZh": "中文名稱",
+      "nameEn": "英文名稱",
+      "description": "描述",
+      "descriptionZh": "中文描述",
+      "descriptionEn": "英文描述",
+      "color": "顏色",
+      "actions": "操作",
+      "delete": "刪除",
+      "confirmDelete": "確認刪除",
+      "deleteMessage": "確定要刪除這個分類嗎？",
+      "cannotDelete": "無法刪除",
+      "categoryInUse": "該分類正在被新聞使用，無法刪除",
+      "form": {
+        "nameZhPlaceholder": "請輸入中文名稱",
+        "nameEnPlaceholder": "請輸入英文名稱",
+        "descriptionZhPlaceholder": "請輸入中文描述",
+        "descriptionEnPlaceholder": "請輸入英文描述",
+        "submit": "儲存",
+        "submitting": "儲存中...",
+        "success": "操作成功",
+        "error": "操作失敗"
+      }
+    },
+    "products": {
+      "title": "商品管理",
+      "create": "建立商品",
+      "edit": "編輯商品",
+      "list": "商品列表",
+      "search": "搜尋商品...",
+      "category": "分類",
+      "featured": "精選",
+      "active": "啟用",
+      "status": "狀態",
+      "actions": "操作",
+      "delete": "刪除",
+      "batchDelete": "批量刪除",
+      "selectAll": "全選",
+      "confirmDelete": "確認刪除",
+      "deleteMessage": "確定要刪除這些商品嗎？此操作不可撤銷。",
+      "preview": "預覽",
+      "form": {
+        "nameZh": "中文名稱",
+        "nameEn": "英文名稱",
+        "nameTw": "繁體中文名稱",
+        "descriptionZh": "中文描述",
+        "descriptionEn": "英文描述",
+        "descriptionTw": "繁體中文描述",
+        "shortDescriptionZh": "中文簡介",
+        "shortDescriptionEn": "英文簡介",
+        "shortDescriptionTw": "繁體中文簡介",
+        "sku": "商品編碼",
+        "price": "價格",
+        "comparePrice": "對比價格",
+        "weight": "重量",
+        "category": "分類",
+        "selectCategory": "選擇分類",
+        "tags": "標籤",
+        "addTag": "新增標籤",
+        "images": "商品圖片",
+        "uploadImages": "上傳圖片",
+        "dragDrop": "拖拽檔案到此處或點擊上傳",
+        "maxFiles": "最多上傳10張圖片",
+        "specifications": "規格參數",
+        "ingredients": "成分配料",
+        "feedingGuide": "餵養指南",
+        "nutritionalAnalysis": "營養分析",
+        "stockQuantity": "庫存數量",
+        "isActive": "啟用商品",
+        "isFeatured": "設為精選",
+        "submit": "提交",
+        "submitting": "提交中...",
+        "success": "操作成功",
+        "error": "操作失敗",
+        "required": "此欄位為必填項",
+        "invalidPrice": "請輸入有效的價格",
+        "invalidWeight": "請輸入有效的重量",
+        "invalidStock": "請輸入有效的庫存數量"
+      }
+    }
+  },
+  "cats": {
+    "title": "貓咪專區",
+    "subtitle": "專為貓咪設計的營養方案，讓每一隻貓咪都能健康快樂成長",
+    "shopCatFood": "選購貓糧",
+    "nutritionGuide": "營養指南",
+    "careGuides": {
+      "title": "貓咪護理指南",
+      "subtitle": "根據貓咪不同生長階段，提供專業的護理建議",
+      "kitten": {
+        "title": "幼貓營養指南",
+        "description": "0-12個月幼貓的科學餵養方案"
+      },
+      "adult": {
+        "title": "成貓健康管理",
+        "description": "1-7歲成貓的日常護理要點"
+      },
+      "senior": {
+        "title": "老年貓特殊護理",
+        "description": "7歲以上老年貓的貼心照顧"
+      },
+      "learnMore": "了解更多"
+    },
+    "breeds": {
+      "title": "熱門貓咪品種",
+      "subtitle": "了解不同品種貓咪的特點和營養需求",
+      "nutritionTips": "營養建議",
+      "britishShorthair": {
+        "name": "英國短毛貓",
+        "traits": ["溫順", "易護理", "適應性強"],
+        "nutritionTips": "需要控制體重，選擇低脂肪高蛋白食物"
+      },
+      "ragdoll": {
+        "name": "布偶貓",
+        "traits": ["溫柔", "親人", "毛髮豐厚"],
+        "nutritionTips": "需要美毛營養，注意毛球問題預防"
+      },
+      "americanShorthair": {
+        "name": "美國短毛貓",
+        "traits": ["活潑", "健康", "適應性強"],
+        "nutritionTips": "均衡營養即可，注意運動量配合"
+      }
+    },
+    "products": {
+      "title": "貓咪專用產品",
+      "subtitle": "精選優質貓糧，滿足貓咪的營養需求",
+      "viewMore": "查看更多貓咪產品"
+    }
+  },
+  "dogs": {
+    "title": "狗狗專區",
+    "subtitle": "專為狗狗設計的營養方案，讓每一隻狗狗都能健康快樂成長",
+    "shopDogFood": "選購狗糧",
+    "nutritionGuide": "營養指南",
+    "careGuides": {
+      "title": "狗狗護理指南",
+      "subtitle": "根據狗狗不同生長階段，提供專業的護理建議",
+      "puppy": {
+        "title": "幼犬營養指南",
+        "description": "0-12個月幼犬的科學餵養方案"
+      },
+      "adult": {
+        "title": "成犬健康管理",
+        "description": "1-7歲成犬的日常護理要點"
+      },
+      "senior": {
+        "title": "老年犬特殊護理",
+        "description": "7歲以上老年犬的貼心照顧"
+      },
+      "learnMore": "了解更多"
+    },
+    "breeds": {
+      "title": "熱門狗狗品種",
+      "subtitle": "了解不同品種狗狗的特點和營養需求",
+      "nutritionTips": "營養建議",
+      "goldenRetriever": {
+        "name": "金毛尋回犬",
+        "traits": ["友善", "聰明", "活躍"],
+        "nutritionTips": "需要高蛋白食物，注意關節健康"
+      },
+      "labrador": {
+        "name": "拉布拉多",
+        "traits": ["溫順", "忠誠", "易訓練"],
+        "nutritionTips": "控制食量，防止肥胖，選擇優質蛋白"
+      },
+
+      "poodle": {
+        "name": "貴賓犬",
+        "traits": ["聰明", "活潑", "不掉毛"],
+        "nutritionTips": "小型犬專用配方，少食多餐"
+      }
+    },
+    "products": {
+      "title": "狗狗專用產品",
+      "subtitle": "精選優質狗糧，滿足狗狗的營養需求",
+      "viewMore": "查看更多狗狗產品"
+    }
+  },
+  "nutritionGuide": {
+    "title": "營養指南",
+    "subtitle": "科學餵養，讓寵物健康成長",
+    "tabs": {
+      "cats": "貓咪營養",
+      "dogs": "狗狗營養"
+    },
+    "cats": {
+      "kitten": {
+        "title": "幼貓營養指南 (0-12個月)",
+        "description": "幼貓正處於快速生長期，需要高質量的營養支持",
+        "tips": [
+          "高蛋白質含量 (至少35%)",
+          "富含DHA支持大腦發育",
+          "少食多餐，每天3-4次",
+          "充足的鈣質和磷質",
+          "易消化的優質食材"
+        ],
+        "feeding": {
+          "title": "餵食建議",
+          "2-4months": "每天4次，每次20-30g",
+          "4-6months": "每天3次，每次30-40g",
+          "6-12months": "每天2-3次，每次40-60g"
+        },
+        "warnings": {
+          "title": "注意事項",
+          "items": [
+            "避免餵食牛奶，可能導致腹瀉",
+            "不要給予成貓糧，營養不夠充足",
+            "避免過度餵食導致肥胖"
+          ]
+        }
+      },
+      "adult": {
+        "title": "成貓營養指南 (1-7歲)",
+        "description": "成貓需要均衡的營養來維持健康的體重和活力",
+        "tips": [
+          "蛋白質含量26-30%",
+          "適量脂肪含量 (9-15%)",
+          "控制碳水化合物攝入",
+          "充足的水分攝入",
+          "定時定量餵食"
+        ],
+        "feeding": {
+          "title": "餵食建議",
+          "indoor": "每天2次，每次40-60g",
+          "outdoor": "每天2次，每次50-70g",
+          "neutered": "每天2次，每次35-50g"
+        },
+        "warnings": {
+          "title": "注意事項",
+          "items": [
+            "避免過度餵食零食",
+            "注意體重變化",
+            "定期檢查牙齒健康"
+          ]
+        }
+      },
+      "senior": {
+        "title": "老年貓營養指南 (7歲以上)",
+        "description": "老年貓需要特殊的營養配方來支持健康老化",
+        "tips": [
+          "易消化的高質量蛋白質",
+          "適量降低熱量攝入",
+          "增加纖維含量",
+          "補充關節保健成分",
+          "定期健康檢查"
+        ],
+        "feeding": {
+          "title": "餵食建議",
+          "general": "每天2次，每次30-50g",
+          "special": "根據健康狀況調整"
+        },
+        "warnings": {
+          "title": "注意事項",
+          "items": [
+            "監控體重變化",
+            "注意腎臟健康",
+            "定期獸醫檢查"
+          ]
+        }
+      }
+    },
+    "dogs": {
+      "puppy": {
+        "title": "幼犬營養指南 (0-12個月)",
+        "description": "幼犬快速成長期需要充足的營養支持",
+        "tips": [
+          "高蛋白質含量 (至少22%)",
+          "適量脂肪支持發育",
+          "少食多餐，每天3-4次",
+          "充足的鈣磷比例",
+          "易消化配方"
+        ],
+        "feeding": {
+          "title": "餵食建議",
+          "small": "小型犬：每天3-4次",
+          "medium": "中型犬：每天3次",
+          "large": "大型犬：每天2-3次"
+        },
+        "warnings": {
+          "title": "注意事項",
+          "items": [
+            "避免過度餵食",
+            "不要給予成犬糧",
+            "注意食物過敏"
+          ]
+        }
+      },
+      "adult": {
+        "title": "成犬營養指南 (1-7歲)",
+        "description": "成犬需要均衡營養維持最佳健康狀態",
+        "tips": [
+          "蛋白質含量18-25%",
+          "適量脂肪含量",
+          "控制熱量攝入",
+          "充足運動配合",
+          "定時定量餵食"
+        ],
+        "feeding": {
+          "title": "餵食建議",
+          "small": "小型犬：每天2次",
+          "medium": "中型犬：每天2次",
+          "large": "大型犬：每天1-2次"
+        },
+        "warnings": {
+          "title": "注意事項",
+          "items": [
+            "控制零食攝入",
+            "監控體重",
+            "定期運動"
+          ]
+        }
+      },
+      "senior": {
+        "title": "老年犬營養指南 (7歲以上)",
+        "description": "老年犬需要特殊營養支持健康老化",
+        "tips": [
+          "易消化蛋白質",
+          "降低熱量密度",
+          "增加纖維含量",
+          "關節保健成分",
+          "心臟健康支持"
+        ],
+        "feeding": {
+          "title": "餵食建議",
+          "general": "每天2次，適量減少",
+          "special": "根據健康狀況調整"
+        },
+        "warnings": {
+          "title": "注意事項",
+          "items": [
+            "定期健康檢查",
+            "監控體重變化",
+            "注意關節健康"
+          ]
+        }
+      }
+    },
+    "common": {
+      "nutritionTips": "營養要點",
+      "feedingSchedule": "餵食時間表",
+      "importantNotes": "重要提醒",
+      "ageRange": "年齡範圍",
+      "indoorCat": "室內貓",
+      "outdoorCat": "戶外貓",
+      "neuteredCat": "絕育貓",
+      "smallDog": "小型犬",
+      "mediumDog": "中型犬",
+      "largeDog": "大型犬"
+    },
+    "commonMistakes": {
+      "title": "常見餵養誤區",
+      "subtitle": "避免這些常見錯誤，讓您的寵物更健康",
+      "correctApproach": "正確做法",
+      "mistakes": [
+        {
+          "mistake": "人類食物餵食",
+          "description": "許多人類食物對寵物有害",
+          "solution": "堅持使用專業寵物食品",
+          "severity": "high"
+        },
+        {
+          "mistake": "過度餵食",
+          "description": "肥胖會導致多種健康問題",
+          "solution": "按照體重和年齡科學餵食",
+          "severity": "medium"
+        },
+        {
+          "mistake": "頻繁更換食物",
+          "description": "突然更換食物可能導致腸胃不適",
+          "solution": "逐漸過渡，7-10天完成換糧",
+          "severity": "medium"
+        },
+        {
+          "mistake": "忽視飲水",
+          "description": "水分不足影響腎臟健康",
+          "solution": "提供充足清潔的飲用水",
+          "severity": "high"
+        }
+      ]
+    },
+    "cta": {
+      "title": "需要個性化營養建議？",
+      "subtitle": "我們的專業營養師團隊為您提供一對一諮詢服務",
+      "consultButton": "諮詢營養師",
+      "shopButton": "選購產品"
+    }
+  },
+  "shop": {
+    "title": "ASUPET嚴選商品",
+    "subtitle": "為您的愛寵提供最優質的營養產品",
+    "search": {
+      "placeholder": "搜尋商品...",
+      "allCategories": "全部分類"
+    },
+    "sort": {
+      "featured": "推薦商品",
+      "newest": "最新上架",
+      "priceLow": "價格從低到高",
+      "priceHigh": "價格從高到低"
+    },
+    "product": {
+      "featured": "推薦",
+      "sale": "特價",
+      "inStock": "現貨充足",
+      "lowStock": "僅剩{{count}}件",
+      "outOfStock": "暫時缺貨",
+      "addToCart": "加入購物車",
+      "weight": "{{weight}}kg"
+    },
+    "comparison": {
+      "title": "商品對比",
+      "viewComparison": "查看對比",
+      "count": "({{current}}/{{max}})"
+    },
+    "empty": {
+      "title": "暫無商品",
+      "description": "我們正在努力為您準備更多優質商品"
+    },
+    "error": {
+      "title": "商城暫時無法訪問",
+      "description": "我們正在努力為您準備精彩的商品，請稍後再試。"
+    }
+  },
+
+  "userCenter": {
+    "title": "個人中心",
+    "overview": "概覽",
+    "myOrders": "我的訂單",
+    "myFavorites": "我的收藏",
+    "parentInfo": "家長資訊",
+    "petInfo": "寶貝資訊",
+    "addresses": "收貨地址",
+    "notifications": "訊息通知",
+    "memberBenefits": "會員權益",
+    "settings": "帳戶設定",
+    "memberLevel": "會員等級",
+    "points": "積分",
+    "joinDate": "成為ASUPET夥伴的日子",
+    "editProfile": "編輯資料",
+    "cart": "購物車",
+    "favorites": "收藏",
+    "recentOrders": "最近訂單",
+    "viewAll": "查看全部",
+    "quickActions": "快速操作",
+    "continueShopping": "繼續購物",
+    "noOrders": "暫無訂單記錄",
+    "noFavorites": "暫無收藏",
+    "noAddresses": "暫無收貨地址",
+    "addAddress": "新增地址",
+    "orderStatus": {
+      "delivered": "已送達",
+      "shipping": "配送中",
+      "processing": "處理中",
+      "cancelled": "已取消"
+    },
+    "basicInfo": "基本資訊",
+    "securitySettings": "安全設定",
+    "changePassword": "修改密碼",
+    "twoFactorAuth": "兩步驗證",
+    "orderDetails": "查看詳情",
+    "buyAgain": "再次購買",
+    "startShopping": "開始購物",
+    "parent": {
+      "title": "家長資訊",
+      "name": "姓名",
+      "birthday": "生日",
+      "phone": "手機號",
+      "email": "郵箱",
+      "address": "地址",
+      "edit": "編輯",
+      "save": "儲存",
+      "cancel": "取消"
+    },
+    "pets": {
+      "title": "寶貝資訊",
+      "addPet": "新增寶貝",
+      "noPets": "暫無寶貝資訊",
+      "noPetsDesc": "新增您的寵物資訊，獲得更好的購物體驗",
+      "name": "姓名",
+      "breed": "品種",
+      "birthday": "生日",
+      "gender": "性別",
+      "weight": "體重",
+      "color": "毛色",
+      "male": "公",
+      "female": "母",
+      "edit": "編輯",
+      "delete": "刪除"
+    },
+    "notifications": "訊息通知",
+    "notificationDetails": {
+      "title": "訊息通知",
+      "markAllRead": "全部標記為已讀",
+      "noNotifications": "暫無新訊息",
+      "orderUpdate": "訂單狀態更新",
+      "orderUpdateMessage": "您的訂單 ORD001 已發貨",
+      "promotion": "限時優惠",
+      "promotionMessage": "寵物營養品8折優惠，僅限今日",
+      "system": "系統通知",
+      "petCare": "寵物護理提醒",
+      "petCareMessage": "小白該接種疫苗了",
+      "hoursAgo": "{{count}}小時前",
+      "daysAgo": "{{count}}天前"
+    },
+    "memberBenefits": "會員權益",
+    "memberBenefitDetails": {
+      "title": "會員權益",
+      "currentLevel": "當前等級",
+      "nextLevel": "下一等級",
+      "pointsToNext": "距離下一等級還需",
+      "benefits": "專屬權益",
+      "discount": "專享折扣",
+      "freeShipping": "免費配送",
+      "prioritySupport": "優先客服",
+      "exclusiveProducts": "專屬商品"
+    },
+    "benefits": {
+      "title": "會員權益",
+      "vipLevel": "VIP等級",
+      "currentLevel": "當前等級",
+      "levelDesc": "享受專屬會員特權",
+      "discount": "專屬折扣",
+      "points": "積分倍率",
+      "exclusive": "專屬權益",
+      "freeShipping": "免費配送",
+      "freeShippingDesc": "全場包郵，無門檻限制",
+      "earlyAccess": "優先體驗",
+      "earlyAccessDesc": "新品搶先購買權",
+      "birthday": "生日特權",
+      "birthdayDesc": "生日月專屬優惠券",
+      "support": "專屬客服",
+      "supportDesc": "VIP專線服務"
+    },
+    "languageSettings": {
+      "title": "語言設定",
+      "current": "當前語言",
+      "chinese": "简体中文",
+      "traditionalChinese": "繁体中文",
+      "english": "English"
+    },
+    "basicInfo": "基本資訊",
+    "name": "姓名",
+    "email": "郵箱",
+    "phone": "手機號",
+    "securitySettings": "安全設定",
+    "changePassword": "修改密碼",
+    "changePasswordDesc": "定期更新密碼以保護帳戶安全",
+    "modify": "修改",
+    "twoFactorAuth": "兩步驗證",
+    "twoFactorAuthDesc": "為帳戶添加額外的安全保護",
+    "setup": "設定"
+  }
+}

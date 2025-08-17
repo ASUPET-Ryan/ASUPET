@@ -1,0 +1,686 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "products": "产品理念",
+    "technology": "技术优势",
+    "news": "新闻动态",
+    "contact": "联系我们",
+    "language": "语言"
+  },
+  "home": {
+    "hero": {
+      "title": "因宠而异",
+      "subtitle": "科技驱动的专业宠物消费新生态",
+      "description": "通过AI技术和专业营养师团队，为每只宠物提供个性化营养解决方案",
+      "cta": {
+        "primary": "查看产品",
+        "secondary": "了解更多"
+      },
+      "imageAlt": "快乐的金毛犬正在享用优质宠物食品"
+    },
+    "features": {
+      "title": "核心优势",
+      "subtitle": "三大核心优势，为您的宠物提供最优质的营养解决方案",
+      "nutrition": {
+        "title": "科学营养配方",
+        "description": "基于宠物营养学研究，精心调配每一种营养成分，确保宠物健康成长"
+      },
+      "safety": {
+        "title": "安全品质保障",
+        "description": "严格的质量控制体系，从原料采购到生产包装，每个环节都确保安全可靠"
+      },
+      "technology": {
+        "title": "AI智能推荐",
+        "description": "运用人工智能技术，根据宠物的品种、年龄、体重等因素，提供个性化营养建议"
+      }
+    },
+    "stats": {
+      "title": "值得信赖的数据",
+      "subtitle": "用数字见证我们的专业与品质",
+      "customers": "服务客户",
+      "awards": "获得奖项",
+      "satisfaction": "客户满意度"
+    },
+    "news": {
+      "title": "最新动态",
+      "subtitle": "了解ASUPET的最新资讯和行业动态",
+      "viewAll": "查看全部"
+    },
+    "cta": {
+      "title": "开始您的宠物营养之旅",
+      "subtitle": "让我们为您的宠物提供最专业的营养解决方案",
+      "button": "立即咨询"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "hero": {
+      "title": "关于ASUPET",
+      "subtitle": "科技驱动的专业宠物消费新生态，致力于为每只宠物提供个性化营养解决方案"
+    },
+    "story": {
+      "title": "品牌故事",
+      "subtitle": "ASUPET的创立理念与使命愿景",
+      "imageAlt": "ASUPET品牌故事"
+    },
+    "values": {
+      "title": "核心价值观",
+      "subtitle": "我们坚持的理念和原则",
+      "love": {
+        "title": "因爱而生",
+        "description": "每一个产品都源于对宠物的深深关爱，我们相信爱是最好的营养"
+      },
+      "quality": {
+        "title": "品质至上",
+        "description": "严格的品质控制和科学的营养配方，确保每一份产品都达到最高标准"
+      },
+      "innovation": {
+        "title": "持续创新",
+        "description": "运用最新的AI技术和营养科学，不断创新产品和服务"
+      }
+    },
+    "achievements": {
+      "title": "我们的成就",
+      "subtitle": "数字见证我们的成长与专业",
+      "customers": "服务客户",
+      "awards": "获得奖项",
+      "countries": "覆盖国家"
+    },
+    "team": {
+      "title": "专业团队",
+      "subtitle": "由资深营养师和技术专家组成的专业团队"
+    },
+    "cta": {
+      "title": "开始您的宠物营养之旅",
+      "subtitle": "让我们为您的宠物提供最专业的营养解决方案",
+      "products": "查看产品",
+      "contact": "联系我们"
+    }
+  },
+  "products": {
+    "title": "产品理念",
+    "subtitle": "三大产品系列，满足不同宠物的营养需求",
+    "hero": {
+      "title": "科学营养，因宠而异",
+      "subtitle": "基于AI技术和专业营养学，为每只宠物提供个性化营养解决方案"
+    },
+    "philosophy": {
+      "title": "产品理念",
+      "subtitle": "以科学为基础，以爱为驱动，为宠物提供最优质的营养体验"
+    },
+    "principles": {
+      "natural": {
+        "title": "天然原料",
+        "description": "精选优质天然原料，不添加人工色素、防腐剂和化学添加剂，确保每一口都是纯净营养"
+      },
+      "safety": {
+        "title": "安全保障",
+        "description": "严格的质量控制体系，从原料采购到生产包装，每个环节都经过严格检测，确保产品安全可靠"
+      },
+      "nutrition": {
+        "title": "营养均衡",
+        "description": "基于宠物营养学研究，科学配比蛋白质、脂肪、维生素等营养成分，满足宠物不同生长阶段的营养需求"
+      },
+      "quality": {
+        "title": "品质卓越",
+        "description": "采用先进的生产工艺和设备，确保产品品质稳定，为宠物提供持续优质的营养保障"
+      }
+    },
+    "series": {
+      "title": "产品系列"
+    },
+    "nutrition": {
+      "title": "营养特点",
+      "subtitle": "科学配比，营养全面",
+      "protein": "蛋白质",
+      "fat": "脂肪",
+      "fiber": "纤维",
+      "imageAlt": "营养成分分析图表"
+    },
+    "benefits": {
+      "digestibility": "易消化吸收",
+      "immunity": "增强免疫力",
+      "coat": "亮泽毛发",
+      "energy": "提供持久能量",
+      "dental": "口腔健康",
+      "weight": "体重管理"
+    },
+    "quality": {
+      "title": "品质保证",
+      "subtitle": "严格的质量控制体系，确保每一份产品都达到最高标准",
+      "certification": {
+        "title": "权威认证",
+        "description": "通过ISO22000、HACCP等国际权威认证，产品质量符合国际标准"
+      },
+      "testing": {
+        "title": "严格检测",
+        "description": "每批产品都经过严格的营养成分检测和安全性检测，确保产品质量"
+      },
+      "satisfaction": {
+        "title": "满意保障",
+        "description": "提供100%满意保障，如有任何质量问题，我们承诺无条件退换货"
+      }
+    },
+    "scenarios": {
+      "title": "适用场景"
+    },
+    "cases": {
+      "title": "成功案例"
+    },
+    "cta": {
+      "title": "选择ASUPET，给宠物最好的营养",
+      "subtitle": "立即了解我们的产品，为您的宠物提供科学营养解决方案",
+      "contact": "联系我们",
+      "technology": "了解技术"
+    }
+  },
+  "technology": {
+    "title": "技术优势",
+    "subtitle": "AI驱动的个性化宠物营养解决方案",
+    "hero": {
+      "title": "技术创新引领未来",
+      "subtitle": "运用前沿AI技术，为宠物营养提供智能化解决方案"
+    },
+    "core": {
+      "title": "核心技术架构",
+      "subtitle": "基于深度学习和大数据分析的智能推荐系统"
+    },
+    "ai": {
+      "title": "AI个性化推荐系统",
+      "description": "通过机器学习算法分析宠物的品种、年龄、体重、活动量等因素，为每只宠物提供精准的营养建议",
+      "features": {
+        "analysis": "智能数据分析",
+        "recommendation": "个性化推荐",
+        "monitoring": "实时健康监测",
+        "optimization": "营养方案优化"
+      }
+    },
+    "data": {
+      "title": "大数据处理平台",
+      "description": "构建完整的宠物健康数据生态，提供精准的营养分析和建议",
+      "features": {
+        "collection": "多维数据采集",
+        "processing": "实时数据处理",
+        "insights": "深度洞察分析",
+        "prediction": "健康趋势预测"
+      }
+    },
+    "security": {
+      "title": "数据安全保障",
+      "description": "采用企业级安全标准，确保用户和宠物数据的隐私安全",
+      "features": {
+        "encryption": "端到端加密",
+        "privacy": "隐私保护机制",
+        "compliance": "合规性保障",
+        "backup": "安全备份系统"
+      }
+    },
+    "advantages": {
+      "title": "技术优势",
+      "subtitle": "领先的技术指标，为您提供最可靠的服务",
+      "accuracy": "准确率",
+      "accuracyDesc": "AI推荐准确率",
+      "availability": "可用性",
+      "availabilityDesc": "全天候服务保障",
+      "efficiency": "效率提升",
+      "efficiencyDesc": "营养配比效率提升",
+      "algorithms": "算法模型",
+      "algorithmsDesc": "专业算法模型支持"
+    },
+    "services": {
+      "title": "技术服务",
+      "subtitle": "全方位的技术支持和专业服务",
+      "consultation": {
+        "title": "专业咨询服务",
+        "description": "提供一对一的专业营养咨询和技术支持",
+        "benefits": {
+          "expert": "专家团队支持",
+          "personalized": "个性化方案",
+          "support": "24/7技术支持"
+        }
+      },
+      "monitoring": {
+        "title": "健康监测服务",
+        "description": "实时监测宠物健康状况，及时调整营养方案",
+        "benefits": {
+          "realtime": "实时数据监测",
+          "alerts": "智能预警系统",
+          "reports": "详细健康报告"
+        }
+      },
+      "optimization": {
+        "title": "方案优化服务",
+        "description": "持续优化营养方案，确保最佳效果",
+        "benefits": {
+          "efficiency": "效率持续提升",
+          "cost": "成本有效控制",
+          "performance": "性能不断优化"
+        }
+      }
+    },
+    "process": {
+      "title": "技术研发流程",
+      "subtitle": "严谨的研发流程，确保技术创新和产品质量",
+      "research": {
+        "title": "需求研究",
+        "description": "深入研究宠物营养需求和市场趋势"
+      },
+      "development": {
+        "title": "技术开发",
+        "description": "运用最新技术开发创新解决方案"
+      },
+      "testing": {
+        "title": "测试验证",
+        "description": "严格测试确保产品质量和安全性"
+      },
+      "deployment": {
+        "title": "部署上线",
+        "description": "稳定部署并持续监控优化"
+      }
+    },
+    "cta": {
+      "title": "体验我们的技术",
+      "subtitle": "立即了解ASUPET的技术优势，为您的宠物提供最佳营养方案",
+      "contact": "联系我们",
+      "products": "查看产品"
+    },
+    "team": {
+      "title": "技术团队",
+      "description": "由AI专家、数据科学家和软件工程师组成的专业技术团队"
+    },
+    "service": {
+      "title": "服务模式",
+      "subscription": "订阅制服务",
+      "dual": "双地服务模式"
+    }
+  },
+  "news": {
+    "title": "新闻动态",
+    "hero": {
+      "title": "新闻动态",
+      "subtitle": "了解ASUPET的最新资讯和行业动态"
+    },
+    "search": {
+      "placeholder": "搜索新闻..."
+    },
+    "filter": {
+      "all": "全部"
+    },
+    "noNews": "暂无新闻",
+    "newsletter": {
+      "title": "订阅新闻通讯",
+      "subtitle": "获取ASUPET最新资讯和行业动态",
+      "placeholder": "请输入您的邮箱地址",
+      "subscribe": "订阅"
+    },
+    "categories": {
+      "all": "全部",
+      "company": "公司新闻",
+      "industry": "行业观点",
+      "media": "媒体报道"
+    },
+    "featured": {
+      "title": "精选新闻"
+    },
+    "latest": {
+      "title": "最新新闻"
+    },
+    "readTime": "分钟阅读",
+    "readMore": "阅读更多",
+    "noResults": "没有找到相关新闻",
+    "publishedOn": "发布于",
+    "by": "作者",
+    "detail": {
+      "notFound": "新闻不存在",
+      "backToNews": "返回新闻列表",
+      "share": "分享",
+      "tags": "标签",
+      "related": "相关新闻",
+      "cta": {
+        "title": "想了解更多？",
+        "subtitle": "联系我们获取更多信息和专业建议",
+        "contact": "联系我们",
+        "moreNews": "更多新闻"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "我们期待与您的合作",
+    "hero": {
+      "title": "联系我们",
+      "subtitle": "我们期待与您的合作，共同为宠物营养事业贡献力量"
+    },
+    "info": {
+      "title": "联系信息",
+      "subtitle": "多种联系方式，随时为您提供专业服务",
+      "address": {
+        "title": "公司地址",
+        "content": "上海市浦东新区张江高科技园区科苑路399号"
+      },
+      "phone": {
+        "title": "联系电话",
+        "content": "+86 400-123-4567"
+      },
+      "email": {
+        "title": "邮箱地址",
+        "content": "contact@asupet.com"
+      },
+      "hours": {
+        "title": "营业时间",
+        "content": "周一至周五 9:00-18:00"
+      }
+    },
+    "map": {
+      "alt": "ASUPET公司位置地图"
+    },
+    "form": {
+      "title": "在线咨询",
+      "name": "姓名",
+      "email": "邮箱",
+      "company": "公司",
+      "phone": "电话",
+      "subject": "咨询主题",
+      "message": "留言内容",
+      "namePlaceholder": "请输入您的姓名",
+      "emailPlaceholder": "请输入您的邮箱地址",
+      "phonePlaceholder": "请输入您的联系电话",
+      "companyPlaceholder": "请输入您的公司名称",
+      "subjectPlaceholder": "请选择咨询主题",
+      "messagePlaceholder": "请详细描述您的需求或问题",
+      "send": "发送消息",
+      "sending": "发送中...",
+      "subjects": {
+        "general": "一般咨询",
+        "products": "产品咨询",
+        "partnership": "商务合作",
+        "support": "技术支持",
+        "media": "媒体联系"
+      },
+      "success": {
+        "title": "提交成功！",
+        "message": "感谢您的咨询，我们会在24小时内回复您"
+      },
+      "error": "提交失败，请稍后重试"
+    },
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "快速了解您关心的问题",
+      "questions": {
+        "response": {
+          "question": "你们的响应时间是多久？",
+          "answer": "我们承诺在收到您的咨询后24小时内回复。对于紧急问题，我们会在2小时内响应。"
+        },
+        "products": {
+          "question": "如何选择适合我宠物的产品？",
+          "answer": "我们的AI推荐系统会根据您宠物的品种、年龄、体重、活动量等因素，为您推荐最适合的营养方案。您也可以咨询我们的专业营养师。"
+        },
+        "partnership": {
+          "question": "如何与ASUPET建立合作关系？",
+          "answer": "我们欢迎各种形式的合作。请通过商务合作渠道联系我们，我们的商务团队会与您详细讨论合作方案。"
+        },
+        "support": {
+          "question": "你们提供哪些技术支持服务？",
+          "answer": "我们提供全方位的技术支持，包括产品使用指导、营养咨询、健康监测等。我们的专业团队随时为您提供帮助。"
+        }
+      }
+    }
+  },
+  "footer": {
+    "company": "ASUPET",
+    "description": "科技驱动的专业宠物消费新生态",
+    "address": "上海市浦东新区张江高科技园区",
+    "phone": "+86 400-123-4567",
+    "email": "contact@asupet.com",
+    "quickLinks": "快速链接",
+    "followUs": "关注我们",
+    "newsletter": "订阅我们的新闻通讯",
+    "emailPlaceholder": "请输入您的邮箱地址",
+    "subscribe": "订阅",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "links": {
+      "about": "关于我们",
+      "products": "产品理念",
+      "technology": "技术优势",
+      "news": "新闻动态",
+      "contact": "联系我们"
+    },
+    "copyright": "© {{year}} ASUPET. 保留所有权利。"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "subtitle": "我们重视您的隐私，致力于保护您的个人信息",
+    "backToHome": "返回首页",
+    "lastUpdated": "最后更新",
+    "introduction": {
+      "title": "引言",
+      "content": "ASUPET（以下简称\"我们\"）尊重并保护用户的隐私权。本隐私政策说明了我们如何收集、使用、存储和保护您的个人信息。使用我们的服务即表示您同意本隐私政策的条款。"
+    },
+    "collection": {
+      "title": "信息收集",
+      "description": "我们可能收集以下类型的信息：",
+      "personal": "个人身份信息（姓名、邮箱地址、电话号码等）",
+      "pet": "宠物信息（品种、年龄、体重、健康状况等）",
+      "usage": "使用数据（访问时间、页面浏览、功能使用等）",
+      "device": "设备信息（IP地址、浏览器类型、操作系统等）"
+    },
+    "usage": {
+      "title": "信息使用",
+      "description": "我们使用收集的信息用于：",
+      "service": "提供和改进我们的服务",
+      "recommendation": "为您的宠物提供个性化营养建议",
+      "communication": "与您沟通服务相关事宜",
+      "improvement": "分析和改进我们的产品和服务"
+    },
+    "sharing": {
+      "title": "信息共享",
+      "description": "我们不会出售、交易或转让您的个人信息给第三方，除非：",
+      "partners": "与可信的服务提供商共享，以提供更好的服务",
+      "legal": "法律要求或保护我们的权利和安全",
+      "consent": "获得您的明确同意"
+    },
+    "security": {
+      "title": "数据安全",
+      "description": "我们采用行业标准的安全措施来保护您的个人信息，包括加密传输、安全存储和访问控制。我们定期审查和更新安全措施以确保数据安全。"
+    },
+    "rights": {
+      "title": "您的权利",
+      "description": "您对自己的个人信息享有以下权利：",
+      "access": "访问和查看您的个人信息",
+      "correction": "更正不准确或不完整的信息",
+      "deletion": "请求删除您的个人信息",
+      "portability": "请求数据可携带性"
+    },
+    "cookies": {
+      "title": "Cookie使用",
+      "description": "我们使用Cookie和类似技术来改善用户体验、分析网站使用情况和提供个性化内容。您可以通过浏览器设置管理Cookie偏好。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "description": "如果您对本隐私政策有任何疑问或需要行使您的权利，请通过以下方式联系我们：",
+      "email": "邮箱",
+      "address": "地址"
+    }
+  },
+  "terms": {
+    "title": "服务条款",
+    "subtitle": "使用我们的服务前，请仔细阅读以下条款",
+    "backToHome": "返回首页",
+    "lastUpdated": "最后更新",
+    "introduction": {
+      "title": "引言",
+      "content": "欢迎使用ASUPET的服务。这些服务条款（以下简称\"条款\"）规定了您使用我们服务的条件。使用我们的服务即表示您同意遵守这些条款。"
+    },
+    "acceptance": {
+      "title": "条款接受",
+      "content": "通过访问或使用我们的服务，您确认已阅读、理解并同意受这些条款的约束。如果您不同意这些条款，请不要使用我们的服务。"
+    },
+    "services": {
+      "title": "服务描述",
+      "description": "ASUPET提供以下服务：",
+      "nutrition": "宠物营养分析和建议",
+      "recommendation": "个性化产品推荐",
+      "consultation": "专业营养师咨询",
+      "monitoring": "宠物健康监测"
+    },
+    "responsibilities": {
+      "title": "用户责任",
+      "description": "作为我们服务的用户，您同意：",
+      "accurate": "提供准确、完整的信息",
+      "lawful": "以合法和适当的方式使用服务",
+      "security": "保护您的账户安全",
+      "respect": "尊重其他用户和我们的权利"
+    },
+    "prohibited": {
+      "title": "禁止使用",
+      "description": "您不得将我们的服务用于：",
+      "illegal": "任何非法或未经授权的目的",
+      "harmful": "传播有害、威胁或冒犯性内容",
+      "unauthorized": "未经授权访问我们的系统",
+      "interference": "干扰或破坏服务的正常运行"
+    },
+    "intellectual": {
+      "title": "知识产权",
+      "content": "我们的服务及其所有内容、功能和特性均为ASUPET及其许可方的专有财产，受版权、商标和其他知识产权法律保护。"
+    },
+    "disclaimers": {
+      "title": "免责声明",
+      "description": "我们的服务按\"现状\"提供，我们不保证：",
+      "accuracy": "信息的准确性或完整性",
+      "availability": "服务的持续可用性",
+      "medical": "我们的建议不能替代专业兽医建议"
+    },
+    "liability": {
+      "title": "责任限制",
+      "content": "在法律允许的最大范围内，ASUPET不对因使用或无法使用我们的服务而产生的任何直接、间接、偶然或后果性损害承担责任。"
+    },
+    "termination": {
+      "title": "服务终止",
+      "content": "我们保留在任何时候暂停或终止您对服务的访问权限的权利，特别是在您违反这些条款的情况下。"
+    },
+    "changes": {
+      "title": "条款变更",
+      "content": "我们可能会不时更新这些条款。重大变更将通过我们的网站或其他适当方式通知您。继续使用服务即表示接受修订后的条款。"
+    },
+    "governing": {
+      "title": "适用法律",
+      "content": "这些条款受中华人民共和国法律管辖，任何争议将在上海市有管辖权的法院解决。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "description": "如果您对这些条款有任何疑问，请联系我们：",
+      "email": "邮箱",
+      "address": "地址"
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "出错了",
+    "retry": "重试",
+    "back": "返回",
+    "next": "下一步",
+    "previous": "上一步",
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确认",
+    "close": "关闭"
+  },
+  "admin": {
+    "title": "管理后台",
+    "login": {
+      "title": "管理员登录",
+      "username": "用户名",
+      "password": "密码",
+      "submit": "登录",
+      "error": "用户名或密码错误"
+    },
+    "nav": {
+      "dashboard": "仪表板",
+      "news": "新闻管理",
+      "categories": "分类管理",
+      "settings": "设置",
+      "logout": "退出登录"
+    },
+    "dashboard": {
+      "title": "仪表板",
+      "stats": {
+        "total": "总计",
+        "published": "已发布",
+        "draft": "草稿",
+        "thisMonth": "本月新增"
+      },
+      "quickActions": "快速操作",
+      "recentNews": "最新新闻",
+      "createNews": "创建新闻",
+      "manageNews": "管理新闻",
+      "categories": "分类管理",
+      "noNews": "暂无新闻文章",
+      "getStarted": "开始创建新闻文章"
+    },
+    "news": {
+      "title": "新闻管理",
+      "create": "创建新闻",
+      "edit": "编辑新闻",
+      "list": "新闻列表",
+      "search": "搜索新闻...",
+      "category": "分类",
+      "featured": "精选",
+      "status": "状态",
+      "actions": "操作",
+      "delete": "删除",
+      "batchDelete": "批量删除",
+      "selectAll": "全选",
+      "confirmDelete": "确认删除",
+      "deleteMessage": "确定要删除这些新闻吗？此操作不可撤销。",
+      "preview": "预览",
+      "form": {
+        "titleZh": "中文标题",
+        "titleEn": "英文标题",
+        "contentZh": "中文内容",
+        "contentEn": "英文内容",
+        "category": "分类",
+        "selectCategory": "选择分类",
+        "featured": "设为精选",
+        "publishDate": "发布日期",
+        "images": "图片",
+        "uploadImages": "上传图片",
+        "dragDrop": "拖拽文件到此处或点击上传",
+        "maxFiles": "最多上传5张图片",
+        "submit": "提交",
+        "submitting": "提交中...",
+        "success": "操作成功",
+        "error": "操作失败"
+      }
+    },
+    "categories": {
+      "title": "分类管理",
+      "create": "创建分类",
+      "edit": "编辑分类",
+      "name": "分类名称",
+      "nameZh": "中文名称",
+      "nameEn": "英文名称",
+      "description": "描述",
+      "descriptionZh": "中文描述",
+      "descriptionEn": "英文描述",
+      "color": "颜色",
+      "actions": "操作",
+      "delete": "删除",
+      "confirmDelete": "确认删除",
+      "deleteMessage": "确定要删除这个分类吗？",
+      "cannotDelete": "无法删除",
+      "categoryInUse": "该分类正在被新闻使用，无法删除",
+      "form": {
+        "nameZhPlaceholder": "请输入中文名称",
+        "nameEnPlaceholder": "请输入英文名称",
+        "descriptionZhPlaceholder": "请输入中文描述",
+        "descriptionEnPlaceholder": "请输入英文描述",
+        "submit": "保存",
+        "submitting": "保存中...",
+        "success": "操作成功",
+        "error": "操作失败"
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+# 宝塔面板专用 Docker Compose 配置
+# 适用于宝塔面板的Docker管理器
+
+version: '3.8'
+
+services:
+  asupet-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: asupet-web
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    # 宝塔面板数据目录挂载（可选）
+    volumes:
+      # 如果需要持久化日志
+      - /www/wwwroot/asupet/logs:/var/log/nginx
+      # 如果需要自定义nginx配置
+      # - /www/wwwroot/asupet/nginx.conf:/etc/nginx/nginx.conf:ro
+    
+    # 健康检查
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    # 资源限制（适合宝塔面板监控）
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+    
+    # 标签（便于宝塔面板识别）
+    labels:
+      - "com.bt.description=ASUPET企业官网"
+      - "com.bt.group=web"
+      - "com.bt.maintainer=ASUPET Team"
+      - "com.bt.version=1.0"
+
+# 网络配置
+networks:
+  default:
+    name: asupet-bt-network
+    driver: bridge
+
+# 数据卷（如果需要持久化数据）
+volumes:
+  asupet-logs:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /www/wwwroot/asupet/logs
