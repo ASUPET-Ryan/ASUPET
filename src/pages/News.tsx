@@ -82,12 +82,12 @@ const News = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=news%20media%20journalism%2C%20modern%20newsroom%2C%20digital%20publishing%2C%20information%20technology%2C%20professional%20news%20background&image_size=landscape_16_9"
+            src="https://via.placeholder.com/1200x675/E5E7EB/6B7280?text=ASUPET+News"
             alt="News Background"
             className="w-full h-full object-cover"
           />
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-blue-800/75 to-gray-900/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-purple-800/75 to-indigo-900/85"></div>
         </div>
         
         {/* Content */}
@@ -96,7 +96,7 @@ const News = () => {
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
               {t('news.hero.title')}
             </h1>
-            <p className="text-xl text-slate-100 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto drop-shadow-md">
               {t('news.hero.subtitle')}
             </p>
           </div>

@@ -70,5 +70,4 @@ Dockerfile
 docker-compose.yml
 
 # 其他
-.trae/
 spec.md

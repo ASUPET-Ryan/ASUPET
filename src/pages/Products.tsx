@@ -79,12 +79,12 @@ const Products = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=premium%20pet%20food%20products%2C%20natural%20ingredients%2C%20healthy%20nutrition%2C%20professional%20product%20photography%2C%20warm%20lighting&image_size=landscape_16_9"
+            src="https://via.placeholder.com/1200x675/E5E7EB/6B7280?text=ASUPET+Products"
             alt="Products Background"
             className="w-full h-full object-cover"
           />
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/80 via-secondary-800/70 to-accent-600/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-purple-800/75 to-indigo-900/85"></div>
         </div>
         
         {/* Content */}
@@ -93,7 +93,7 @@ const Products = () => {
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
               {t('products.hero.title')}
             </h1>
-            <p className="text-xl text-primary-100 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto drop-shadow-md">
               {t('products.hero.subtitle')}
             </p>
           </div>

@@ -103,7 +103,7 @@ const Technology = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=advanced%20technology%2C%20AI%20artificial%20intelligence%2C%20data%20analytics%2C%20digital%20innovation%2C%20futuristic%20tech%20background%2C%20professional%20lighting&image_size=landscape_16_9"
+            src="https://via.placeholder.com/1200x675/E5E7EB/6B7280?text=ASUPET+Technology"
             alt="Technology Background"
             className="w-full h-full object-cover"
           />

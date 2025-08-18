@@ -31,7 +31,7 @@ const About = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20pet%20care%20team%2C%20veterinarians%20and%20nutritionists%2C%20modern%20office%20environment%2C%20warm%20lighting%2C%20professional%20photography&image_size=landscape_16_9"
+            src="https://via.placeholder.com/1200x675/E5E7EB/6B7280?text=ASUPET+About+Us"
             alt="About Us Background"
             className="w-full h-full object-cover"
           />

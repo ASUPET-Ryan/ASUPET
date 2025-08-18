@@ -5,7 +5,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # 构建输出
-dist
+# dist  # 注释掉，因为 Fly.io 部署需要 dist 目录
 build
 
 # 开发文件
@@ -53,5 +53,4 @@ backup/
 .vercelignore
 
 # 其他
-.trae/
 spec.md

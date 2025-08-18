@@ -112,12 +112,12 @@ const Contact = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20office%20building%2C%20business%20communication%2C%20professional%20contact%20center%2C%20customer%20service%2C%20corporate%20headquarters&image_size=landscape_16_9"
+            src="https://via.placeholder.com/1200x675/E5E7EB/6B7280?text=ASUPET+Contact+Us"
             alt="Contact Background"
             className="w-full h-full object-cover"
           />
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/85 via-teal-800/75 to-cyan-900/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 via-purple-800/75 to-indigo-900/85"></div>
         </div>
         
         {/* Content */}
@@ -126,7 +126,7 @@ const Contact = () => {
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
               {t('contact.hero.title')}
             </h1>
-            <p className="text-xl text-emerald-100 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto drop-shadow-md">
               {t('contact.hero.subtitle')}
             </p>
           </div>
@@ -173,7 +173,7 @@ const Contact = () => {
               <div className="mt-12">
                 <div className="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden shadow-lg">
                   <img
-                    src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20office%20building%20location%20map%20view%2C%20professional%20business%20district%2C%20clean%20architecture&image_size=landscape_16_9"
+                    src="https://via.placeholder.com/600x400/E5E7EB/6B7280?text=ASUPET+Office+Location"
                     alt={t('contact.map.alt')}
                     className="w-full h-64 object-cover"
                   />
